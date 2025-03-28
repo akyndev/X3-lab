@@ -175,7 +175,7 @@ const Future = () => {
             </div>
             <div className="absolute -bottom-10 right-0">
               <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_496_97)">
+                <g clipPath="url(#clip0_496_97)">
                   <mask
                     id="mask0_496_97"
                     style={{ maskType: "luminance" }}
@@ -189,8 +189,8 @@ const Future = () => {
                   </mask>
                   <g mask="url(#mask0_496_97)">
                     <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
+                      fillRule="evenodd"
+                      clipRule="evenodd"
                       d="M50.1935 45.9266C48.1208 20.2175 26.6 0 0.357145 0C0.357145 26.1212 20.3877 47.5641 45.9266 49.8064C20.2175 51.879 1.14711e-06 73.4 0 99.643C26.1212 99.643 47.5641 79.6125 49.8064 54.0735C51.879 79.7825 73.4 100 99.643 100C99.643 73.879 79.6125 52.436 54.0735 50.1935C79.7825 48.1208 100 26.6 100 0.357143C73.879 0.357142 52.436 20.3877 50.1935 45.9266ZM49.9988 50.001L50.001 50.0015L50.0015 49.9987C50.0005 49.9987 49.9988 49.9987 49.9988 49.9987V50.001Z"
                       fill="url(#paint0_linear_496_97)"
                     />
@@ -205,8 +205,8 @@ const Future = () => {
                     y2="76.25"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#B0B9FF" />
-                    <stop offset="1" stop-color="#E7E9FF" />
+                    <stop stopColor="#B0B9FF" />
+                    <stop offset="1" stop="#E7E9FF" />
                   </linearGradient>
                   <clipPath id="clip0_496_97">
                     <rect width="100" height="100" fill="white" />

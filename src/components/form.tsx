@@ -7,6 +7,7 @@ import { z } from "zod"
 import { Button } from "@/components/ui/button"
 import { Form, FormControl, FormDescription, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form"
 import { Input } from "@/components/ui/input"
+import { RadioGroup, RadioGroupItem } from "./ui/radio-group"
 
 const formSchema = z.object({
   username: z.string().min(2, {
@@ -43,6 +44,34 @@ export function ContactForm() {
               </FormControl>
               <FormDescription>This is your public display name.</FormDescription>
               <FormMessage />
+
+              <FormLabel>Notify me about...</FormLabel>
+              <FormControl>
+                <RadioGroup
+                  onValueChange={field.onChange}
+                  defaultValue={field.value}
+                  className="flex flex-col space-y-1"
+                >
+                  <FormItem className="flex items-center space-x-3 space-y-0">
+                    <FormControl>
+                      <RadioGroupItem value="all" />
+                    </FormControl>
+                    <FormLabel className="font-normal">All new messages</FormLabel>
+                  </FormItem>
+                  <FormItem className="flex items-center space-x-3 space-y-0">
+                    <FormControl>
+                      <RadioGroupItem value="mentions" />
+                    </FormControl>
+                    <FormLabel className="font-normal">Direct messages and mentions</FormLabel>
+                  </FormItem>
+                  <FormItem className="flex items-center space-x-3 space-y-0">
+                    <FormControl>
+                      <RadioGroupItem value="none" />
+                    </FormControl>
+                    <FormLabel className="font-normal">Nothing</FormLabel>
+                  </FormItem>
+                </RadioGroup>
+              </FormControl>
             </FormItem>
           )}
         />

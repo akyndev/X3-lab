@@ -11,7 +11,9 @@ const ResearchAndDevelopmentPage = () => {
           Development Fellowship
         </h2>
 
-        <p className="text-2xl">Connect with like-minded creatives, access resources, and collaborate <br /> on impactful projects</p>
+        <p className="text-2xl">
+          Connect with like-minded creatives, access resources, and collaborate <br /> on impactful projects
+        </p>
       </div>
 
       <div className="flex">
@@ -28,7 +30,7 @@ const ResearchAndDevelopmentPage = () => {
             label="What's in it for you?"
             description="You can join this community if you are transitioning into a technical role in tech and you want to learn with a community . You can also join if you are already a well established tech professional that wants to learn more or help people solve thier problems"
           />
-          <Button>Submit Proposal</Button>
+          <Button className="w-[203px] py-6">Submit Proposal</Button>
         </div>
 
         <div>
