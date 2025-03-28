@@ -206,7 +206,7 @@ const Future = () => {
                     gradientUnits="userSpaceOnUse"
                   >
                     <stop stopColor="#B0B9FF" />
-                    <stop offset="1" stop="#E7E9FF" />
+                    <stop offset="1" stopColor="#E7E9FF" />
                   </linearGradient>
                   <clipPath id="clip0_496_97">
                     <rect width="100" height="100" fill="white" />
