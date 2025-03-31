@@ -9,14 +9,14 @@ const Footer = () => {
   return (
     <footer className="bg-[#0B0922] text-white pt-20 pb-6">
       <div className="container space-y-16">
-        <div className=" flex gap-20 items-center justify-between">
+        <div className=" flex gap-20 items-center justify-between flex-col lg:flex-row">
           <div>
             <Image src={"/x3-footer-logo.svg"} alt="Footer logo " width={205} height={49} />
           </div>
 
           <div>
             <nav>
-              <ul className="flex items-center gap-6 text-white">
+              <ul className="flex flex-col lg:flex-row items-center gap-6 text-white">
                 <li className="hover:underline hover:text-blue-500">
                   <Link href={"/about-us"}>About Us</Link>
                 </li>
@@ -36,8 +36,8 @@ const Footer = () => {
 
         <Separator className="opacity-50" />
 
-        <div className="flex justify-end gap-56">
-          <div className="">
+        <div className="flex justify-end flex-col lg:flex-row gap-6 lg:gap-56">
+          <div className="w-max mx-auto">
             <div className="flex items-center gap-2">
               {" "}
               <p className="bg-green-400 h-1 w-10" /> EMAIL
@@ -45,7 +45,7 @@ const Footer = () => {
             <p className={cn("text-xl", nomixa.className)}>X3Lab@gmail.com</p>
           </div>
 
-          <div>
+          <div className="w-max mx-auto ">
             <span>Follow Us</span>
             <div className="flex items-center gap-4">
               <Linkedin />
@@ -54,8 +54,8 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex items-start justify-between ">
-          <div className="flex items-center gap-6">
+        <div className="flex items-start justify-between flex-col lg:flex-row ">
+          <div className="flex items-center lg:gap-6 flex-col lg:flex-row w-full">
             <div className="relative w-[188px] h-[188px]">
               <div className="absolute rotate-[21.78deg] -right-2 bottom-4">
                 <Image src={"/scan-me.png"} alt="Scan me" width={157} height={157} />
@@ -76,7 +76,7 @@ const Footer = () => {
             <Image src={"/human.png"} alt="Scan me" width={230} height={230} />
           </div>
 
-          <span>&copy;Copyright {new Date().getFullYear()} X3Lab</span>
+          <span className="text-center text-sm w-full pt-8">&copy;Copyright {new Date().getFullYear()} X3Lab</span>
         </div>
       </div>
     </footer>

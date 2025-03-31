@@ -37,8 +37,8 @@ const GetInvolvedPage = () => {
     <main className="space-y-24">
       <section>
         <div className="container ">
-          <div className="flex py-24 justify-between gap-24">
-            <div className=" relative w-4/12 space-y-6">
+          <div className="flex py-24 justify-between gap-24 flex-col lg:flex-row">
+            <div className=" relative lg:w-4/12 space-y-6">
               <h2 className={cn(nomixa.className, "text-4xl font-semibold")}>Get Involved</h2>
               <p>Be part of the innovation movement</p>
 
@@ -83,7 +83,7 @@ const GetInvolvedPage = () => {
               </div>
             </div>
 
-            <div className="w-8/12">
+            <div className="lg:w-8/12">
               <p className="text-xl font-light">
                 X3Lab thrives on collaboration, mentorship, and support from passionate individuals and organizations.
                 Whether you&apos;re an aspiring innovator, an industry expert, or a company looking to make an impact,
@@ -92,7 +92,7 @@ const GetInvolvedPage = () => {
             </div>
           </div>
 
-          <div className="grid grid-cols-4 gap-10">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-10">
             <Image src={"/ceo.png"} width={315} height={387} alt="akinlade Joseph" className="rounded-md w-full" />
             <Image src={"/ceo.png"} width={315} height={387} alt="akinlade Joseph" className="rounded-md w-full" />
             <Image src={"/ceo.png"} width={315} height={387} alt="akinlade Joseph" className="rounded-md w-full" />
@@ -103,9 +103,9 @@ const GetInvolvedPage = () => {
 
       <section className="w-full text-white bg-black">
         <div className={`space-y-10 swatch-bg w-full`}>
-          <div className="flex container py-16">
-            <div className="w-5/12 space-y-8">
-              <h3 className={cn(nomixa.className, "text-4xl font-medium")}>
+          <div className="flex container py-16 flex-col lg:flex-row gap-16 lg:gap-0">
+            <div className="lg:w-5/12 space-y-8">
+              <h3 className={cn(nomixa.className, "text-3xl lg:text-4xl font-medium")}>
                 Explore the many <br />
                 Ways you can get <br />
                 involved!
@@ -113,18 +113,18 @@ const GetInvolvedPage = () => {
               <Explore />
             </div>
 
-            <div className="w-7/12 space-y-10">
-              {waysToGetInvolved.map((way) => (
+            <div className="lg:w-7/12 space-y-10">
+              {waysToGetInvolved.map((way, index) => (
                 <>
                   <div key={way.label} className="flex items-center gap-8">
-                    <div>{way.icon}</div>
+                    <div className="scale-75">{way.icon}</div>
 
                     <div className="space-y-4">
-                      <h3 className={cn(nomixa.className, "text-3xl")}>{way.label}</h3>
-                      <p className="text-lg font-light">{way.description}</p>
+                      <h3 className={cn(nomixa.className, "text-xl lg:text-3xl")}>{way.label}</h3>
+                      <p className="lg:text-lg text-base font-light">{way.description}</p>
                     </div>
                   </div>
-                  <Separator className="opacity-50" />
+                  <Separator key={index} className="opacity-50" />
                 </>
               ))}
             </div>
@@ -133,7 +133,7 @@ const GetInvolvedPage = () => {
       </section>
 
       <section className="pb-44">
-        <div className="container flex justify-between">
+        <div className="container flex flex-col lg:flex-row justify-between gap-6 lg:gap-0">
           <div className="space-y-6">
             <h2 className={cn(nomixa.className, "text-3xl")}>
               Partner <br /> With Us
@@ -155,25 +155,25 @@ const GetInvolvedPage = () => {
             </Button>
           </div>
 
-          <div className="flex">
+          <div className="flex flex-col lg:flex-row">
             <Image
               width={313}
               height={432}
-              className="translate-y-16 rounded-md"
+              className="lg:translate-y-16 rounded-md w-full p-4"
               src={"/partner-with-us-1.png"}
               alt="partner with us"
             />
             <Image
               width={313}
               height={432}
-              className="translate-y-0 rounded-md"
+              className="lg:translate-y-0 rounded-md w-full p-4"
               src={"/partner-with-us.png"}
               alt="partner with us"
             />
             <Image
               width={313}
               height={432}
-              className="translate-y-32 rounded-md"
+              className="lg:translate-y-32 rounded-md w-full p-4"
               src={"/partner-with-us-2.png"}
               alt="partner with us"
             />

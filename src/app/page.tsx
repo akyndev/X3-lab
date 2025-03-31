@@ -45,9 +45,9 @@ export default function Home() {
   return (
     <main className="space-y-36">
       <section className="container">
-        <div className="flex items-center justify-between px-8">
+        <div className="flex items-center flex-col lg:flex-row justify-between px-8">
           <div className="">
-            <h2 className={cn(nomixa.className, "text-5xl leading-[64px] font-semibold inline mx-auto")}>
+            <h2 className={cn(nomixa.className, "lg:text-5xl text-4xl leading-[64px] font-semibold inline mx-auto")}>
               Turn Your{" "}
               <span className="rounded-full bg-[#1CFEBA] text-3xl border border-black font-medium border-b-4 inline-block w-36 text-center pt-2 ">
                 Ideas
@@ -59,7 +59,7 @@ export default function Home() {
               Grow
             </h2>
 
-            <p className="font-light text-2xl my-6">
+            <p className="font-light text-xl lg:text-2xl my-6">
               We provide a collaborative ecosystem where <br /> tech creatives, innovators, and problem-solvers <br />{" "}
               bring their boldest ideas to life
             </p>
@@ -71,7 +71,7 @@ export default function Home() {
             style={{
               boxShadow: "-16px 16px #1B5299"
             }}
-            className="rounded-2xl"
+            className="rounded-lg"
           >
             <Image src={"/hero-image.png"} alt="hero image " width={560} height={600} className="" />
           </div>
@@ -80,7 +80,7 @@ export default function Home() {
 
       <section>
         <div className="container overflow-hidden">
-          <div className="flex items-center pb-8">
+          <div className="flex items-center pb-8" >
             <h3 className="text-nowrap">Our mentors work at</h3>
             <Separator />
           </div>
@@ -106,16 +106,16 @@ export default function Home() {
 
       <section className="bg-[#1B5299]/5 ">
         <div className="container py-16">
-          <div className="flex items-center gap-6">
-            <div className="space-y-10">
+          <div className="flex items-center gap-12  lg:gap-6 flex-col lg:flex-row">
+            <div className="space-y-6 lg:space-y-10">
               <h3 className={cn(nomixa.className, "text-[#1B5299] text-2xl")}>About X3Lab</h3>
 
-              <h2 className={cn(nomixa.className, "text-4xl font-medium")}>
+              <h2 className={cn(nomixa.className, "text-3xl lg:text-4xl font-medium")}>
                 Empowering Innovators, <br />
                 Builders & Visionaries
               </h2>
 
-              <p className="text-2xl font-light">
+              <p className="lg:text-2xl text-xl font-light">
                 We provide the resources, mentorship and scalable projects. Our ecosystem fosters collaboration,
                 learning, and hands-on execution, bridging the gap between theory and real-world application.
               </p>
@@ -130,14 +130,14 @@ export default function Home() {
               </Button>
             </div>
 
-            <Image src={"/about-image.png"} alt="About picture" width={647} height={515} className="w-1/2 h-1/2" />
+            <Image src={"/about-image.png"} alt="About picture" width={647} height={515} className="lg:w-1/2 lg:h-1/2 w-full h-full" />
           </div>
         </div>
       </section>
 
       <section>
         <div className="container">
-          <div className="grid grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <div className="w-full bg-[#1B5299]  flex px-6 pt-32 rounded-md">
               <h3 className={cn(nomixa.className, "text-4xl  text-white font-semibold")}>
                 What <br /> We Do
@@ -232,98 +232,8 @@ export default function Home() {
               </div>
             ))}
 
-            <div>
-              <svg width="423" height="398" viewBox="0 0 423 398" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="423" height="398" rx="12" fill="#1B5299" />
-                <g filter="url(#filter0_d_572_163)">
-                  <rect
-                    x="277.286"
-                    y="146.019"
-                    width="154.228"
-                    height="139.81"
-                    rx="20"
-                    transform="rotate(34.8291 277.286 146.019)"
-                    fill="#FF556C"
-                  />
-                  <rect
-                    x="276.786"
-                    y="143.235"
-                    width="158.228"
-                    height="143.81"
-                    rx="22"
-                    transform="rotate(34.8291 276.786 143.235)"
-                    stroke="#424347"
-                    strokeWidth="4"
-                  />
-                </g>
-                <g filter="url(#filter1_d_572_163)">
-                  <rect
-                    x="99.6481"
-                    y="28.276"
-                    width="245"
-                    height="245"
-                    rx="122.5"
-                    transform="rotate(17.7451 99.6481 28.276)"
-                    fill="#1CFEBA"
-                  />
-                  <rect
-                    x="98.3528"
-                    y="25.7616"
-                    width="249"
-                    height="249"
-                    rx="124.5"
-                    transform="rotate(17.7451 98.3528 25.7616)"
-                    stroke="#424347"
-                    strokeWidth="4"
-                  />
-                </g>
-                <defs>
-                  <filter
-                    id="filter0_d_572_163"
-                    x="201.273"
-                    y="149.856"
-                    width="198.774"
-                    height="203.173"
-                    filterUnits="userSpaceOnUse"
-                    colorInterpolationFilters="sRGB"
-                  >
-                    <feFlood floodOpacity="0" result="BackgroundImageFix" />
-                    <feColorMatrix
-                      in="SourceAlpha"
-                      type="matrix"
-                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                      result="hardAlpha"
-                    />
-                    <feOffset dy="8" />
-                    <feComposite in2="hardAlpha" operator="out" />
-                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0" />
-                    <feBlend mode="multiply" in2="BackgroundImageFix" result="effect1_dropShadow_572_163" />
-                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_572_163" result="shape" />
-                  </filter>
-                  <filter
-                    id="filter1_d_572_163"
-                    x="52.45"
-                    y="55.7495"
-                    width="253.068"
-                    height="261.068"
-                    filterUnits="userSpaceOnUse"
-                    colorInterpolationFilters="sRGB"
-                  >
-                    <feFlood floodOpacity="0" result="BackgroundImageFix" />
-                    <feColorMatrix
-                      in="SourceAlpha"
-                      type="matrix"
-                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                      result="hardAlpha"
-                    />
-                    <feOffset dy="8" />
-                    <feComposite in2="hardAlpha" operator="out" />
-                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0" />
-                    <feBlend mode="multiply" in2="BackgroundImageFix" result="effect1_dropShadow_572_163" />
-                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_572_163" result="shape" />
-                  </filter>
-                </defs>
-              </svg>
+            <div className="">
+
             </div>
           </div>
         </div>
@@ -331,13 +241,13 @@ export default function Home() {
 
       <section>
         <div className="container">
-          <div className="flex bg-gray-100 gap-14">
-            <div className="p-8 space-y-14">
-              <h2 className={cn(nomixa.className, "text-5xl font-medium")}>
+          <div className="flex bg-gray-100 gap-14 flex-col lg:flex-row">
+            <div className="lg:p-8 p-4 space-y-8 lg:space-y-14">
+              <h2 className={cn(nomixa.className, "lg:text-5xl text-3xl font-medium")}>
                 Hear Success <br /> Stories
               </h2>
 
-              <p className="text-2xl font-light">
+              <p className="lg:text-2xl text-xl font-light">
                 Meet Joseph, a former apprentice who landed a top role in tech after completing our work simulation
                 program
               </p>
@@ -345,14 +255,14 @@ export default function Home() {
 
             <div className="w-full">
               <Image src={"/success-people.png"} alt="success-people " width={756} height={319} />
-              <div className="bg-black p-12 text-white space-y-16 ">
+              <div className="bg-black lg:p-12 text-white space-y-16 p-4">
                 <h3>Real world Experience, Real Growth</h3>
 
                 <div className="flex justify-between items-center">
-                  <span className="border border-white px-4 py-2 rounded-full text-center "> Innovation</span>
-                  <span className="border border-white px-4 py-2 rounded-full text-center "> Growth</span>
-                  <span className="border border-white px-4 py-2 rounded-full text-center "> Impact</span>
-                  <span className="border border-white px-4 py-2 rounded-full text-center "> Creativity</span>
+                  <span className="border border-white px-4 py-2 rounded-full text-xs lg:text-base text-center "> Innovation</span>
+                  <span className="border border-white px-4 py-2 rounded-full text-xs lg:text-base text-center "> Growth</span>
+                  <span className="border border-white px-4 py-2 rounded-full text-xs lg:text-base text-center "> Impact</span>
+                  <span className="border border-white px-4 py-2 rounded-full text-xs lg:text-base text-center "> Creativity</span>
                 </div>
               </div>
             </div>
@@ -361,9 +271,9 @@ export default function Home() {
       </section>
 
       <section>
-        <div className="container flex gap-44 ">
+        <div className="container flex lg:gap-44 flex-col lg:flex-row">
           <div className="pt-4">
-            <h2 className={cn(nomixa.className, "text-6xl font-semibold")}>
+            <h2 className={cn(nomixa.className, "lg:text-6xl text-4xl font-semibold")}>
               Frequently <br />
               Asked <br />
               Questions

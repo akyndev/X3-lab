@@ -11,7 +11,7 @@ const Future = () => {
         <h3 className={cn("text-4xl", nomixa.className)}>The future starts here.</h3>
         <p className="font-light">Here&apos;s how you can be part</p>
       </div>
-      <div className="grid grid-cols-3 gap-4 ">
+      <div className="grid grid-cols-1  lg:grid-cols-3 gap-4 ">
         <div className="w-full h-[660px] shadow-md rounded-md border flex flex-col justify-between pt-10 relative">
           <div className="space-y-6 px-4">
             <span className={cn("font-medium text-[#1B5299]", nomixa.className)}>#BUILD</span>

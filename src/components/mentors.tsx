@@ -10,10 +10,10 @@ const Mentors = ({
   return (
     <section className="space-y-14">
       <div className="text-center">
-        <h3 className={cn("text-4xl", nomixa.className)}>{title}</h3>
+        <h3 className={cn("text-2xl lg:text-4xl", nomixa.className)}>{title}</h3>
         <p className="font-light">{description}</p>
       </div>
-      <div className="grid grid-cols-4 gap-10">
+      <div className="grid grid-cols-1 lg:grid-cols-4 gap-10">
         <Mentor />
         <Mentor />
         <Mentor />
@@ -21,7 +21,7 @@ const Mentors = ({
         <Mentor />
         <Mentor />
         <Mentor />
-        <Mentor />
+        <Mentor />  
       </div>
     </section>
   )

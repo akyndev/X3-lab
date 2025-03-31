@@ -44,16 +44,16 @@ const getInvolved: GetInvolvedType[] = [
 const GetInvolved = () => {
   return (
     <div className="space-y-20 container py-16">
-      <div className="flex gap-16">
-        <div className="w-5/12">
-          <h2 className="text-5xl text-nowrap font-semibold pb-6 "> Our Programs</h2>
-          <p className="font-light text-xl">Find the right program for you</p>
+      <div className="flex flex-col lg:flex-row gap-16">
+        <div className="lg:w-5/12">
+          <h2 className="lg:text-5xl text-4xl text-nowrap font-semibold pb-6 "> Our Programs</h2>
+          <p className="font-light lg:text-xl">Find the right program for you</p>
         </div>
 
-        <div className="w-max  space-y-12">
-          <p className="text-2xl font-light">
-            Our programs are tailored to equip aspiring tech creators, <br /> entrepreneurs, and researchers with the
-            skills, mentorship, <br /> and resources they need to thrive in the industry.
+        <div className="lg:w-max  space-y-12">
+          <p className="lg:text-2xl text-xl font-light">
+            Our programs are tailored to equip aspiring tech creators, <br className="hidden lg:block" /> entrepreneurs, and researchers with the
+            skills, mentorship, <br className="hidden lg:block" /> and resources they need to thrive in the industry.
           </p>
 
           <Button className="w-[203px] py-6">
@@ -81,12 +81,12 @@ export default GetInvolved
 
 const GetInvolvedComponent = ({ label, description, link, linkLabel }: GetInvolvedType) => {
   return (
-    <div className="flex gap-16">
-      <h3 className={cn("font-medium text-3xl w-[496px]", nomixa.className)}>{label}</h3>
+    <div className="flex flex-col lg:flex-row gap-4 lg:gap-16">
+      <h3 className={cn("font-medium text-2xl lg:text-3xl lg:w-[496px]", nomixa.className)}>{label}</h3>
 
-      <div className="w-11/12">
-        <p className="text-2xl font-extralight">{description}</p>
-        <Link href={link} className="text-xl text-blue-500">
+      <div className="lg:w-11/12">
+        <p className="lg:text-2xl text-xl font-extralight">{description}</p>
+        <Link href={link} className="lg:text-xl text-base text-blue-500">
           {linkLabel}
         </Link>
       </div>

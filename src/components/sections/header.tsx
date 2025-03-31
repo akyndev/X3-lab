@@ -12,7 +12,7 @@ const Header = () => {
           </Link>
         </div>
 
-        <div>
+        <div className="hidden lg:block">
           <nav>
             <ul className="flex items-center gap-6">
               <li className="hover:underline hover:text-blue-500">
