@@ -77,3 +77,8 @@ body {
   background-size: 500px;
 
 }
+
+.donate-bg {
+  background-image: url(../../public/donate-bg.png);
+  background-size: 100%;
+}

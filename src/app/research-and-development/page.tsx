@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
 import { nomixa } from "../fonts"
+import Image from "next/image"
 
 const ResearchAndDevelopmentPage = () => {
   return (
@@ -11,13 +12,13 @@ const ResearchAndDevelopmentPage = () => {
           Development Fellowship
         </h2>
 
-        <p className="text-2xl">
+        <p className="text-xl">
           Connect with like-minded creatives, access resources, and collaborate <br /> on impactful projects
         </p>
       </div>
 
-      <div className="flex">
-        <div className="space-y-14">
+      <div className="flex justify-between">
+        <div className="space-y-14 w-6/12">
           <Development
             label="Our Purpose."
             description="NexaScale Study Groups is a vitual community created for people to connect, learn, build projects, and get their technical questions answered. We host bi-weekly office hour sessions for different tracks"
@@ -33,8 +34,11 @@ const ResearchAndDevelopmentPage = () => {
           <Button className="w-[203px] py-6">Submit Proposal</Button>
         </div>
 
-        <div>
-          <div className="h-56 w-56 rounded bg-gray-100">Our Purpose</div>
+        <div className="bg-gray-100 rounded-lg overflow-hidden h-max ">
+          <div>
+            <Image src={"/the-boys.png"} alt="the boys" width={400} height={400} />
+          </div>
+          <div className="p-6">Our Purpose</div>
         </div>
       </div>
     </div>
@@ -46,8 +50,8 @@ export default ResearchAndDevelopmentPage
 export const Development = ({ label, description }: { label: string; description: string }) => {
   return (
     <div className="space-y-8">
-      <h2 className={cn(nomixa.className, "font-medium text-4xl")}>{label}</h2>
-      <p className="text-2xl">{description}</p>
+      <h2 className={cn(nomixa.className, "font-medium text-3xl")}>{label}</h2>
+      <p className="text-lg font-light">{description}</p>
     </div>
   )
 }

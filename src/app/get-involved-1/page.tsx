@@ -1,20 +1,50 @@
 import { Button } from "@/components/ui/button"
-import { Explore, JoinX3Lab } from "@/lib/icons"
+import { Separator } from "@/components/ui/separator"
+import { ApplyIcon, Explore, JoinX3Lab, MentorIcon, TrainingIcon } from "@/lib/icons"
+import { cn } from "@/lib/utils"
 import Image from "next/image"
+import { nomixa } from "../fonts"
+
+const waysToGetInvolved = [
+  {
+    label: "Join X3Lab",
+    description:
+      "Become part of our vibrant tech ecosystem where ideas come to life. Gain access to a free workspace, cutting-edge resources, and a community of like-minded innovators.",
+    icon: <JoinX3Lab />
+  },
+  {
+    label: "Apply for R&D support",
+    description:
+      "Our Research & Development (R&D) program provides the resources, mentorship, and funding you need to develop and test innovative solutions.",
+    icon: <ApplyIcon />
+  },
+  {
+    label: "Become a Mentor",
+    description:
+      "Your experience can inspire and guide the next generation of innovators. Share your knowledge, provide career insights, and help shape the future of tech.",
+    icon: <MentorIcon />
+  },
+  {
+    label: "Mentorship based Training Program",
+    description:
+      "Whether you're new to tech or looking to specialize, our expert-led programs will equip you with real-world experience.",
+    icon: <TrainingIcon />
+  }
+]
 
 const GetInvolvedPage = () => {
   return (
-    <main className="">
+    <main className="space-y-24">
       <section>
-        <div className="container">
-          <div className="flex justify-between">
-            <div className=" relative">
-              <h2>Get Involved</h2>
+        <div className="container ">
+          <div className="flex py-24 justify-between gap-24">
+            <div className=" relative w-4/12 space-y-6">
+              <h2 className={cn(nomixa.className, "text-4xl font-semibold")}>Get Involved</h2>
               <p>Be part of the innovation movement</p>
 
-              <div className="absolute">
+              <div className="absolute -right-28 -bottom-16 -z-10">
                 <svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <g clip-path="url(#clip0_107_16255)">
+                  <g clipPath="url(#clip0_107_16255)">
                     <mask
                       id="mask0_107_16255"
                       style={{ maskType: "luminance" }}
@@ -42,8 +72,8 @@ const GetInvolvedPage = () => {
                       y2="200"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#B8DBFC" />
-                      <stop offset="1" stop-color="#F8FBFE" />
+                      <stop stopColor="#B8DBFC" />
+                      <stop offset="1" stopColor="#F8FBFE" />
                     </linearGradient>
                     <clipPath id="clip0_107_16255">
                       <rect width="200" height="200" fill="white" />
@@ -54,7 +84,7 @@ const GetInvolvedPage = () => {
             </div>
 
             <div className="w-8/12">
-              <p>
+              <p className="text-xl font-light">
                 X3Lab thrives on collaboration, mentorship, and support from passionate individuals and organizations.
                 Whether you&apos;re an aspiring innovator, an industry expert, or a company looking to make an impact,
                 there’s a place for you here.
@@ -71,11 +101,11 @@ const GetInvolvedPage = () => {
         </div>
       </section>
 
-      <section className=" h-96 w-full text-white bg-black">
-        <div className={`space-y-10 swatch-bg h-full w-full`}>
-          <div className="flex container">
-            <div>
-              <h3>
+      <section className="w-full text-white bg-black">
+        <div className={`space-y-10 swatch-bg w-full`}>
+          <div className="flex container py-16">
+            <div className="w-5/12 space-y-8">
+              <h3 className={cn(nomixa.className, "text-4xl font-medium")}>
                 Explore the many <br />
                 Ways you can get <br />
                 involved!
@@ -83,33 +113,33 @@ const GetInvolvedPage = () => {
               <Explore />
             </div>
 
-            <div>
-              <div className="flex ">
-                <div>
-                  <JoinX3Lab />
-                </div>
+            <div className="w-7/12 space-y-10">
+              {waysToGetInvolved.map((way) => (
+                <>
+                  <div key={way.label} className="flex items-center gap-8">
+                    <div>{way.icon}</div>
 
-                <div>
-                  <h3>Join X3Lab</h3>
-                  <p>
-                    Become part of our vibrant tech ecosystem where ideas come to life. Gain access to a free workspace,
-                    cutting-edge resources, and a community of like-minded innovators.
-                  </p>
-                </div>
-              </div>
+                    <div className="space-y-4">
+                      <h3 className={cn(nomixa.className, "text-3xl")}>{way.label}</h3>
+                      <p className="text-lg font-light">{way.description}</p>
+                    </div>
+                  </div>
+                  <Separator className="opacity-50" />
+                </>
+              ))}
             </div>
           </div>
         </div>
       </section>
 
-      <section>
+      <section className="pb-44">
         <div className="container flex justify-between">
-          <div>
-            <h2>
+          <div className="space-y-6">
+            <h2 className={cn(nomixa.className, "text-3xl")}>
               Partner <br /> With Us
             </h2>
 
-            <p>
+            <p className="text-lg font-light pb-6">
               Partner with X3Lab to support <br /> research, mentor emerging <br /> talents, and drive impact through{" "}
               <br /> collaboration
             </p>

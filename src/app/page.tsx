@@ -1,12 +1,10 @@
 import { FAQsAccordion } from "@/components/faq-accordion"
+import { Marquee } from "@/components/magicui/marquee"
 import { Button } from "@/components/ui/button"
 import { Separator } from "@/components/ui/separator"
 import { cn } from "@/lib/utils"
 import Image from "next/image"
 import { nomixa } from "./fonts"
-import { Marquee } from "@/components/magicui/marquee"
-
-
 
 const firstRow = [
   {
@@ -40,17 +38,12 @@ const firstRow = [
   {
     src: "/logos/stallion.png",
     alt: "binance"
-  },
+  }
 ]
-
-
-
-
-
 
 export default function Home() {
   return (
-    <main className="space-y-16">
+    <main className="space-y-36">
       <section className="container">
         <div className="flex items-center justify-between px-8">
           <div className="">
@@ -86,7 +79,7 @@ export default function Home() {
       </section>
 
       <section>
-        <div className="container">
+        <div className="container overflow-hidden">
           <div className="flex items-center pb-8">
             <h3 className="text-nowrap">Our mentors work at</h3>
             <Separator />
@@ -145,26 +138,209 @@ export default function Home() {
       <section>
         <div className="container">
           <div className="grid grid-cols-3 gap-8">
-            <div className="w-full bg-[#1B5269]  rounded-md"></div>
-            {Array.from({ length: 4 }).map((_, idx) => (
+            <div className="w-full bg-[#1B5299]  flex px-6 pt-32 rounded-md">
+              <h3 className={cn(nomixa.className, "text-4xl  text-white font-semibold")}>
+                What <br /> We Do
+              </h3>
+
+              <div>
+                <svg width="219" height="197" viewBox="0 0 219 197" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g filter="url(#filter0_d_495_14)">
+                    <rect
+                      x="0.0390625"
+                      y="121.198"
+                      width="207.232"
+                      height="71.3192"
+                      rx="20"
+                      transform="rotate(-16.5415 0.0390625 121.198)"
+                      fill="#1CFEBA"
+                    />
+                    <rect
+                      x="-2.44758"
+                      y="119.85"
+                      width="211.232"
+                      height="75.3192"
+                      rx="22"
+                      transform="rotate(-16.5415 -2.44758 119.85)"
+                      stroke="#424347"
+                      strokeWidth="4"
+                    />
+                  </g>
+                  <g filter="url(#filter1_d_495_14)">
+                    <path
+                      d="M65.5168 8.91065C67.0988 2.95891 74.5305 0.95162 78.8938 5.29753L169.948 95.9871C174.311 100.333 172.334 107.773 166.388 109.378L42.3219 142.889C36.3765 144.495 30.9223 139.062 32.5043 133.11L65.5168 8.91065Z"
+                      fill="#FF7789"
+                    />
+                    <path
+                      d="M65.5168 8.91065C67.0988 2.95891 74.5305 0.95162 78.8938 5.29753L169.948 95.9871C174.311 100.333 172.334 107.773 166.388 109.378L42.3219 142.889C36.3765 144.495 30.9223 139.062 32.5043 133.11L65.5168 8.91065Z"
+                      stroke="#424347"
+                      strokeWidth="4"
+                    />
+                  </g>
+                  <defs>
+                    <filter
+                      id="filter0_d_495_14"
+                      x="0.899231"
+                      y="63.0569"
+                      width="217.24"
+                      height="133.648"
+                      filterUnits="userSpaceOnUse"
+                      colorInterpolationFilters="sRGB"
+                    >
+                      <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                      <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                      />
+                      <feOffset dy="8" />
+                      <feComposite in2="hardAlpha" operator="out" />
+                      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0" />
+                      <feBlend mode="multiply" in2="BackgroundImageFix" result="effect1_dropShadow_495_14" />
+                      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_495_14" result="shape" />
+                    </filter>
+                    <filter
+                      id="filter1_d_495_14"
+                      x="30.2253"
+                      y="0.959473"
+                      width="144.083"
+                      height="152.217"
+                      filterUnits="userSpaceOnUse"
+                      colorInterpolationFilters="sRGB"
+                    >
+                      <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                      <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                      />
+                      <feOffset dy="8" />
+                      <feComposite in2="hardAlpha" operator="out" />
+                      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0" />
+                      <feBlend mode="multiply" in2="BackgroundImageFix" result="effect1_dropShadow_495_14" />
+                      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_495_14" result="shape" />
+                    </filter>
+                  </defs>
+                </svg>
+              </div>
+            </div>
+            {whatWeDo.map((_, idx) => (
               <div key={idx}>
-                <WhatWeDo />
+                <WhatWeDo {..._} />
               </div>
             ))}
-            <div className="w-full bg-[#1B5269]  rounded-md"></div>
+
+            <div>
+              <svg width="423" height="398" viewBox="0 0 423 398" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="423" height="398" rx="12" fill="#1B5299" />
+                <g filter="url(#filter0_d_572_163)">
+                  <rect
+                    x="277.286"
+                    y="146.019"
+                    width="154.228"
+                    height="139.81"
+                    rx="20"
+                    transform="rotate(34.8291 277.286 146.019)"
+                    fill="#FF556C"
+                  />
+                  <rect
+                    x="276.786"
+                    y="143.235"
+                    width="158.228"
+                    height="143.81"
+                    rx="22"
+                    transform="rotate(34.8291 276.786 143.235)"
+                    stroke="#424347"
+                    strokeWidth="4"
+                  />
+                </g>
+                <g filter="url(#filter1_d_572_163)">
+                  <rect
+                    x="99.6481"
+                    y="28.276"
+                    width="245"
+                    height="245"
+                    rx="122.5"
+                    transform="rotate(17.7451 99.6481 28.276)"
+                    fill="#1CFEBA"
+                  />
+                  <rect
+                    x="98.3528"
+                    y="25.7616"
+                    width="249"
+                    height="249"
+                    rx="124.5"
+                    transform="rotate(17.7451 98.3528 25.7616)"
+                    stroke="#424347"
+                    strokeWidth="4"
+                  />
+                </g>
+                <defs>
+                  <filter
+                    id="filter0_d_572_163"
+                    x="201.273"
+                    y="149.856"
+                    width="198.774"
+                    height="203.173"
+                    filterUnits="userSpaceOnUse"
+                    colorInterpolationFilters="sRGB"
+                  >
+                    <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                    <feColorMatrix
+                      in="SourceAlpha"
+                      type="matrix"
+                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                      result="hardAlpha"
+                    />
+                    <feOffset dy="8" />
+                    <feComposite in2="hardAlpha" operator="out" />
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0" />
+                    <feBlend mode="multiply" in2="BackgroundImageFix" result="effect1_dropShadow_572_163" />
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_572_163" result="shape" />
+                  </filter>
+                  <filter
+                    id="filter1_d_572_163"
+                    x="52.45"
+                    y="55.7495"
+                    width="253.068"
+                    height="261.068"
+                    filterUnits="userSpaceOnUse"
+                    colorInterpolationFilters="sRGB"
+                  >
+                    <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                    <feColorMatrix
+                      in="SourceAlpha"
+                      type="matrix"
+                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                      result="hardAlpha"
+                    />
+                    <feOffset dy="8" />
+                    <feComposite in2="hardAlpha" operator="out" />
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0" />
+                    <feBlend mode="multiply" in2="BackgroundImageFix" result="effect1_dropShadow_572_163" />
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_572_163" result="shape" />
+                  </filter>
+                </defs>
+              </svg>
+            </div>
           </div>
         </div>
       </section>
 
-
       <section>
         <div className="container">
           <div className="flex bg-gray-100 gap-14">
-
             <div className="p-8 space-y-14">
-              <h2 className={cn(nomixa.className, "text-5xl font-medium")}>Hear Success <br /> Stories</h2>
+              <h2 className={cn(nomixa.className, "text-5xl font-medium")}>
+                Hear Success <br /> Stories
+              </h2>
 
-              <p className="text-2xl font-light">Meet Joseph, a former apprentice who landed a top role in tech after completing our work simulation program</p>
+              <p className="text-2xl font-light">
+                Meet Joseph, a former apprentice who landed a top role in tech after completing our work simulation
+                program
+              </p>
             </div>
 
             <div className="w-full">
@@ -178,10 +354,8 @@ export default function Home() {
                   <span className="border border-white px-4 py-2 rounded-full text-center "> Impact</span>
                   <span className="border border-white px-4 py-2 rounded-full text-center "> Creativity</span>
                 </div>
-
               </div>
             </div>
-
           </div>
         </div>
       </section>
@@ -206,14 +380,37 @@ export default function Home() {
   )
 }
 
-const WhatWeDo = () => {
+const WhatWeDo = ({ no, label, description }: { no: string; label: string; description: string }) => {
   return (
     <div className="w-full h-[398px] rounded-md bg-[#1b5269]/5 p-6 py-16 flex justify-between flex-col ">
-      <h3 className={cn(nomixa.className, "text-5xl font-semibold")}>01</h3>
+      <h3 className={cn(nomixa.className, "text-5xl font-semibold")}>{no}</h3>
       <div className="space-y-6">
-        <h4 className={cn(nomixa.className, "text-[28px] font-medium")}>Workspace & Community</h4>
-        <p className="font-light text-2xl">Free access to a dynamic and resouceful co-working space</p>
+        <h4 className={cn(nomixa.className, "text-[28px] font-medium")}>{label}</h4>
+        <p className="font-light text-2xl">{description}</p>
       </div>
     </div>
   )
 }
+
+const whatWeDo = [
+  {
+    no: "01",
+    label: "Workspace & Community",
+    description: "Free access to a dynamic and resourceful co-working space."
+  },
+  {
+    no: "02",
+    label: "Research & Development (R&D)",
+    description: "Support for cutting-edge ideas, funding, and product prototyping."
+  },
+  {
+    no: "03",
+    label: "Mentorship based trainings",
+    description: "Hands-on training through simulated work experiences and boootcamps."
+  },
+  {
+    no: "04",
+    label: "Startup support & Incubation",
+    description: "Guidance for early-stage entreprenuers, from ideation to launch."
+  }
+]

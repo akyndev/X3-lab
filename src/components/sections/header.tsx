@@ -4,7 +4,7 @@ import { Button } from "../ui/button"
 
 const Header = () => {
   return (
-    <header className="py-4">
+    <header className="py-8"> 
       <div className="flex items-center justify-between container">
         <div>
           <Link href={"/"}>

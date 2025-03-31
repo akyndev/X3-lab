@@ -20,28 +20,23 @@ const faqsArr = [
       "In summary, hash rate serves as a fundamental pillar in cryptocurrency mining, affecting both individual miner profitability and network security. In summary, hash rate serves as a fundamental pillar in cryptocurrency mining, affecting both individual miner profitability and network security."
   },
   {
-    question: "Is X3Lab only opened to tech skills?",
+    question: "Where are you located?",
     answer:
       "In summary, hash rate serves as a fundamental pillar in cryptocurrency mining, affecting both individual miner profitability and network security. In summary, hash rate serves as a fundamental pillar in cryptocurrency mining, affecting both individual miner profitability and network security."
   },
   {
-    question: "Is X3Lab only opened to tech skills?",
+    question: "Is X3Lab open for only teaching or mentorship",
     answer:
       "In summary, hash rate serves as a fundamental pillar in cryptocurrency mining, affecting both individual miner profitability and network security. In summary, hash rate serves as a fundamental pillar in cryptocurrency mining, affecting both individual miner profitability and network security."
   },
   {
-    question: "Is X3Lab only opened to tech skills?",
+    question: "Is it open for only FUTA students?",
     answer:
       "In summary, hash rate serves as a fundamental pillar in cryptocurrency mining, affecting both individual miner profitability and network security. In summary, hash rate serves as a fundamental pillar in cryptocurrency mining, affecting both individual miner profitability and network security."
   },
   {
-    question: "Is X3Lab only opened to tech skills?",
+    question: "Can graduates apply to usee the Lab?",
     answer:
       "In summary, hash rate serves as a fundamental pillar in cryptocurrency mining, affecting both individual miner profitability and network security. In summary, hash rate serves as a fundamental pillar in cryptocurrency mining, affecting both individual miner profitability and network security."
-  },
-  {
-    question: "Is X3Lab only opened to tech skills?",
-    answer:
-      "In summary, hash rate serves as a fundamental pillar in cryptocurrency mining, affecting both individual miner profitability and network security. In summary, hash rate serves as a fundamental pillar in cryptocurrency mining, affecting both individual miner profitability and network security."
-  },
+  }
 ]
