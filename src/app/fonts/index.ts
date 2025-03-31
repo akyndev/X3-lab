@@ -1,31 +1,42 @@
-import { Montserrat } from "next/font/google"
 import LocalFont from "next/font/local"
 
-export const mont = Montserrat({
-  subsets: ["latin"],
-  weight: ["100", "200", "300", "400"]
-})
 
 export const nomixa = LocalFont({
   src: [
     {
-      path: "./Nomixa-Medium.otf",
+      path: "./Nomixa/Nomixa-Medium.otf",
       weight: "500",
       style: "normal"
     },
     {
-      path: "./Nomixa-SemiBold.otf",
+      path: "./Nomixa/Nomixa-SemiBold.otf",
       weight: "600",
       style: "normal"
     },
     {
-      path: "./Nomixa-Bold.otf",
+      path: "./Nomixa/Nomixa-Bold.otf",
       weight: "700",
       style: "normal"
     },
     {
-      path: "./Nomixa-ExtraBold.otf",
+      path: "./Nomixa/Nomixa-ExtraBold.otf",
       weight: "900",
+      style: "normal"
+    }
+  ]
+})
+
+
+export const mont = LocalFont({
+  src: [
+    {
+      path: "./Mont/Mont-Light.ttf",
+      weight: "300",
+      style: "normal"
+    },
+    {
+      path: "./Mont/Mont-Regular.ttf",
+      weight: "400",
       style: "normal"
     }
   ]

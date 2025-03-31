@@ -43,7 +43,7 @@ const ResearchAndDevelopmentPage = () => {
 
 export default ResearchAndDevelopmentPage
 
-const Development = ({ label, description }: { label: string; description: string }) => {
+export const Development = ({ label, description }: { label: string; description: string }) => {
   return (
     <div className="space-y-8">
       <h2 className={cn(nomixa.className, "font-medium text-4xl")}>{label}</h2>

@@ -73,5 +73,7 @@ body {
 
 
 .swatch-bg {
-  background-image: url(../../public/swatch.png)
+  background-image: url(../../public/swatch.png);
+  background-size: 500px;
+
 }

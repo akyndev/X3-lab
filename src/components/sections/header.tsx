@@ -7,7 +7,9 @@ const Header = () => {
     <header className="py-4">
       <div className="flex items-center justify-between container">
         <div>
-          <Image src={"/x3-header-logo.svg"} alt="header logo" width={135} height={32} />
+          <Link href={"/"}>
+            <Image src={"/x3-header-logo.svg"} alt="header logo" width={135} height={32} />
+          </Link>
         </div>
 
         <div>

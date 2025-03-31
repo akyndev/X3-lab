@@ -23,7 +23,7 @@ const ContactUsPage = () => {
 
           <h4>hello@X3Lab.org icon</h4>
         </div>
-        <div className="">
+        <div className="w-4/12">
           <ContactForm />
         </div>
       </div>
