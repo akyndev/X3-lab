@@ -6,37 +6,68 @@ import { cn } from "@/lib/utils"
 import Image from "next/image"
 import { nomixa } from "./fonts"
 
+const secondRow = [
+  {
+    src: "/mentors-logo/Globacom Limited Logo 1.png",
+    alt: "binance"
+  },
+  {
+    src: "/mentors-logo/MTN Logo 1.png",
+    alt: "MTN"
+  },
+  {
+    src: "/mentors-logo/grace health 1.png",
+    alt: "binance"
+  },
+  {
+    src: "/mentors-logo/stallion 1.png",
+    alt: "binance"
+  },
+  {
+    src: "/mentors-logo/vector.png",
+    alt: "binance"
+  },
+  {
+    src: "/mentors-logo/nigeria-lng-logo-liquefied-natural-gas-business-png-favpng-z580ujg7N5uG0tiSBbWjA3FW6 1.png",
+    alt: "binance"
+  },
+  {
+    src: "/mentors-logo/n 1.png",
+    alt: "binance"
+  },
+  {
+    src: "/mentors-logo/pwc 1.png",
+    alt: "binance"
+  }
+]
+
 const firstRow = [
   {
-    src: "/logos/binance.png",
+    src: "/mentors-logo/Group.png",
     alt: "binance"
   },
   {
-    src: "/logos/glo.png",
+    src: "/mentors-logo/Flutterwave Logo 1.png",
     alt: "binance"
   },
   {
-    src: "/logos/flutterwave.png",
+    src: "/mentors-logo/Interswitch Logo 1.png",
     alt: "binance"
   },
   {
-    src: "/logos/glovo.png",
+    src: "/mentors-logo/Julius Berger Logo 1.png",
     alt: "binance"
   },
   {
-    src: "/logos/grace-health.png",
+    src: "/mentors-logo/cedae group 1.png",
     alt: "binance"
   },
   {
-    src: "/logos/cedea.png",
+    src: "/mentors-logo/deloitte-1 1.png",
     alt: "binance"
   },
   {
-    src: "/logos/julius.png",
-    alt: "binance"
-  },
-  {
-    src: "/logos/stallion.png",
+    src: "/mentors-logo/Fincra Logo 1.png",
     alt: "binance"
   }
 ]
@@ -45,11 +76,11 @@ export default function Home() {
   return (
     <main className="space-y-36">
       <section className="container">
-        <div className="flex items-center flex-col lg:flex-row justify-between px-8">
+        <div className="flex items-center flex-col lg:flex-row justify-between">
           <div className="">
-            <h2 className={cn(nomixa.className, "lg:text-5xl text-4xl leading-[64px] font-semibold inline mx-auto")}>
+            <h2 className={cn(nomixa.className, "lg:text-5xl text-4xl  font-semibold inline mx-auto")}>
               Turn Your{" "}
-              <span className="rounded-full bg-[#1CFEBA] text-3xl border border-black font-medium border-b-4 inline-block w-36 text-center pt-2 ">
+              <span className="rounded-full bg-[#1CFEBA] text-3xl border border-black font-medium border-b-4 inline-block w-36 text-center pt-2 mb-2">
                 Ideas
               </span>{" "}
               Into <br /> Impact. Build. <br />{" "}
@@ -80,7 +111,7 @@ export default function Home() {
 
       <section>
         <div className="container overflow-hidden">
-          <div className="flex items-center pb-8" >
+          <div className="flex items-center pb-8">
             <h3 className="text-nowrap">Our mentors work at</h3>
             <Separator />
           </div>
@@ -88,15 +119,27 @@ export default function Home() {
           <div className="space-y-6">
             <Marquee pauseOnHover className="[--duration:20s]">
               {firstRow.map((company, index) => (
-                <div key={index}>
-                  <Image src={company.src} alt={company.alt} width={157} height={27} />
+                <div key={index} className="mx-8 flex items-center justify-center">
+                  <Image
+                    src={company.src}
+                    alt={company.alt}
+                    width={157}
+                    height={27}
+                    className="w-44 object-cover h-auto"
+                  />
                 </div>
               ))}
             </Marquee>
             <Marquee reverse pauseOnHover className="[--duration:20s]">
-              {firstRow.map((company, index) => (
-                <div key={index}>
-                  <Image src={company.src} alt={company.alt} width={157} height={27} />
+              {secondRow.map((company, index) => (
+                <div key={index} className="mx-8 flex items-center justify-center">
+                  <Image
+                    src={company.src}
+                    alt={company.alt}
+                    width={157}
+                    height={27}
+                    className="w-24 object-cover h-auto"
+                  />
                 </div>
               ))}
             </Marquee>
@@ -130,7 +173,13 @@ export default function Home() {
               </Button>
             </div>
 
-            <Image src={"/about-image.png"} alt="About picture" width={647} height={515} className="lg:w-1/2 lg:h-1/2 w-full h-full" />
+            <Image
+              src={"/about-image.png"}
+              alt="About picture"
+              width={647}
+              height={515}
+              className="lg:w-1/2 lg:h-1/2 w-full h-full"
+            />
           </div>
         </div>
       </section>
@@ -232,8 +281,105 @@ export default function Home() {
               </div>
             ))}
 
-            <div className="">
-
+            <div className="w-full bg-[#1B5299]  flex px-6 pt-32 rounded-md relative">
+              <div className="absolute z-10 top-1/2 -translate-y-1/2 left-10">
+                <svg width="254" height="262" viewBox="0 0 254 262" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g filter="url(#filter0_d_609_136)">
+                    <rect
+                      x="47.6479"
+                      y="-26.7239"
+                      width="245"
+                      height="245"
+                      rx="122.5"
+                      transform="rotate(17.7451 47.6479 -26.7239)"
+                      fill="#1CFEBA"
+                    />
+                    <rect
+                      x="46.3527"
+                      y="-29.2383"
+                      width="249"
+                      height="249"
+                      rx="124.5"
+                      transform="rotate(17.7451 46.3527 -29.2383)"
+                      stroke="#424347"
+                      strokeWidth="4"
+                    />
+                  </g>
+                  <defs>
+                    <filter
+                      id="filter0_d_609_136"
+                      x="0.449707"
+                      y="0.749512"
+                      width="253.068"
+                      height="261.068"
+                      filterUnits="userSpaceOnUse"
+                      colorInterpolationFilters="sRGB"
+                    >
+                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                      />
+                      <feOffset dy="8" />
+                      <feComposite in2="hardAlpha" operator="out" />
+                      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0" />
+                      <feBlend mode="multiply" in2="BackgroundImageFix" result="effect1_dropShadow_609_136" />
+                      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_609_136" result="shape" />
+                    </filter>
+                  </defs>
+                </svg>
+              </div>
+              <div className="absolute right-10 top-40">
+                <svg width="200" height="205" viewBox="0 0 200 205" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g filter="url(#filter0_d_609_135)">
+                    <rect
+                      x="76.2856"
+                      y="-2.9812"
+                      width="154.228"
+                      height="139.81"
+                      rx="20"
+                      transform="rotate(34.8291 76.2856 -2.9812)"
+                      fill="#FF556C"
+                    />
+                    <rect
+                      x="75.7862"
+                      y="-5.76518"
+                      width="158.228"
+                      height="143.81"
+                      rx="22"
+                      transform="rotate(34.8291 75.7862 -5.76518)"
+                      stroke="#424347"
+                      strokeWidth="4"
+                    />
+                  </g>
+                  <defs>
+                    <filter
+                      id="filter0_d_609_135"
+                      x="0.273438"
+                      y="0.856445"
+                      width="198.774"
+                      height="203.173"
+                      filterUnits="userSpaceOnUse"
+                      colorInterpolationFilters="sRGB"
+                    >
+                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                      />
+                      <feOffset dy="8" />
+                      <feComposite in2="hardAlpha" operator="out" />
+                      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0" />
+                      <feBlend mode="multiply" in2="BackgroundImageFix" result="effect1_dropShadow_609_135" />
+                      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_609_135" result="shape" />
+                    </filter>
+                  </defs>
+                </svg>
+              </div>
             </div>
           </div>
         </div>
@@ -259,10 +405,22 @@ export default function Home() {
                 <h3>Real world Experience, Real Growth</h3>
 
                 <div className="flex justify-between items-center">
-                  <span className="border border-white px-4 py-2 rounded-full text-xs lg:text-base text-center "> Innovation</span>
-                  <span className="border border-white px-4 py-2 rounded-full text-xs lg:text-base text-center "> Growth</span>
-                  <span className="border border-white px-4 py-2 rounded-full text-xs lg:text-base text-center "> Impact</span>
-                  <span className="border border-white px-4 py-2 rounded-full text-xs lg:text-base text-center "> Creativity</span>
+                  <span className="border border-white px-4 py-2 rounded-full text-xs lg:text-base text-center ">
+                    {" "}
+                    Innovation
+                  </span>
+                  <span className="border border-white px-4 py-2 rounded-full text-xs lg:text-base text-center ">
+                    {" "}
+                    Growth
+                  </span>
+                  <span className="border border-white px-4 py-2 rounded-full text-xs lg:text-base text-center ">
+                    {" "}
+                    Impact
+                  </span>
+                  <span className="border border-white px-4 py-2 rounded-full text-xs lg:text-base text-center ">
+                    {" "}
+                    Creativity
+                  </span>
                 </div>
               </div>
             </div>

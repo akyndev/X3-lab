@@ -35,7 +35,7 @@ const faqsArr = [
       "In summary, hash rate serves as a fundamental pillar in cryptocurrency mining, affecting both individual miner profitability and network security. In summary, hash rate serves as a fundamental pillar in cryptocurrency mining, affecting both individual miner profitability and network security."
   },
   {
-    question: "Can graduates apply to usee the Lab?",
+    question: "Can graduates apply to use the Lab?",
     answer:
       "In summary, hash rate serves as a fundamental pillar in cryptocurrency mining, affecting both individual miner profitability and network security. In summary, hash rate serves as a fundamental pillar in cryptocurrency mining, affecting both individual miner profitability and network security."
   }
