@@ -9,7 +9,6 @@ const Footer = () => {
   return (
     <footer className="bg-[#0B0922] text-white pt-20 pb-8">
       <div className="container space-y-16">
-        {/* Logo and Navigation Section */}
         <div className="flex gap-8 md:gap-20 items-center flex-col lg:flex-row">
           <div className="w-full lg:w-auto text-center">
             <Image 
@@ -41,7 +40,6 @@ const Footer = () => {
 
         <Separator className="opacity-50" />
 
-        {/* Contact and Social Section */}
         <div className="flex justify-center lg:justify-end flex-col lg:flex-row gap-8 lg:gap-12">
           <div className="text-center lg:text-left">
             <div className="flex items-center gap-2 justify-center lg:justify-start mb-2">
