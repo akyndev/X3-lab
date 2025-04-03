@@ -8,9 +8,7 @@ import HeroImage from "/public/about-hero.png"
 const AboutUsPage = () => {
   return (
     <div className="container space-y-16 md:space-y-32 py-8 md:py-16">
-      {/* Hero Section */}
       <div className="flex items-center justify-between flex-col lg:flex-row gap-12 lg:gap-0 relative">
-        {/* Decorative SVG - Hidden on small screens */}
         <div className="hidden md:block absolute -left-4 -top-6 -z-10">
           <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clipPath="url(#clip0_142_12012)">
@@ -53,7 +51,6 @@ const AboutUsPage = () => {
           </svg>
         </div>
 
-        {/* Hero Text */}
         <div className="text-center lg:text-left">
           <h2 className={cn("text-3xl md:text-4xl lg:text-5xl font-semibold", nomixa.className)}>
             WE BELIEVE THE
@@ -65,9 +62,7 @@ const AboutUsPage = () => {
           </h2>
         </div>
 
-        {/* Hero Image */}
         <div className="relative w-full lg:w-auto">
-          {/* Decorative SVG - Hidden on small screens */}
           <div className="hidden md:block absolute -bottom-20 -z-10 -left-20">
             <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clipPath="url(#clip0_145_12019)">
@@ -119,7 +114,6 @@ const AboutUsPage = () => {
         </div>
       </div>
 
-      {/* Mission Statement Section */}
       <div className="bg-gray-100 space-y-6 md:space-y-10 p-4 md:p-6 lg:p-20 rounded-lg mx-auto">
         <p className="font-light text-lg md:text-xl lg:text-3xl">
           X3Lab is a collaborative ecosystem designed to empower tech creatives, innovators, and problem-solvers. We
@@ -133,10 +127,8 @@ const AboutUsPage = () => {
         </p>
       </div>
 
-      {/* Future Section */}
       <Future />
 
-      {/* Mentors Sections */}
       <div className="space-y-16 md:space-y-32">
         <Mentors 
           title="Our Mentors." 
