@@ -75,7 +75,6 @@ const firstRow = [
 export default function Home() {
   return (
     <main className="space-y-20 md:space-y-36">
-      {/* Hero Section */}
       <section className="container pt-8 md:pt-16">
         <div className="flex items-center flex-col-reverse lg:flex-row justify-between gap-12 lg:gap-8">
           <div className="text-center lg:text-left">
@@ -115,7 +114,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Mentors Section */}
       <section>
         <div className="container overflow-hidden py-8">
           <div className="flex items-center pb-8">
@@ -154,7 +152,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* About Section */}
       <section className="bg-[#1B5299]/5">
         <div className="container py-12 lg:py-16">
           <div className="flex items-center gap-8 lg:gap-12 flex-col lg:flex-row">
@@ -193,17 +190,16 @@ export default function Home() {
         </div>
       </section>
 
-      {/* What We Do Section */}
       <section className="py-8 md:py-12">
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-            <div className="w-full bg-[#1B5299]  flex px-6 pt-32 rounded-md">
-              <h3 className={cn(nomixa.className, "text-4xl  text-white font-semibold")}>
+            <div className="w-full bg-[#1B5299] flex px-4 sm:px-6 pt-16 sm:pt-32 rounded-md min-h-[320px] relative overflow-hidden">
+              <h3 className={cn(nomixa.className, "text-3xl sm:text-4xl text-white font-semibold z-10")}>
                 What <br /> We Do
               </h3>
 
-              <div>
-                <svg width="219" height="197" viewBox="0 0 219 197" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <div className="absolute right-0 bottom-0 w-[180px] sm:w-[219px] transform scale-75 sm:scale-100 origin-bottom-right">
+                <svg width="100%" height="100%" viewBox="0 0 219 197" preserveAspectRatio="xMinYMin meet" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g filter="url(#filter0_d_495_14)">
                     <rect
                       x="0.0390625"
@@ -291,9 +287,9 @@ export default function Home() {
               </div>
             ))}
 
-            <div className="w-full bg-[#1B5299]  flex px-6 pt-32 rounded-md relative">
-              <div className="absolute z-10 top-1/2 -translate-y-1/2 left-10">
-                <svg width="254" height="262" viewBox="0 0 254 262" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <div className="w-full bg-[#1B5299] flex px-4 sm:px-6 pt-16 sm:pt-32 rounded-md min-h-[320px] relative overflow-hidden">
+              <div className="absolute z-10 top-1/2 -translate-y-1/2 left-4 sm:left-10 w-[180px] sm:w-[254px] transform scale-75 sm:scale-100">
+                <svg width="100%" height="100%" viewBox="0 0 254 262" preserveAspectRatio="xMinYMin meet" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g filter="url(#filter0_d_609_136)">
                     <rect
                       x="47.6479"
@@ -341,8 +337,8 @@ export default function Home() {
                   </defs>
                 </svg>
               </div>
-              <div className="absolute right-10 top-40">
-                <svg width="200" height="205" viewBox="0 0 200 205" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <div className="absolute right-4 sm:right-10 top-40 w-[150px] sm:w-[200px] transform scale-75 sm:scale-100">
+                <svg width="100%" height="100%" viewBox="0 0 200 205" preserveAspectRatio="xMinYMin meet" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g filter="url(#filter0_d_609_135)">
                     <rect
                       x="76.2856"
@@ -395,7 +391,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Success Stories Section */}
       <section className="py-8 md:py-12">
         <div className="container">
           <div className="flex bg-gray-100 gap-8 lg:gap-14 flex-col lg:flex-row">
@@ -433,7 +428,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* FAQ Section */}
       <section className="py-8 md:py-12">
         <div className="container flex gap-12 lg:gap-44 flex-col lg:flex-row">
           <div className="pt-4 text-center lg:text-left">
@@ -445,16 +439,22 @@ export default function Home() {
             <div className="hidden lg:-translate-x-24 lg:block">
               <Image src={"/paper-airline.png"} alt="paper airline" width={384} height={256} />
             </div>
+          </div>
+
+          <FAQsAccordion />
+        </div>
+      </section>
+    </main>
   )
 }
 
 const WhatWeDo = ({ no, label, description }: { no: string; label: string; description: string }) => {
   return (
-    <div className="w-full h-[398px] rounded-md bg-[#1b5269]/5 p-6 py-16 flex justify-between flex-col ">
-      <h3 className={cn(nomixa.className, "text-5xl font-semibold")}>{no}</h3>
-      <div className="space-y-6">
-        <h4 className={cn(nomixa.className, "text-[28px] font-medium")}>{label}</h4>
-        <p className="font-light text-2xl">{description}</p>
+    <div className="w-full min-h-[320px] sm:h-[398px] rounded-md bg-[#1b5269]/5 p-4 sm:p-6 py-8 sm:py-16 flex justify-between flex-col">
+      <h3 className={cn(nomixa.className, "text-3xl sm:text-5xl font-semibold")}>{no}</h3>
+      <div className="space-y-4 sm:space-y-6">
+        <h4 className={cn(nomixa.className, "text-xl sm:text-[28px] font-medium leading-tight")}>{label}</h4>
+        <p className="font-light text-lg sm:text-2xl">{description}</p>
       </div>
     </div>
   )
