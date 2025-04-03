@@ -7,9 +7,9 @@ import HeroImage from "/public/about-hero.png"
 
 const AboutUsPage = () => {
   return (
-    <div className="container space-y-32 py-16">
-      <div className="flex items-center justify-between flex-col lg:flex-row gap-8 lg:gap-0 relative">
-        <div className="absolute -left-4 -top-6 -z-10">
+    <div className="container space-y-16 md:space-y-32 py-8 md:py-16">
+      <div className="flex items-center justify-between flex-col lg:flex-row gap-12 lg:gap-0 relative">
+        <div className="hidden md:block absolute -left-4 -top-6 -z-10">
           <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clipPath="url(#clip0_142_12012)">
               <mask
@@ -50,18 +50,20 @@ const AboutUsPage = () => {
             </defs>
           </svg>
         </div>
-        <div>
-          <h2 className={cn("lg:text-5xl text-4xl font-semibold", nomixa.className)}>
+
+        <div className="text-center lg:text-left">
+          <h2 className={cn("text-3xl md:text-4xl lg:text-5xl font-semibold", nomixa.className)}>
             WE BELIEVE THE
-            <span className="text-blue-500 underline ml-2.5">FUTURE</span>
-            <br />
-            BELONGS TO THOSE WHO <br />
+            <span className="text-blue-500 underline ml-2.5 block md:inline-block">FUTURE</span>
+            <br className="hidden md:block" />
+            BELONGS TO THOSE WHO <br className="hidden md:block" />
             DARES TO
-            <span className="text-red-400 underline ml-2.5">CREATE!</span>
+            <span className="text-red-400 underline ml-0 md:ml-2.5 block md:inline-block">CREATE!</span>
           </h2>
         </div>
-        <div className="relative">
-          <div className="absolute -bottom-20 -z-10 -left-20">
+
+        <div className="relative w-full lg:w-auto">
+          <div className="hidden md:block absolute -bottom-20 -z-10 -left-20">
             <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clipPath="url(#clip0_145_12019)">
                 <mask
@@ -102,18 +104,24 @@ const AboutUsPage = () => {
               </defs>
             </svg>
           </div>
-          <Image src={HeroImage} alt="hero image" className="rounded-lg w-[32rem] h-auto" />
+          
+          <Image 
+            src={HeroImage} 
+            alt="hero image" 
+            className="rounded-lg w-full lg:w-[32rem] h-auto mx-auto" 
+            priority
+          />
         </div>
       </div>
 
-      <div className="bg-gray-100 space-y-10 p-6  lg:p-20 rounded-lg mx-auto">
-        <p className="font-light lg:text-3xl text-xl">
+      <div className="bg-gray-100 space-y-6 md:space-y-10 p-4 md:p-6 lg:p-20 rounded-lg mx-auto">
+        <p className="font-light text-lg md:text-xl lg:text-3xl">
           X3Lab is a collaborative ecosystem designed to empower tech creatives, innovators, and problem-solvers. We
           provide a dynamic environment where bold ideas are nurtured into impactful solutions. Through free workspace,
           research & development (R&D) initiatives, structured mentorship, and hands-on training, we bridge the gap
           between innovation and execution.
         </p>
-        <p className="font-light lg:text-3xl text-xl">
+        <p className="font-light text-lg md:text-xl lg:text-3xl">
           Our Mission is To ignite innovation by providing a nurturing space, technical support, and growth
           opportunities for aspiring and experienced tech builders alike.
         </p>
@@ -121,8 +129,16 @@ const AboutUsPage = () => {
 
       <Future />
 
-      <Mentors title="Our Mentors." description="Experts dedicated to shaping the next generation of innovators!" />
-      <Mentors title="X3LAB FUTA Team" description="Group of young, vibrant innovators ready to shape the future" />
+      <div className="space-y-16 md:space-y-32">
+        <Mentors 
+          title="Our Mentors." 
+          description="Experts dedicated to shaping the next generation of innovators!" 
+        />
+        <Mentors 
+          title="X3LAB FUTA Team" 
+          description="Group of young, vibrant innovators ready to shape the future" 
+        />
+      </div>
     </div>
   )
 }

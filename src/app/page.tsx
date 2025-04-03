@@ -74,45 +74,50 @@ const firstRow = [
 
 export default function Home() {
   return (
-    <main className="space-y-36">
-      <section className="container">
-        <div className="flex items-center flex-col lg:flex-row justify-between">
-          <div className="">
-            <h2 className={cn(nomixa.className, "lg:text-5xl text-4xl  font-semibold inline mx-auto")}>
+    <main className="space-y-20 md:space-y-36">
+      <section className="container pt-8 md:pt-16">
+        <div className="flex items-center flex-col-reverse lg:flex-row justify-between gap-12 lg:gap-8">
+          <div className="text-center lg:text-left">
+            <h2 className={cn(nomixa.className, "lg:text-5xl text-3xl font-semibold leading-tight")}>
               Turn Your{" "}
-              <span className="rounded-full bg-[#1CFEBA] text-3xl border border-black font-medium border-b-4 inline-block w-36 text-center pt-2 mb-2">
+              <span className="rounded-full bg-[#1CFEBA] text-2xl lg:text-3xl border border-black font-medium border-b-4 inline-block w-28 lg:w-36 text-center pt-2 mb-2">
                 Ideas
               </span>{" "}
               Into <br /> Impact. Build. <br />{" "}
-              <span className="rounded-full bg-red-400 text-white border border-black font-normal border-b-4 text-2xl w-80 inline-block text-center pt-2 mr-3">
+              <span className="rounded-full bg-red-400 text-white border border-black font-normal border-b-4 text-xl lg:text-2xl w-64 lg:w-80 inline-block text-center pt-2 mr-3">
                 Experiment
               </span>
               Grow
             </h2>
 
-            <p className="font-light text-xl lg:text-2xl my-6">
-              We provide a collaborative ecosystem where <br /> tech creatives, innovators, and problem-solvers <br />{" "}
-              bring their boldest ideas to life
+            <p className="font-light text-lg lg:text-2xl my-6 max-w-xl mx-auto lg:mx-0">
+              We provide a collaborative ecosystem where tech creatives, innovators, and problem-solvers bring their boldest ideas to life
             </p>
 
-            <Button className="w-[203px] py-6 my-8">Get Involved</Button>
+            <Button className="w-full sm:w-[203px] py-6 my-8">Get Involved</Button>
           </div>
 
           <div
             style={{
               boxShadow: "-16px 16px #1B5299"
             }}
-            className="rounded-lg"
+            className="rounded-lg w-full lg:w-auto"
           >
-            <Image src={"/hero-image.png"} alt="hero image " width={560} height={600} className="" />
+            <Image 
+              src={"/hero-image.png"} 
+              alt="hero image" 
+              width={560} 
+              height={600} 
+              className="w-full h-auto"
+            />
           </div>
         </div>
       </section>
 
       <section>
-        <div className="container overflow-hidden">
+        <div className="container overflow-hidden py-8">
           <div className="flex items-center pb-8">
-            <h3 className="text-nowrap">Our mentors work at</h3>
+            <h3 className="text-nowrap text-lg md:text-xl">Our mentors work at</h3>
             <Separator />
           </div>
 
@@ -147,22 +152,23 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-[#1B5299]/5 ">
-        <div className="container py-16">
-          <div className="flex items-center gap-12  lg:gap-6 flex-col lg:flex-row">
-            <div className="space-y-6 lg:space-y-10">
-              <h3 className={cn(nomixa.className, "text-[#1B5299] text-2xl")}>About X3Lab</h3>
+      <section className="bg-[#1B5299]/5">
+        <div className="container py-12 lg:py-16">
+          <div className="flex items-center gap-8 lg:gap-12 flex-col lg:flex-row">
+            <div className="space-y-6 lg:space-y-10 text-center lg:text-left">
+              <h3 className={cn(nomixa.className, "text-[#1B5299] text-xl lg:text-2xl")}>About X3Lab</h3>
 
-              <h2 className={cn(nomixa.className, "text-3xl lg:text-4xl font-medium")}>
-                Empowering Innovators, <br />
+              <h2 className={cn(nomixa.className, "text-2xl lg:text-4xl font-medium")}>
+                Empowering Innovators, <br className="hidden lg:block" />
                 Builders & Visionaries
               </h2>
 
-              <p className="lg:text-2xl text-xl font-light">
+              <p className="text-lg lg:text-2xl font-light max-w-2xl">
                 We provide the resources, mentorship and scalable projects. Our ecosystem fosters collaboration,
                 learning, and hands-on execution, bridging the gap between theory and real-world application.
               </p>
-              <Button className="w-[203px] py-6">
+
+              <Button className="w-full sm:w-[203px] py-6">
                 Donate
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -178,22 +184,22 @@ export default function Home() {
               alt="About picture"
               width={647}
               height={515}
-              className="lg:w-1/2 lg:h-1/2 w-full h-full"
+              className="w-full lg:w-1/2 h-auto"
             />
           </div>
         </div>
       </section>
 
-      <section>
+      <section className="py-8 md:py-12">
         <div className="container">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            <div className="w-full bg-[#1B5299]  flex px-6 pt-32 rounded-md">
-              <h3 className={cn(nomixa.className, "text-4xl  text-white font-semibold")}>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+            <div className="w-full bg-[#1B5299] flex px-4 sm:px-6 pt-16 sm:pt-32 rounded-md min-h-[320px] relative overflow-hidden">
+              <h3 className={cn(nomixa.className, "text-3xl sm:text-4xl text-white font-semibold z-10")}>
                 What <br /> We Do
               </h3>
 
-              <div>
-                <svg width="219" height="197" viewBox="0 0 219 197" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <div className="absolute right-0 bottom-0 w-[180px] sm:w-[219px] transform scale-75 sm:scale-100 origin-bottom-right">
+                <svg width="100%" height="100%" viewBox="0 0 219 197" preserveAspectRatio="xMinYMin meet" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g filter="url(#filter0_d_495_14)">
                     <rect
                       x="0.0390625"
@@ -281,9 +287,9 @@ export default function Home() {
               </div>
             ))}
 
-            <div className="w-full bg-[#1B5299]  flex px-6 pt-32 rounded-md relative">
-              <div className="absolute z-10 top-1/2 -translate-y-1/2 left-10">
-                <svg width="254" height="262" viewBox="0 0 254 262" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <div className="w-full bg-[#1B5299] flex px-4 sm:px-6 pt-16 sm:pt-32 rounded-md min-h-[320px] relative overflow-hidden">
+              <div className="absolute z-10 top-1/2 -translate-y-1/2 left-4 sm:left-10 w-[180px] sm:w-[254px] transform scale-75 sm:scale-100">
+                <svg width="100%" height="100%" viewBox="0 0 254 262" preserveAspectRatio="xMinYMin meet" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g filter="url(#filter0_d_609_136)">
                     <rect
                       x="47.6479"
@@ -331,8 +337,8 @@ export default function Home() {
                   </defs>
                 </svg>
               </div>
-              <div className="absolute right-10 top-40">
-                <svg width="200" height="205" viewBox="0 0 200 205" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <div className="absolute right-4 sm:right-10 top-40 w-[150px] sm:w-[200px] transform scale-75 sm:scale-100">
+                <svg width="100%" height="100%" viewBox="0 0 200 205" preserveAspectRatio="xMinYMin meet" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g filter="url(#filter0_d_609_135)">
                     <rect
                       x="76.2856"
@@ -385,42 +391,36 @@ export default function Home() {
         </div>
       </section>
 
-      <section>
+      <section className="py-8 md:py-12">
         <div className="container">
-          <div className="flex bg-gray-100 gap-14 flex-col lg:flex-row">
-            <div className="lg:p-8 p-4 space-y-8 lg:space-y-14">
-              <h2 className={cn(nomixa.className, "lg:text-5xl text-3xl font-medium")}>
-                Hear Success <br /> Stories
+          <div className="flex bg-gray-100 gap-8 lg:gap-14 flex-col lg:flex-row">
+            <div className="p-6 lg:p-8 space-y-6 lg:space-y-14">
+              <h2 className={cn(nomixa.className, "text-3xl lg:text-5xl font-medium")}>
+                Hear Success <br className="hidden lg:block" /> Stories
               </h2>
 
-              <p className="lg:text-2xl text-xl font-light">
-                Meet Joseph, a former apprentice who landed a top role in tech after completing our work simulation
-                program
+              <p className="text-lg lg:text-2xl font-light">
+                Meet Joseph, a former apprentice who landed a top role in tech after completing our work simulation program
               </p>
             </div>
 
             <div className="w-full">
-              <Image src={"/success-people.png"} alt="success-people " width={756} height={319} />
-              <div className="bg-black lg:p-12 text-white space-y-16 p-4">
-                <h3>Real world Experience, Real Growth</h3>
+              <Image 
+                src={"/success-people.png"} 
+                alt="success-people"
+                width={756} 
+                height={319}
+                className="w-full h-auto" 
+              />
+              <div className="bg-black p-6 lg:p-12 text-white space-y-8 lg:space-y-16">
+                <h3 className="text-lg lg:text-xl">Real world Experience, Real Growth</h3>
 
-                <div className="flex justify-between items-center">
-                  <span className="border border-white px-4 py-2 rounded-full text-xs lg:text-base text-center ">
-                    {" "}
-                    Innovation
-                  </span>
-                  <span className="border border-white px-4 py-2 rounded-full text-xs lg:text-base text-center ">
-                    {" "}
-                    Growth
-                  </span>
-                  <span className="border border-white px-4 py-2 rounded-full text-xs lg:text-base text-center ">
-                    {" "}
-                    Impact
-                  </span>
-                  <span className="border border-white px-4 py-2 rounded-full text-xs lg:text-base text-center ">
-                    {" "}
-                    Creativity
-                  </span>
+                <div className="grid grid-cols-2 lg:flex lg:justify-between gap-4 items-center">
+                  {["Innovation", "Growth", "Impact", "Creativity"].map((item) => (
+                    <span key={item} className="border border-white px-3 lg:px-4 py-2 rounded-full text-xs lg:text-base text-center">
+                      {item}
+                    </span>
+                  ))}
                 </div>
               </div>
             </div>
@@ -428,16 +428,16 @@ export default function Home() {
         </div>
       </section>
 
-      <section>
-        <div className="container flex lg:gap-44 flex-col lg:flex-row">
-          <div className="pt-4">
-            <h2 className={cn(nomixa.className, "lg:text-6xl text-4xl font-semibold")}>
-              Frequently <br />
-              Asked <br />
+      <section className="py-8 md:py-12">
+        <div className="container flex gap-12 lg:gap-44 flex-col lg:flex-row">
+          <div className="pt-4 text-center lg:text-left">
+            <h2 className={cn(nomixa.className, "text-4xl lg:text-6xl font-semibold")}>
+              Frequently <br className="hidden lg:block" />
+              Asked <br className="hidden lg:block" />
               Questions
             </h2>
-            <div className="-translate-x-24">
-              <Image src={"/paper-airline.png"} alt="paper airline" width={384} height={256} className="" />
+            <div className="hidden lg:-translate-x-24 lg:block">
+              <Image src={"/paper-airline.png"} alt="paper airline" width={384} height={256} />
             </div>
           </div>
 
@@ -450,11 +450,11 @@ export default function Home() {
 
 const WhatWeDo = ({ no, label, description }: { no: string; label: string; description: string }) => {
   return (
-    <div className="w-full h-[398px] rounded-md bg-[#1b5269]/5 p-6 py-16 flex justify-between flex-col ">
-      <h3 className={cn(nomixa.className, "text-5xl font-semibold")}>{no}</h3>
-      <div className="space-y-6">
-        <h4 className={cn(nomixa.className, "text-[28px] font-medium")}>{label}</h4>
-        <p className="font-light text-2xl">{description}</p>
+    <div className="w-full min-h-[320px] sm:h-[398px] rounded-md bg-[#1b5269]/5 p-4 sm:p-6 py-8 sm:py-16 flex justify-between flex-col">
+      <h3 className={cn(nomixa.className, "text-3xl sm:text-5xl font-semibold")}>{no}</h3>
+      <div className="space-y-4 sm:space-y-6">
+        <h4 className={cn(nomixa.className, "text-xl sm:text-[28px] font-medium leading-tight")}>{label}</h4>
+        <p className="font-light text-lg sm:text-2xl">{description}</p>
       </div>
     </div>
   )

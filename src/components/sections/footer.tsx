@@ -7,56 +7,62 @@ import { Separator } from "../ui/separator"
 
 const Footer = () => {
   return (
-    <footer className="bg-[#0B0922] text-white pt-20">
+    <footer className="bg-[#0B0922] text-white pt-20 pb-8">
       <div className="container space-y-16">
-        <div className=" flex gap-20 items-center flex-col lg:flex-row">
-          <div>
-            <Image src={"/x3-footer-logo.svg"} alt="Footer logo " width={205} height={49} />
+        <div className="flex gap-8 md:gap-20 items-center flex-col lg:flex-row">
+          <div className="w-full lg:w-auto text-center">
+            <Image 
+              src={"/x3-footer-logo.svg"} 
+              alt="Footer logo" 
+              width={205} 
+              height={49}
+              className="max-w-[160px] md:max-w-[205px] mx-auto lg:mx-0" 
+            />
           </div>
 
-          <div>
-            <nav>
-              <ul className="flex flex-col lg:flex-row items-center gap-6 text-white">
-                <li className="hover:underline hover:text-blue-500">
-                  <Link href={"/about-us"}>About Us</Link>
-                </li>
-                <li className="hover:underline hover:text-blue-500">
-                  <Link href={"/get-involved"}>Get Involve</Link>
-                </li>
-                <li className="hover:underline hover:text-blue-500">
-                  <Link href={"/research-and-development"}>Our Programs</Link>
-                </li>
-                <li className="hover:underline hover:text-blue-500">
-                  <Link href={"/contact-us"}>Contact Us</Link>
-                </li>
-              </ul>
-            </nav>
-          </div>
+          <nav className="w-full lg:w-auto">
+            <ul className="flex flex-col lg:flex-row items-center gap-4 md:gap-6 text-white">
+              <li className="hover:underline hover:text-blue-500">
+                <Link href={"/about-us"}>About Us</Link>
+              </li>
+              <li className="hover:underline hover:text-blue-500">
+                <Link href={"/get-involved"}>Get Involve</Link>
+              </li>
+              <li className="hover:underline hover:text-blue-500">
+                <Link href={"/research-and-development"}>Our Programs</Link>
+              </li>
+              <li className="hover:underline hover:text-blue-500">
+                <Link href={"/contact-us"}>Contact Us</Link>
+              </li>
+            </ul>
+          </nav>
         </div>
 
         <Separator className="opacity-50" />
 
-        <div className="flex justify-end flex-col lg:flex-row gap-6 lg:gap">
-          <div className=" mx-auto">
-            <div className="flex items-center gap-2">
-              {" "}
-              <p className="bg-green-400 h-1 w-10" /> EMAIL
+        <div className="flex justify-center lg:justify-end flex-col lg:flex-row gap-8 lg:gap-12">
+          <div className="text-center lg:text-left">
+            <div className="flex items-center gap-2 justify-center lg:justify-start mb-2">
+              <p className="bg-green-400 h-1 w-10" /> 
+              <span>EMAIL</span>
             </div>
-            <p className={cn("text-xl", nomixa.className)}>X3Lab@gmail.com</p>
+            <p className={cn("text-lg md:text-xl", nomixa.className)}>X3Lab@gmail.com</p>
           </div>
 
-          <div className="w-ma  mx-auto ">
-            <span>Follow Us</span>
-            <div className="flex items-center gap-4">
-              <Linkedin />
-              <Instagram />
+          <div className="text-center lg:text-left">
+            <span className="block mb-2">Follow Us</span>
+            <div className="flex items-center gap-4 justify-center lg:justify-start">
+              <Linkedin className="w-6 h-6 hover:text-blue-500 cursor-pointer" />
+              <Instagram className="w-6 h-6 hover:text-pink-500 cursor-pointer" />
             </div>
           </div>
         </div>
 
-        <div className="flex items-start justify-between flex-col lg:flex-row ">
-          <div className="flex items-center flex-col lg:flex-row w-full">
-            <div className="relative w-[188px] h-[188px]">
+        {/* Scan and Copyright Section */}
+        <div className="flex items-center justify-between flex-col lg:flex-row gap-8">
+          <div className="flex items-center flex-col lg:flex-row w-full gap-6">
+            {/* QR Code Section */}
+            <div className="relative w-[160px] h-[160px] md:w-[188px] md:h-[188px]">
               <div className="absolute rotate-[21.78deg] -right-2 bottom-4">
                 <Image src={"/scan-me.png"} alt="Scan me" width={157} height={157} />
               </div>
@@ -68,8 +74,8 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="flex items-center gap-4">
-              <svg width="39" height="21" viewBox="0 0 39 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <div className="flex items-center gap-4 text-center lg:text-left">
+              <svg className="hidden md:block" width="39" height="21" viewBox="0 0 39 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M36.2225 10.5552L2.88916 10.5552"
                   stroke="white"
@@ -85,15 +91,21 @@ const Footer = () => {
                   strokeLinejoin="round"
                 />
               </svg>
-              Scan to Join Our Community
+              <span className="text-sm md:text-base">Scan to Join Our Community</span>
             </div>
 
-            <div className="-ml-10">
-              <Image src={"/human.png"} alt="Scan me" width={230} height={230} />
+            <div className="hidden lg:block -ml-10">
+              <Image 
+                src={"/human.png"} 
+                alt="Community illustration" 
+                width={230} 
+                height={230}
+                className="max-w-[180px] xl:max-w-[230px]" 
+              />
             </div>
           </div>
 
-          <span className="text-center text-sm w-full lg:w-max pt-8 text-nowrap">
+          <span className="text-center text-xs md:text-sm w-full lg:w-max pt-4 lg:pt-8">
             &copy;Copyright {new Date().getFullYear()} X3Lab
           </span>
         </div>
