@@ -76,9 +76,9 @@ export default function Home() {
   return (
     <main className="space-y-20 md:space-y-36">
       <section className="container pt-8 md:pt-16">
-        <div className="flex items-center flex-col-reverse lg:flex-row justify-between gap-12 lg:gap-8">
-          <div className="text-center lg:text-left">
-            <h2 className={cn(nomixa.className, "lg:text-5xl text-3xl font-semibold leading-tight")}>
+        <div className="flex flex-col-reverse lg:flex-row justify-between gap-12 lg:gap-8">
+          <div className="flex flex-col items-center lg:items-start">
+            <h2 className={cn(nomixa.className, "lg:text-5xl text-3xl font-semibold leading-tight text-center lg:text-left")}>
               Turn Your{" "}
               <span className="rounded-full bg-[#1CFEBA] text-2xl lg:text-3xl border border-black font-medium border-b-4 inline-block w-28 lg:w-36 text-center pt-2 mb-2">
                 Ideas
@@ -90,18 +90,20 @@ export default function Home() {
               Grow
             </h2>
 
-            <p className="font-light text-lg lg:text-2xl my-6 max-w-xl mx-auto lg:mx-0">
-              We provide a collaborative ecosystem where tech creatives, innovators, and problem-solvers bring their boldest ideas to life
-            </p>
+            <div className="mt-6 lg:mt-6 text-center lg:text-left w-full">
+              <p className="font-light text-lg lg:text-2xl mb-8 max-w-xl mx-auto lg:mx-0">
+                We provide a collaborative ecosystem where tech creatives, innovators, and problem-solvers bring their boldest ideas to life
+              </p>
 
-            <Button className="w-full sm:w-[203px] py-6 my-8">Get Involved</Button>
+              <Button className="hidden lg:inline-flex w-[203px] py-6">Get Involved</Button>
+            </div>
           </div>
 
           <div
             style={{
               boxShadow: "-16px 16px #1B5299"
             }}
-            className="rounded-lg w-full lg:w-auto"
+            className="rounded-lg w-full lg:w-auto order-first lg:order-last mb-8 lg:mb-0"
           >
             <Image 
               src={"/hero-image.png"} 
@@ -109,6 +111,7 @@ export default function Home() {
               width={560} 
               height={600} 
               className="w-full h-auto"
+              priority
             />
           </div>
         </div>

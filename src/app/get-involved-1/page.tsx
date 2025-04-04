@@ -34,15 +34,15 @@ const waysToGetInvolved = [
 
 const GetInvolvedPage = () => {
   return (
-    <main className="space-y-24">
+    <main className="space-y-16 md:space-y-24">
       <section>
-        <div className="container ">
-          <div className="flex py-24 justify-between gap-24 flex-col lg:flex-row">
-            <div className=" relative lg:w-4/12 space-y-6">
-              <h2 className={cn(nomixa.className, "text-4xl font-semibold")}>Get Involved</h2>
-              <p>Be part of the innovation movement</p>
+        <div className="container">
+          <div className="flex py-12 md:py-24 justify-between gap-12 md:gap-24 flex-col lg:flex-row">
+            <div className="relative lg:w-4/12 space-y-4 md:space-y-6">
+              <h2 className={cn(nomixa.className, "text-3xl md:text-4xl font-semibold")}>Get Involved</h2>
+              <p className="text-lg md:text-xl">Be part of the innovation movement</p>
 
-              <div className="absolute -right-28 -bottom-16 -z-10">
+              <div className="hidden md:block absolute -right-28 -bottom-16 -z-10">
                 <svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g clipPath="url(#clip0_107_16255)">
                     <mask
@@ -84,67 +84,79 @@ const GetInvolvedPage = () => {
             </div>
 
             <div className="lg:w-8/12">
-              <p className="text-xl font-light">
+              <p className="text-lg md:text-xl font-light">
                 X3Lab thrives on collaboration, mentorship, and support from passionate individuals and organizations.
                 Whether you&apos;re an aspiring innovator, an industry expert, or a company looking to make an impact,
-                there’s a place for you here.
+                there's a place for you here.
               </p>
             </div>
           </div>
 
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-10">
-            <Image src={"/ceo.png"} width={315} height={387} alt="akinlade Joseph" className="rounded-md w-full" />
-            <Image src={"/ceo.png"} width={315} height={387} alt="akinlade Joseph" className="rounded-md w-full" />
-            <Image src={"/ceo.png"} width={315} height={387} alt="akinlade Joseph" className="rounded-md w-full" />
-            <Image src={"/ceo.png"} width={315} height={387} alt="akinlade Joseph" className="rounded-md w-full" />
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-10">
+            {Array(4).fill(0).map((_, index) => (
+              <Image
+                key={index}
+                src={"/ceo.png"}
+                width={315}
+                height={387}
+                alt="akinlade Joseph"
+                className="rounded-md w-full h-auto object-cover"
+              />
+            ))}
           </div>
         </div>
       </section>
 
       <section className="w-full text-white bg-black">
-        <div className={`space-y-10 swatch-bg w-full`}>
-          <div className="flex container py-16 flex-col lg:flex-row gap-16 lg:gap-0">
-            <div className="lg:w-5/12 space-y-8">
-              <h3 className={cn(nomixa.className, "text-3xl lg:text-4xl font-medium")}>
-                Explore the many <br />
-                Ways you can get <br />
+        <div className="space-y-8 md:space-y-10 swatch-bg w-full">
+          <div className="flex container py-12 md:py-16 flex-col lg:flex-row gap-12 lg:gap-16">
+            <div className="lg:w-5/12 space-y-6 md:space-y-8">
+              <h3 className={cn(nomixa.className, "text-2xl md:text-3xl lg:text-4xl font-medium")}>
+                Explore the many <br className="hidden md:block" />
+                Ways you can get <br className="hidden md:block" />
                 involved!
               </h3>
-              <Explore />
+              <div className="w-full md:w-auto">
+                <Explore />
+              </div>
             </div>
 
-            <div className="lg:w-7/12 space-y-10">
+            <div className="lg:w-7/12 space-y-8 md:space-y-10">
               {waysToGetInvolved.map((way, index) => (
-                <>
-                  <div key={way.label} className="flex items-center gap-8">
-                    <div className="scale-75">{way.icon}</div>
+                <div key={way.label}>
+                  <div className="flex items-start md:items-center gap-4 md:gap-8">
+                    <div className="scale-75 md:scale-100">{way.icon}</div>
 
-                    <div className="space-y-4">
-                      <h3 className={cn(nomixa.className, "text-xl lg:text-3xl")}>{way.label}</h3>
-                      <p className="lg:text-lg text-base font-light">{way.description}</p>
+                    <div className="space-y-2 md:space-y-4">
+                      <h3 className={cn(nomixa.className, "text-xl md:text-2xl lg:text-3xl")}>{way.label}</h3>
+                      <p className="text-sm md:text-base lg:text-lg font-light">{way.description}</p>
                     </div>
                   </div>
-                  <Separator key={index} className="opacity-50" />
-                </>
+                  {index < waysToGetInvolved.length - 1 && (
+                    <Separator className="opacity-50 mt-8" />
+                  )}
+                </div>
               ))}
             </div>
           </div>
         </div>
       </section>
 
-      <section className="pb-44">
-        <div className="container flex flex-col lg:flex-row justify-between gap-6 lg:gap-0">
+      <section className="pb-20 md:pb-44">
+        <div className="container flex flex-col lg:flex-row justify-between gap-12 lg:gap-0">
           <div className="space-y-6">
-            <h2 className={cn(nomixa.className, "text-3xl")}>
-              Partner <br /> With Us
+            <h2 className={cn(nomixa.className, "text-2xl md:text-3xl")}>
+              Partner <br className="hidden md:block" /> With Us
             </h2>
 
-            <p className="text-lg font-light pb-6">
-              Partner with X3Lab to support <br /> research, mentor emerging <br /> talents, and drive impact through{" "}
-              <br /> collaboration
+            <p className="text-base md:text-lg font-light pb-6">
+              Partner with X3Lab to support <br className="hidden md:block" /> 
+              research, mentor emerging <br className="hidden md:block" /> 
+              talents, and drive impact through <br className="hidden md:block" /> 
+              collaboration
             </p>
 
-            <Button className="w-[203px] py-6">
+            <Button className="w-full sm:w-[203px] py-6">
               Partner With Us
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -155,28 +167,21 @@ const GetInvolvedPage = () => {
             </Button>
           </div>
 
-          <div className="flex flex-col lg:flex-row">
-            <Image
-              width={313}
-              height={432}
-              className="lg:translate-y-16 rounded-md w-full p-4"
-              src={"/partner-with-us-1.png"}
-              alt="partner with us"
-            />
-            <Image
-              width={313}
-              height={432}
-              className="lg:translate-y-0 rounded-md w-full p-4"
-              src={"/partner-with-us.png"}
-              alt="partner with us"
-            />
-            <Image
-              width={313}
-              height={432}
-              className="lg:translate-y-32 rounded-md w-full p-4"
-              src={"/partner-with-us-2.png"}
-              alt="partner with us"
-            />
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-0">
+            {[
+              { src: "/partner-with-us-1.png", translateClass: "lg:translate-y-16" },
+              { src: "/partner-with-us.png", translateClass: "lg:translate-y-0" },
+              { src: "/partner-with-us-2.png", translateClass: "lg:translate-y-32" }
+            ].map((image, index) => (
+              <Image
+                key={index}
+                width={313}
+                height={432}
+                className={`rounded-md w-full p-2 md:p-4 ${image.translateClass}`}
+                src={image.src}
+                alt="partner with us"
+              />
+            ))}
           </div>
         </div>
       </section>
