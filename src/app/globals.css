@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -76,20 +75,37 @@
 }
 
 @layer base {
-  *, body {
+  *,
+  body {
     @apply border-border;
   }
 }
 
-
 .swatch-bg {
   background-image: url(../../public/swatch.png);
   background-size: 500px;
-
 }
 
 .donate-bg {
   background-image: url(../../public/donate-bg.png);
   background-repeat: repeat-x;
   background-size: cover;
+}
+
+.hero-swatch {
+  background-image: url(../../public/swatch.png);
+}
+
+
+.link::after {
+  width: 0%;
+  height: 1px;
+  content: "";
+  background-color: #1B5299;
+  transition: all 300ms;
+  
+}
+
+.link:hover.link::after {
+  width: 100%;
 }

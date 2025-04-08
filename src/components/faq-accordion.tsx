@@ -2,7 +2,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 
 export function FAQsAccordion() {
   return (
-    <Accordion type="single" collapsible className="w-full" defaultValue="item-0">
+    <Accordion type="single" collapsible className="w-full text-[#2B2A2A]" defaultValue="item-0">
       {faqsArr.map((faq, index) => (
         <AccordionItem key={index} value={`item-${index}`}>
           <AccordionTrigger>{faq.question}</AccordionTrigger>

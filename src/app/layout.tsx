@@ -15,8 +15,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
-      <body className={`${mont.className} space-y-6`}>
+    <html lang="en" className="text-[15px] 2xl:text-[16px]">
+      <body className={`${mont.className} space-y-8 `}>
         <Header />
         {children}
         <Footer />

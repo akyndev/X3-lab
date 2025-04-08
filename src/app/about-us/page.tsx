@@ -93,8 +93,8 @@ const AboutUsPage = () => {
                   y2="120"
                   gradientUnits="userSpaceOnUse"
                 >
-                  <stop stop-color="#FFB6E1" />
-                  <stop offset="1" stop-color="#C0E8FF" />
+                  <stop stopColor="#FFB6E1" />
+                  <stop offset="1" stopColor="#C0E8FF" />
                 </linearGradient>
                 <clipPath id="clip0_145_12019">
                   <rect width="120" height="120" fill="white" />
