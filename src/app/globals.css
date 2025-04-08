@@ -78,6 +78,7 @@
   *,
   body {
     @apply border-border;
+    margin: 0;
   }
 }
 
@@ -94,6 +95,7 @@
 
 .hero-swatch {
   background-image: url(../../public/swatch.png);
+  background-size: cover;
 }
 
 
