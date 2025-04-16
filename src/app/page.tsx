@@ -78,7 +78,7 @@ export default function Home() {
     <main className="space-y-36">
       <section className="container">
         <div className="flex items-center flex-col lg:flex-row justify-between gap-12 lg:gap-0">
-          <div className="lg:w-6/12 w-full">
+          <div className="lg:w-6/12 w-full text-black/80">
             <H1 className="text-left ">
               <div className="flex items-start flex-wrap">
                 Turn Your{" "}
@@ -167,7 +167,32 @@ export default function Home() {
                 </span>{" "}
                 Into
               </div>
-              Impact. Build. <br />
+              <div className="flex items-start">
+
+              Impact. Build
+               <span className="ml-7 inline flex">
+
+               <svg className="hidden lg:block" width="136" height="57" viewBox="0 0 136 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 0V57C14.6819 55.7786 26.2279 43.5032 26.2279 28.5C26.2279 13.4968 14.6819 1.22143 0 0Z" fill="#1B5299"/>
+<path d="M36.2876 0V57C50.9695 55.7786 62.5155 43.5032 62.5155 28.5C62.5155 13.4968 50.9695 1.22143 36.2876 0Z" fill="#1B5299"/>
+<path d="M72.5752 0V57C87.2571 55.7786 98.8031 43.5032 98.8031 28.5C98.8031 13.4968 87.2571 1.22143 72.5752 0Z" fill="#1B5299"/>
+<path d="M108.842 0V57C123.524 55.7786 135.07 43.5032 135.07 28.5C135.07 13.4968 123.544 1.22143 108.842 0Z" fill="#1B5299"/>
+<path d="M108.842 0V57C123.524 55.7786 135.07 43.5032 135.07 28.5C135.07 13.4968 123.544 1.22143 108.842 0Z" fill="#1B5299"/>
+<path d="M108.842 0V57C123.524 55.7786 135.07 43.5032 135.07 28.5C135.07 13.4968 123.544 1.22143 108.842 0Z" fill="#1B5299"/>
+</svg>
+
+
+<svg className="block lg:hidden" width="74" height="37" viewBox="0 0 74 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 0V37C8.0436 36.2071 14.3691 28.2389 14.3691 18.5C14.3691 8.76107 8.0436 0.792857 0 0Z" fill="#1B5299"/>
+<path d="M19.8818 0V37C27.9254 36.2071 34.251 28.2389 34.251 18.5C34.251 8.76107 27.9254 0.792857 19.8818 0Z" fill="#1B5299"/>
+<path d="M39.7627 0V37C47.8063 36.2071 54.1318 28.2389 54.1318 18.5C54.1318 8.76107 47.8063 0.792857 39.7627 0Z" fill="#1B5299"/>
+<path d="M59.6318 0V37C67.6754 36.2071 74.001 28.2389 74.001 18.5C74.001 8.76107 67.6866 0.792857 59.6318 0Z" fill="#1B5299"/>
+<path d="M59.6318 0V37C67.6754 36.2071 74.001 28.2389 74.001 18.5C74.001 8.76107 67.6866 0.792857 59.6318 0Z" fill="#1B5299"/>
+<path d="M59.6318 0V37C67.6754 36.2071 74.001 28.2389 74.001 18.5C74.001 8.76107 67.6866 0.792857 59.6318 0Z" fill="#1B5299"/>
+</svg>
+
+               </span>
+              </div>
               <div className="flex items-start ">
                 <span className="mr-3 inline-flex">
                   <svg
@@ -253,7 +278,7 @@ export default function Home() {
                     </defs>
                   </svg>
                 </span>
-                Grow.
+                & Grow.
               </div>
             </H1>
 
@@ -562,7 +587,7 @@ export default function Home() {
 
       <section>
         <div className="container">
-          <div className="flex bg-gray-100 lg:gap-14 gap-4 flex-col-reverse lg:flex-row">
+          <div className="flex bg-gray-100 lg:gap-14 gap-4 flex-col lg:flex-row">
             <div className="lg:p-8 p-2 space-y-8 lg:space-y-14">
               <h2 className={cn(nomixa.className, "lg:text-5xl text-[28px] font-medium")}>
                 Hear Success <br className="hidden lg:block" /> Stories

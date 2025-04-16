@@ -1,16 +1,24 @@
-import Future from "@/components/future"
-import Mentors from "@/components/mentors"
-import { cn } from "@/lib/utils"
-import Image from "next/image"
-import { nomixa } from "../fonts"
-import HeroImage from "/public/about-hero.png"
+import Future from "@/components/future";
+import Mentors from "@/components/mentors";
+import { cn } from "@/lib/utils";
+import Image from "next/image";
+import { nomixa } from "../fonts";
+import HeroImage from "/public/about-hero.png";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const AboutUsPage = () => {
   return (
     <div className="container space-y-32 py-16">
       <div className="flex items-center justify-between flex-col lg:flex-row gap-8 lg:gap-0 relative">
         <div className="absolute -left-4 -top-6 -z-10">
-          <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg
+            width="120"
+            height="120"
+            viewBox="0 0 120 120"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
             <g clipPath="url(#clip0_142_12012)">
               <mask
                 id="mask0_142_12012"
@@ -51,18 +59,30 @@ const AboutUsPage = () => {
           </svg>
         </div>
         <div>
-          <h2 className={cn("lg:text-5xl text-4xl font-semibold", nomixa.className)}>
+          <h2
+            className={cn(
+              "lg:text-5xl text-4xl font-semibold",
+              nomixa.className
+            )}
+          >
             WE BELIEVE THE
-            <span className="text-blue-500 underline ml-2.5">FUTURE</span>
-            <br />
-            BELONGS TO THOSE WHO <br />
+            <span className="text-blue-500 underline">{' '} FUTURE {" "} </span>
+            <br className="hidden lg:block" />
+            BELONGS TO THOSE WHO {' '}
+            <br className="hidden lg:block" />
             DARES TO
             <span className="text-red-400 underline ml-2.5">CREATE!</span>
           </h2>
         </div>
         <div className="relative">
           <div className="absolute -bottom-20 -z-10 -left-20">
-            <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg
+              width="120"
+              height="120"
+              viewBox="0 0 120 120"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
               <g clipPath="url(#clip0_145_12019)">
                 <mask
                   id="mask0_145_12019"
@@ -102,29 +122,50 @@ const AboutUsPage = () => {
               </defs>
             </svg>
           </div>
-          <Image src={HeroImage} alt="hero image" className="rounded-lg w-[32rem] h-auto" />
+          <Image
+            src={HeroImage}
+            alt="hero image"
+            className="rounded-lg w-[32rem] h-auto"
+          />
         </div>
       </div>
 
-      <div className="bg-gray-100 space-y-10 p-6  lg:p-20 rounded-lg mx-auto">
+      <div className="bg-gray-100 space-y-10 p-6  lg:p-14 rounded-lg mx-auto">
         <p className="font-light lg:text-3xl text-xl">
-          X3Lab is a collaborative ecosystem designed to empower tech creatives, innovators, and problem-solvers. We
-          provide a dynamic environment where bold ideas are nurtured into impactful solutions. Through free workspace,
-          research & development (R&D) initiatives, structured mentorship, and hands-on training, we bridge the gap
-          between innovation and execution.
+          At X3lab, we believe the future belongs to those who dare to create.
+          Innovation is born from bold ideas and the courage to pursue them.
+          It’s not about waiting for opportunities to come to you, it’s about
+          actively creating them. and that’s why we’ve built X3lab, an ecosystem
+          that inspires you to transform your boldest ideas into real-world
+          impact. Whether you&apos;re working on a startup, a personal project, or
+          navigating new solutions to complex problems, we provide the
+          resources, mentorship, and collaborative environment to bring your
+          vision to life.
         </p>
         <p className="font-light lg:text-3xl text-xl">
-          Our Mission is To ignite innovation by providing a nurturing space, technical support, and growth
-          opportunities for aspiring and experienced tech builders alike.
+          Our mission is to support bold ideas that shape the future, by
+          providing access to tools, guidance, and network to turn your
+          ambitions into reality, no matter your field or experience level.
+          Together, we can create a future built on innovation, collaboration,
+          and bold thinking.
         </p>
       </div>
 
       <Future />
 
-      <Mentors title="Our Mentors." description="Experts dedicated to shaping the next generation of innovators!" />
-      <Mentors title="X3LAB FUTA Team" description="Group of young, vibrant innovators ready to shape the future" />
+      <Mentors
+        title="Our Mentors."
+        description="Experts dedicated to shaping the next generation of innovators!"
+      />
+      <Mentors
+        title="X3LAB FUTA Team"
+        description="Group of young, vibrant innovators ready to shape the future"
+      />
+      <Link href={"/team-members"}>
+        <Button variant={"outline"}>See All</Button>
+      </Link>
     </div>
-  )
-}
+  );
+};
 
-export default AboutUsPage
+export default AboutUsPage;

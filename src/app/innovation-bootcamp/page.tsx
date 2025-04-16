@@ -4,7 +4,7 @@ import { nomixa } from "../fonts"
 import Image from "next/image"
 import { Development } from "@/components/development"
 
-const ResearchAndDevelopmentPage = () => {
+const InnovatoionBootCampPage = () => {
   return (
     <div className="container space-y-10 py-16">
       <div className="space-y-8">
@@ -46,6 +46,6 @@ const ResearchAndDevelopmentPage = () => {
   )
 }
 
-export default ResearchAndDevelopmentPage
+export default InnovatoionBootCampPage
 
 

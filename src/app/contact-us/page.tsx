@@ -6,7 +6,7 @@ import { nomixa } from "../fonts"
 const ContactUsPage = () => {
   return (
     <div className="container py-16">
-      <div className="flex flex-col lg:flex-row">
+      <div className="flex flex-col lg:flex-row space-y-10">
 
         <div className="space-y-8 lg:space-y-16 lg:w-6/12 w-full">
           <div className="flex items-center">
@@ -23,7 +23,7 @@ const ContactUsPage = () => {
           </h2>
 
           <div className="flex gap-4 items-center">
-            <h4>hello@X3Lab.org </h4>
+            <h4>info@X3Lab.org </h4>
             <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="20" cy="20" r="20" fill="#1CFEBA" />
               <path

@@ -7,7 +7,7 @@ import { Button } from "./ui/button"
 const Future = () => {
   return (
     <section>
-      <div className="text-center">
+      <div className="text-center space-y-3 pb-8">
         <h3 className={cn("text-4xl", nomixa.className)}>The future starts here.</h3>
         <p className="font-light">Here&apos;s how you can be part</p>
       </div>
