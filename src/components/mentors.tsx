@@ -1,6 +1,5 @@
 import { nomixa } from "@/app/fonts";
 import { cn } from "@/lib/utils";
-import Image from "next/image";
 import ProfileCard from "./profile-card";
 
 const Mentors = ({
