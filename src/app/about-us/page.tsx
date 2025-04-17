@@ -6,6 +6,7 @@ import { nomixa } from "../fonts";
 import HeroImage from "/public/about-hero.png";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import Members from "@/components/members";
 
 const AboutUsPage = () => {
   return (
@@ -157,7 +158,7 @@ const AboutUsPage = () => {
         title="Our Mentors."
         description="Experts dedicated to shaping the next generation of innovators!"
       />
-      <Mentors
+      <Members
         title="X3LAB FUTA Team"
         description="Group of young, vibrant innovators ready to shape the future"
       />

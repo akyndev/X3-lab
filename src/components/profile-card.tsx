@@ -2,14 +2,24 @@ import { nomixa } from "@/app/fonts"
 import { cn } from "@/lib/utils"
 import Image from "next/image"
 
-const ProfileCard = () => {
+
+type ProfileCardType = {
+  name: string
+  role: string
+  image: string
+}
+
+const ProfileCard = ({ name, role, image }: ProfileCardType) => {
     return (
-      <div className="space-y-4">
-        <Image src={"/ceo.png"} width={315} height={387} alt="akinlade Joseph" className="rounded-md grayscale w-full" />
+      <div className="space-y-4 ">
+        <div className="w-full h-[387px] overflow-hidden rounded-md">
+
+        <Image src={`/members/${image}`} width={315} height={387} alt="akinlade Joseph" className="transition-all duration-500 hover:scale-110 ease-in-out rounded-md grayscale w-full h-[387px] object-cover" />
+        </div>
   
         <div>
-          <h2 className={cn(nomixa.className, "text-2xl")}>Akinlade Joseph</h2>
-          <h3>CEO Brafas</h3>
+          <h2 className={cn(nomixa.className, "text-[22px]")}>{name}</h2>
+          <h3 className="capitalize">{role}</h3>
   
           <div>
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">

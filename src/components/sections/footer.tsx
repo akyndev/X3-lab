@@ -16,19 +16,19 @@ const Footer = () => {
           <div>
             <nav className="text-[1.2rem]">
               <ul className="flex flex-col lg:flex-row lg:items-center gap-7 text-white">
-                <li className=" hover:text-blue-500">
+                <li className=" hover:text-blue-500 transition-colors duration-300">
                   <Link href={"/about-us"}>About Us</Link>
                 </li>
-                <li className=" hover:text-blue-500">
+                <li className=" hover:text-blue-500 transition-colors duration-300">
                   <Link href={"/get-involved"}>Get Involve</Link>
                 </li>
-                <li className=" hover:text-blue-500">
+                <li className=" hover:text-blue-500 transition-colors duration-300">
                   <Link href={"/our-programs"}>Our Programs</Link>
                 </li>
-                <li className=" hover:text-blue-500">
+                <li className=" hover:text-blue-500 transition-colors duration-300">
                   <Link href={"/contact-us"}>Contact Us</Link>
                 </li>
-                <li className=" hover:text-blue-500">
+                <li className=" hover:text-blue-500 transition-colors duration-300">
                   <Link href={"/contact-us"}>Podcast</Link>
                 </li>
               </ul>

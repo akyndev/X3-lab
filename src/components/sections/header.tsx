@@ -33,16 +33,16 @@ const Header = () => {
         <div className="hidden lg:block">
           <nav>
             <ul className="flex items-center gap-6">
-              <li className=" hover:text-[#1B5299] link flex flex-col gap-2">
+              <li className=" hover:text-[#1B5299] transition-all duration-300 link flex flex-col gap-2">
                 <Link href={"/about-us"}>About Us</Link>
               </li>
-              <li className=" hover:text-[#1B5299] link flex flex-col gap-2">
+              <li className=" hover:text-[#1B5299] transition-all duration-300 link flex flex-col gap-2">
                 <Link href={"/get-involved"}>Get Involve</Link>
               </li>
-              <li className=" hover:text-[#1B5299] link flex flex-col gap-2">
+              <li className=" hover:text-[#1B5299] transition-all duration-300 link flex flex-col gap-2">
                 <Link href={"/our-programs"}>Our Programs</Link>
               </li>
-              <li className=" hover:text-[#1B5299] link flex flex-col gap-2">
+              <li className=" hover:text-[#1B5299] transition-all duration-300 link flex flex-col gap-2">
                 <Link href={"/contact-us"}>Contact Us</Link>
               </li>
             </ul>
@@ -101,26 +101,26 @@ const Header = () => {
               <nav className="px-2">
                 <ul className="flex items-start flex-col gap-8">
                   <li
-                    className=" hover:text-[#1B5299] link flex flex-col gap-2"
+                    className=" hover:text-[#1B5299] transition-all duration-300 link flex flex-col gap-2"
                     onClick={() => setOpen(false)}
                   >
                     <Link href={"/about-us"}>About Us</Link>
                   </li>
                   <li
-                    className=" hover:text-[#1B5299] link flex flex-col gap-2"
+                    className=" hover:text-[#1B5299] transition-all duration-300 link flex flex-col gap-2"
                     onClick={() => setOpen(false)}
                   >
                     <Link href={"/get-involved"}>Get Involve</Link>
                   </li>
                   <li
-                    className=" hover:text-[#1B5299] link flex flex-col gap-2"
+                    className=" hover:text-[#1B5299] transition-all duration-300 link flex flex-col gap-2"
                     onClick={() => setOpen(false)}
                   >
                     <Link href={"/our-programs"} onClick={() => setOpen(false)}>
                       Our Programs
                     </Link>
                   </li>
-                  <li className=" hover:text-[#1B5299] link flex flex-col gap-2">
+                  <li className=" hover:text-[#1B5299] transition-all duration-300 link flex flex-col gap-2">
                     <Link href={"/contact-us"} onClick={() => setOpen(false)}>
                       Contact Us
                     </Link>
