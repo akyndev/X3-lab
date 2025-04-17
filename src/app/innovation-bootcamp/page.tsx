@@ -1,6 +1,7 @@
-import { cn } from "@/lib/utils"
-import { nomixa } from "../fonts"
-import ScrollPin from "@/components/scroll-pin"
+import { cn } from "@/lib/utils";
+import { nomixa } from "../fonts";
+import ScrollPin from "@/components/scroll-pin";
+import MobileScrollPin from "@/components/mobile-scroll-pin";
 
 const InnovatoionBootCampPage = () => {
   return (
@@ -12,16 +13,20 @@ const InnovatoionBootCampPage = () => {
         </h2>
 
         <p className="text-xl">
-          Connect with like-minded creatives, access resources, and collaborate <br /> on impactful projects
+          Connect with like-minded creatives, access resources, and collaborate{" "}
+          <br /> on impactful projects
         </p>
       </div>
 
-    <ScrollPin />
+      <div className="hidden lg:block">
+        <ScrollPin />
+      </div>
 
+      <div className="block lg:hidden">
+        <MobileScrollPin />
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default InnovatoionBootCampPage
-
-
+export default InnovatoionBootCampPage;
