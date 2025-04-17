@@ -18,7 +18,7 @@ const IncubatorHub = () => {
         </p>
       </div>
 
-      <div className="flex flex-col lg:flex-row space-y-6">
+      <div className="flex flex-col lg:flex-row space-y-6 justify-between">
         <div className="lg:space-y-14 lg:w-6/12">
           <Development
             label="Our Purpose."

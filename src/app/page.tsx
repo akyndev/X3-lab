@@ -165,8 +165,7 @@ export default function Home() {
               </div>
               <div className="flex items-start">
 
-              Impact. Build
-               <span className="ml-7 inline-flex">
+              Impact. Build               <span className="ml-7 inline-flex">
 
                <svg className="hidden lg:block" width="136" height="57" viewBox="0 0 136 57" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M0 0V57C14.6819 55.7786 26.2279 43.5032 26.2279 28.5C26.2279 13.4968 14.6819 1.22143 0 0Z" fill="#1B5299"/>
