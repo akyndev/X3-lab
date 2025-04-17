@@ -110,13 +110,16 @@ const GetInvolvedPage = () => {
                 Ways you can get <br />
                 involved!
               </h3>
+
+              <div className="hidden lg:block">
               <Explore />
+              </div>
             </div>
 
             <div className="lg:w-7/12 space-y-10">
               {waysToGetInvolved.map((way, index) => (
                 <>
-                  <div key={way.label} className="flex items-center gap-8">
+                  <div key={index+1} className="flex items-start lg:items-center gap-8 flex-col lg:flex-row">
                     <div className="scale-75">{way.icon}</div>
 
                     <div className="space-y-4">
@@ -178,6 +181,19 @@ const GetInvolvedPage = () => {
               alt="partner with us"
             />
           </div>
+        </div>
+      </section>
+
+
+      <section className=" relative text-white">
+        <div className="absolute inset-0 bg-[#1CFEBA] -z-10" />
+        <div className="w-6/12 bg-[#10315C] -z-10 absolute inset-y-0 left-0 rounded-tr-[4rem]" />
+        <div className="w-6/12 bg-[#10315C] -z-10 absolute inset-y-0 right-0 rounded-tl-[4rem]" />
+
+        <div className="container flex items-center justify-center flex-col py-20 space-y-6">
+          <h3 className={cn(nomixa.className, "font-medium text-4xl")}>Support Our Vision</h3>
+          <p className="text-center font-light "> Every contribution helps us grow and provide more opportunities for creators. <br className="hidden lg:block" /> You can support X3Lab through donations, resource contributions, or by advocating  for our mission. </p>
+          <Button className="bg-[#1CFEBA] text-black">Donate via Bank Transfer</Button>
         </div>
       </section>
     </main>

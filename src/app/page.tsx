@@ -25,10 +25,6 @@ const secondRow = [
     alt: "binance"
   },
   {
-    src: "/mentors-logo/vector.png",
-    alt: "binance"
-  },
-  {
     src: "/mentors-logo/nigeria-lng-logo-liquefied-natural-gas-business-png-favpng-z580ujg7N5uG0tiSBbWjA3FW6 1.png",
     alt: "binance"
   },
@@ -170,7 +166,7 @@ export default function Home() {
               <div className="flex items-start">
 
               Impact. Build
-               <span className="ml-7 inline flex">
+               <span className="ml-7 inline-flex">
 
                <svg className="hidden lg:block" width="136" height="57" viewBox="0 0 136 57" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M0 0V57C14.6819 55.7786 26.2279 43.5032 26.2279 28.5C26.2279 13.4968 14.6819 1.22143 0 0Z" fill="#1B5299"/>
@@ -297,7 +293,7 @@ export default function Home() {
             className="rounded-lg lg:w-6/12 relative translate-x-2"
           >
             <div className="absolute inset-0 z-10">
-              <Image src={"/image.png"} alt="swatch" width={560} height={600} className="w-full h-auto" />
+              <Image src={"/swatch.png"} alt="swatch" width={560} height={600} className="w-full h-auto" />
             </div>
             <Image src={"/hero-image.png"} alt="hero image " width={560} height={600} className="w-full h-auto" />
           </div>

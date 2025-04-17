@@ -12,13 +12,13 @@ const Future = () => {
         <p className="font-light">Here&apos;s how you can be part</p>
       </div>
       <div className="grid grid-cols-1  lg:grid-cols-3 gap-4 ">
-        <div className="w-full h-[660px] shadow-md rounded-md border flex flex-col justify-between pt-10 relative">
+        <div className="w-full h-[660px] shadow-md rounded-md border flex flex-col justify-between pt-10 relative overflow-hidden">
           <div className="space-y-6 px-4">
             <span className={cn("font-medium text-[#1B5299]", nomixa.className)}>#BUILD</span>
             <h3 className={cn("text-4xl ", nomixa.className)}>
               Join X3Lab and <br /> start building!
             </h3>
-            <p>connect with like-mind creatives, access resources, and collaborate on impactful projects</p>
+            <p>Connect with like-mind creatives, access resources, and collaborate on impactful projects</p>
 
             <div className="flex items-center justify-center">
               <Button className="py-6 bg-black">Join Community</Button>
@@ -29,21 +29,21 @@ const Future = () => {
               <Image src={"/future-gradient.png"} alt="future gradient" width={100} height={100} />
             </div>
             <div className="flex items-center -space-x-4">
+              <Image src="/future-image-3.png" alt="future image " width={80} height={80} />
               <Image src="/future-image-1.png" alt="future image " width={80} height={80} />
-              <Image src="/future-image-1.png" alt="future image " width={80} height={80} />
-              <Image src="/future-image-1.png" alt="future image " width={80} height={80} />
+              <Image src="/future-image-2.png" alt="future image " width={80} height={80} />
             </div>
           </div>
 
-          <div className="absolute inset-0">
+          <div className="absolute inset-0 -z-10 opacity-20">
             <Image src={"/swatch.png"} alt="swatch" height={660} width={400} className="w-full h-full" />
           </div>
         </div>
 
-        <div className="w-full h-[660px] relative shadow-md bg-[#1B5299] text-white rounded-lg border p-6 pt-10 space-y-12">
+        <div className="w-full h-[660px] relative shadow-md bg-[#1B5299] text-white rounded-lg border p-6 pt-10 space-y-12 overflow-hidden">
           <span className={cn("font-medium text-[#1CFEBA]", nomixa.className)}>#RESEARCH</span>
           <p className="">
-            Support for cutting-edge <br /> idea, funding and product <br /> prototyping
+          Turn curiosity into real-world <br /> solutions, bring innovative <br /> ideas to life.
           </p>
 
           <div className="relative rounded-lg w-full flex items-center justify-center">
@@ -225,7 +225,8 @@ const Future = () => {
             <Image src={"/future-gradient.png"} alt="future gradient" width={100} height={100} />
           </div>
         </div>
-        <div className="w-full h-[660px] pt-10 shadow-md rounded-md border relative flex flex-col justify-between">
+
+        <div className="w-full h-[660px] pt-10 shadow-md rounded-md border relative flex flex-col justify-between overflow-hidden">
           <div className="px-6 space-y-8">
             <span className={cn("font-medium text-[#1B5299]", nomixa.className)}>#MENTORSHIP</span>
             <h3 className={cn("text-4xl ", nomixa.className)}>
@@ -240,12 +241,12 @@ const Future = () => {
           </div>
           <div className="relative overflow-hidden">
             <div className="w-[535px] -z-10 h-[335px] bg-[#1B5299] rounded-t-full absolute inset-0 top-16 left-1/2 -translate-x-1/2"></div>
-            <div className="z-10">
-              <Image src={"/happy-couple.png"} alt="happy couple" width={372} height={466} className="z-10" />
+            <div className="z-10 flex items-center justify-center">
+              <Image src={"/happy-couple.png"} alt="happy couple" width={372} height={466} className="" />
             </div>
           </div>
 
-          <div className="absolute inset-0">
+          <div className="absolute inset-0 -z-10 opacity-20">
             <Image src={"/swatch.png"} alt="swatch" height={660} width={400} className="w-full h-full" />
           </div>
         </div>
