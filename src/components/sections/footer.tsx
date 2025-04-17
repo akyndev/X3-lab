@@ -23,7 +23,7 @@ const Footer = () => {
                   <Link href={"/get-involved"}>Get Involve</Link>
                 </li>
                 <li className=" hover:text-blue-500">
-                  <Link href={"/research-and-development"}>Our Programs</Link>
+                  <Link href={"/our-programs"}>Our Programs</Link>
                 </li>
                 <li className=" hover:text-blue-500">
                   <Link href={"/contact-us"}>Contact Us</Link>

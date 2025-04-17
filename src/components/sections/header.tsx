@@ -40,7 +40,7 @@ const Header = () => {
                 <Link href={"/get-involved"}>Get Involve</Link>
               </li>
               <li className=" hover:text-[#1B5299] link flex flex-col gap-2">
-                <Link href={"/our-program"}>Our Programs</Link>
+                <Link href={"/our-programs"}>Our Programs</Link>
               </li>
               <li className=" hover:text-[#1B5299] link flex flex-col gap-2">
                 <Link href={"/contact-us"}>Contact Us</Link>
@@ -116,7 +116,7 @@ const Header = () => {
                     className=" hover:text-[#1B5299] link flex flex-col gap-2"
                     onClick={() => setOpen(false)}
                   >
-                    <Link href={"/our-program"} onClick={() => setOpen(false)}>
+                    <Link href={"/our-programs"} onClick={() => setOpen(false)}>
                       Our Programs
                     </Link>
                   </li>

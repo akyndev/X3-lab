@@ -161,8 +161,8 @@ const AboutUsPage = () => {
         title="X3LAB FUTA Team"
         description="Group of young, vibrant innovators ready to shape the future"
       />
-      <Link href={"/team-members"}>
-        <Button variant={"outline"}>See All</Button>
+      <Link href={"/team-members"} className="bg-red-100">
+        <Button variant={"outline"} className="px-8 py-6 mt-8 mx-auto  border-blue-800 text-blue-800" >See All Members</Button>
       </Link>
     </div>
   );

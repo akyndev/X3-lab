@@ -23,7 +23,7 @@ const TeamMembers = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-4 gap-10">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-10">
             <ProfileCard />
             <ProfileCard />
             <ProfileCard />
