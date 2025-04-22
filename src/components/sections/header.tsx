@@ -18,7 +18,7 @@ const Header = () => {
   return (
     <header className="py-4 pb-8">
       <div className="flex items-center justify-between container">
-        <div>
+        <div  onClick={() => setOpen(false)}>
           <Link href={"/"}>
             <Image
               src={"/x3-header-logo.svg"}
