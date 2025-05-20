@@ -163,13 +163,13 @@ const Future = () => {
             </div>
 
             <div className="bg-gray-100 rounded w-9/12 text-black p-10 space-y-3 z-10">
-              <div className="flex bg-white px-2 items-center rounded-lg py-1 gap-4 shadow-md">
+              <div className="flex bg-white px-2 items-center rounded-lg py-1 gap-4 text-sm font-bold shadow-md">
                 <CheckCircle color="green" size={20} /> Idea
               </div>
-              <div className="flex bg-white px-2 items-center rounded-lg py-1 gap-4 shadow-md">
+              <div className="flex bg-white px-2 items-center rounded-lg py-1 gap-4 text-sm font-bold shadow-md">
                 <CheckCircle color="green" size={20} /> Research
               </div>
-              <div className="flex bg-white px-2 items-center rounded-lg py-1 gap-4 shadow-md">
+              <div className="flex bg-white px-2 items-center rounded-lg py-1 gap-4 text-sm font-bold shadow-md">
                 <CheckCircle color="green" size={20} /> Development
               </div>
             </div>

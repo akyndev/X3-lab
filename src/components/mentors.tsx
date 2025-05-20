@@ -1,67 +1,112 @@
-import { nomixa } from "@/app/fonts";
-import { cn } from "@/lib/utils";
-import ProfileCard from "./profile-card";
-import Image from "next/image";
-import Link from "next/link";
+import { nomixa } from "@/app/fonts"
+import { cn } from "@/lib/utils"
+import Image from "next/image"
+import Link from "next/link"
 
-const members = [
+const mentors = [
   {
-    name: "Abidemi Olaosebikan",
-    role: "social media manager",
-    image: "Abidemi Olaosebikan (social media manager).JPG",
+    name: "Wareh Oweh",
+    role: "Engineering Manager",
+    company: "Paystack",
+    image: "image.png"
   },
   {
-    name: "Ademeso Daniel",
-    role: "Founder X3 Lab",
-    image: "Ademeso Daniel (Founder X3 Lab).jpg",
+    name: "Romanus Eke",
+    role: "Senior Manager Cloud",
+    company: "Achitect Deloitte",
+    image: "image (1).png"
   },
   {
-    name: "Ademola Anjorin",
-    role: "Community Manager",
-    image: "Ademola Anjorin (Community Manager).jpg",
+    name: "Tele Falola",
+    role: "Software Engineer Mitu ai",
+    company: "Binance",
+    image: "image (2).png"
   },
   {
-    name: "Ayomide Ibidapo",
-    role: "front end developer",
-    image: "Ayomide Ibidapo (front end developer).jpg",
+    name: "Adedeji kemisola",
+    role: "Program Manager",
+    company: "interswitch",
+    image: "image (3).png"
   },
   {
-    name: "Abidemi Olaosebikan",
-    role: "social media manager",
-    image: "Abidemi Olaosebikan (social media manager).JPG",
+    name: "Ohis Imoukhede",
+    role: "Sap technical lead",
+    company: "Julius Berger",
+    image: "image (4).png"
   },
   {
-    name: "Ademeso Daniel",
-    role: "Founder X3 Lab",
-    image: "Ademeso Daniel (Founder X3 Lab).jpg",
+    name: "Dare Bakare",
+    role: "Consultant PWC",
+    company: "",
+    image: "image (5).png"
   },
   {
-    name: "Ademola Anjorin",
-    role: "Community Manager",
-    image: "Ademola Anjorin (Community Manager).jpg",
+    name: "Oluwatimilehin Odubola",
+    role: "Principal Consultant",
+    company: "Reinstudio",
+    image: "image (6).png"
   },
+  {
+    name: "Rosemary Onyinye Ani",
+    role: "COO Mecheosky",
+    company: "Ventures",
+    image: "image (7).png"
+  },
+  {
+    name: "Ayomide Ibosila",
+    role: "Technical lead at Madu",
+    company: "",
+    image: "image (8).png"
+  },
+  {
+    name: "Samuel Awe",
+    role: "Business Developer",
+    company: "",
+    image: "image (9).png"
+  },
+  {
+    name: "Taiwo Hassan Yusuf",
+    role: "Software Engineer",
+    company: "Sephia",
+    image: "image (10).png"
+  }
+]
 
-
-];
-
-const Mentors = ({
-  title,
-  description,
-}: {
-  title: string;
-  description: string;
-}) => {
+const Mentors = ({ title, description }: { title: string; description: string }) => {
   return (
     <section className="space-y-14">
       <div className="text-center">
-        <h3 className={cn("text-2xl lg:text-4xl", nomixa.className)}>
-          {title}
-        </h3>
+        <h3 className={cn("text-2xl lg:text-4xl", nomixa.className)}>{title}</h3>
         <p className="font-light">{description}</p>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-10">
-        {members.map((member, index) => (
-          <ProfileCard key={member.name + index.toString()} {...member} />
+        {mentors.map((mentor) => (
+          <div className="space-y-4 " key={mentor.name}>
+            <div className="w-full h-[387px] overflow-hidden rounded-md">
+              <Image
+                src={`/x-lab/${mentor.image}`}
+                width={315}
+                height={387}
+                alt="akinlade Joseph"
+                className="transition-all duration-500 hover:scale-110 ease-in-out rounded-md grayscale w-full h-[387px] object-cover"
+              />
+            </div>
+
+            <div>
+              <h2 className={cn(nomixa.className, "text-[22px]")}>{mentor.name}</h2>
+              <h3 className="capitalize">{mentor.role}</h3>
+              <h3 className="capitalize">{mentor.company}</h3>
+
+              <div>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M13.75 1.75H2.25C1.97344 1.75 1.75 1.97344 1.75 2.25V13.75C1.75 14.0266 1.97344 14.25 2.25 14.25H13.75C14.0266 14.25 14.25 14.0266 14.25 13.75V2.25C14.25 1.97344 14.0266 1.75 13.75 1.75ZM5.45781 12.4016H3.60313V6.43594H5.45781V12.4016ZM4.53125 5.62031C4.31863 5.62031 4.11079 5.55726 3.93401 5.43914C3.75723 5.32102 3.61944 5.15313 3.53808 4.9567C3.45672 4.76027 3.43543 4.54412 3.47691 4.33559C3.51838 4.12706 3.62077 3.93551 3.77111 3.78517C3.92145 3.63483 4.113 3.53245 4.32153 3.49097C4.53006 3.44949 4.7462 3.47078 4.94263 3.55214C5.13907 3.63351 5.30696 3.77129 5.42508 3.94807C5.5432 4.12486 5.60625 4.3327 5.60625 4.54531C5.60469 5.13906 5.12344 5.62031 4.53125 5.62031ZM12.4016 12.4016H10.5484V9.5C10.5484 8.80781 10.5359 7.91875 9.58438 7.91875C8.62031 7.91875 8.47188 8.67188 8.47188 9.45V12.4016H6.62031V6.43594H8.39844V7.25156H8.42344C8.67031 6.78281 9.275 6.2875 10.1781 6.2875C12.0563 6.2875 12.4016 7.52344 12.4016 9.12969V12.4016Z"
+                    fill="#1B5299"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
         ))}{" "}
         <div className="space-y-4">
           <Image
@@ -80,7 +125,7 @@ const Mentors = ({
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Mentors;
+export default Mentors
