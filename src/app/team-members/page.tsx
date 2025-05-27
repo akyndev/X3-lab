@@ -167,7 +167,7 @@ const TeamMembers = () => {
           <div className="text-center space-y-6">
             <h2
               className={cn(
-                "text-2xl lg:text-5xl lg:leading-[72px]",
+                "text-2xl lg:text-5xl lg:leading-[65px]",
                 nomixa.className
               )}
             >
@@ -195,7 +195,7 @@ const TeamMembers = () => {
 
               <div>
                 <Link className="underline text-blue-800" href={"#"}>
-                  Become a mentor
+                  Become a member
                 </Link>
               </div>
             </div>

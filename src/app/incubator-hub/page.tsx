@@ -21,12 +21,12 @@ const IncubatorHub = () => {
       <div className="flex flex-col lg:flex-row space-y-6 justify-between">
         <div className="lg:space-y-14 lg:w-6/12">
           <Development
-            label="Our Purpose."
-            description="NexaScale Study Groups is a vitual community created for people to connect, learn, build projects, and get their technical questions answered. We host bi-weekly office hour sessions for different tracks"
+            label="What we offer"
+            description="Talents are exposed to projects that bridge the gap between personal experiences, like school projects, and industry-level experience through collaboration with skilled peers and access to essential startup resources."
           />
           <Development
-            label="Who can join?"
-            description="You can join this community if you are transitioning into a technical role in tech and you want to learn with a community . You can also join if you are already a well established tech professional that wants to learn more or help people solve thier problems"
+            label="Who is it ideal for?"
+            description="Early-stage founders, startup teams, who have developed a minimum viable product (MVP) and talents with validate concept who are now ready to refine, test, and scale their solution into a sustainable business"
           />
           <Button className="w-[203px] py-6">Join Community</Button>
         </div>
@@ -36,9 +36,14 @@ const IncubatorHub = () => {
             <div className="bg-[#1CFEBA] w-44 h-60 rounded-lg"></div>
             <div className="bg-[#1B5299] w-44 h-60 rounded-lg relative">
               <div className="absolute -bottom-4 flex items-center justify-center">
-                
-              <Image src={"/hub-image.png"} alt="hub image" height={680} width={359 }  className="
-              "/>
+                <Image
+                  src={"/hub-image.png"}
+                  alt="hub image"
+                  height={680}
+                  width={359}
+                  className="
+              "
+                />
               </div>
             </div>
             <div className="bg-[#1CFEBA] w-44 h-60 rounded-lg"></div>
@@ -50,9 +55,14 @@ const IncubatorHub = () => {
             <div className="bg-[#1B5299] w-44 h-60 rounded-lg"></div>
             <div className="bg-[#1CFEBA] w-44 h-60 rounded-lg relative">
               <div className="absolute -bottom-4 flex items-center justify-center">
-                
-              <Image src={"/hub-image.png"} alt="hub image" height={680} width={359 }  className="
-              "/>
+                <Image
+                  src={"/hub-image.png"}
+                  alt="hub image"
+                  height={680}
+                  width={359}
+                  className="
+              "
+                />
               </div>
             </div>
           </Marquee>

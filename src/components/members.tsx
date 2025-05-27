@@ -46,13 +46,13 @@ const Members = ({
             src={"/become-a-mentor.png"}
             width={315}
             height={387}
-            alt="akinlade Joseph"
+            alt=""
             className="rounded-md w-full h-[387px] object-cover"
           />
 
           <div>
             <Link className="underline text-blue-800" href={"#"}>
-              Become a mentor
+              Become a member
             </Link>
           </div>
         </div>

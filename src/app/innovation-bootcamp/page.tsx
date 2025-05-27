@@ -13,8 +13,8 @@ const InnovatoionBootCampPage = () => {
         </h2>
 
         <p className="text-xl">
-          Connect with like-minded creatives, access resources, and collaborate{" "}
-          <br /> on impactful projects
+          A chance to connect with like-minds, be empowered with <br /> problem solving skills and collaborate on impactful
+          projects.
         </p>
       </div>
 
@@ -26,7 +26,7 @@ const InnovatoionBootCampPage = () => {
         <MobileScrollPin />
       </div>
     </div>
-  );
+  )
 };
 
 export default InnovatoionBootCampPage;

@@ -1,42 +1,34 @@
-import { Button } from "@/components/ui/button";
-import { Separator } from "@/components/ui/separator";
-import {
-  ApplyIcon,
-  Explore,
-  JoinX3Lab,
-  MentorIcon,
-  TrainingIcon,
-} from "@/lib/icons";
-import { cn } from "@/lib/utils";
-import Image from "next/image";
-import { nomixa } from "../fonts";
+import { Button } from "@/components/ui/button"
+import { Separator } from "@/components/ui/separator"
+import { ApplyIcon, Explore, JoinX3Lab, MentorIcon, TrainingIcon } from "@/lib/icons"
+import { cn } from "@/lib/utils"
+import Image from "next/image"
+import { nomixa } from "../fonts"
 
 const waysToGetInvolved = [
   {
     label: "Join X3Lab",
     description:
-      "Become part of our vibrant tech ecosystem where ideas come to life. Gain access to a free workspace, cutting-edge resources, and a community of like-minded innovators.",
-    icon: <JoinX3Lab />,
+      "Become part of a vibrant community of innovators, creators, and problem-solvers dedicated to making a real impact",
+    icon: <JoinX3Lab />
   },
   {
     label: "Apply for R&D support",
-    description:
-      "Our Research & Development (R&D) program provides the resources, mentorship, and funding you need to develop and test innovative solutions.",
-    icon: <ApplyIcon />,
+    description: "Gain access to resources and mentorship that will help you develop and test your innovative ideas.",
+    icon: <ApplyIcon />
   },
   {
     label: "Become a Mentor",
-    description:
-      "Your experience can inspire and guide the next generation of innovators. Share your knowledge, provide career insights, and help shape the future of tech.",
-    icon: <MentorIcon />,
+    description: "Share your expertise and help guide the next generation of creators and innovators on their journey.",
+    icon: <MentorIcon />
   },
   {
     label: "Mentorship based Training Program",
     description:
-      "Whether you're new to tech or looking to specialize, our expert-led programs will equip you with real-world experience.",
-    icon: <TrainingIcon />,
-  },
-];
+      "Learn from industry professionals through structured mentorship programs designed to help you grow and succeed.",
+    icon: <TrainingIcon />
+  }
+]
 
 const members = [
   {
@@ -114,9 +106,9 @@ const GetInvolvedPage = () => {
 
             <div className="lg:w-8/12">
               <p className="text-xl font-light">
-                X3Lab thrives on collaboration, mentorship, and support from passionate individuals and organizations.
-                Whether you&apos;re an aspiring innovator, an industry expert, or a company looking to make an impact,
-                there’s a place for you here.
+                Join X3lab and be part of a community where you can work with other creators, get advice from experts,
+                and learn by doing real projects. We’ll provide the resources and support to help bring your ideas to
+                life.
               </p>
             </div>
           </div>
@@ -240,6 +232,6 @@ const GetInvolvedPage = () => {
       </section>
     </main>
   )
-};
+}
 
-export default GetInvolvedPage;
+export default GetInvolvedPage

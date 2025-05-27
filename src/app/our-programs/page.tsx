@@ -19,25 +19,25 @@ const getInvolved: GetInvolvedType[] = [
   {
     label: "Innovative Bootcamp",
     description:
-      "A fast-paced, immersive program that equips participants with the skills to build and launch tech solutions.",
+      "Where creative ideas are being turned into real solutions by teaching problem-solving, teamwork, and how to test ideas quickly.",
     link: "/innovation-bootcamp",
-    linkLabel: "Click to learn more",
+    linkLabel: "Click to learn more"
   },
   {
     label: "Startup Incubation",
     description:
-      "A structured pathway for early-stage entrepreneurs, including mentorship, funding, and business development support.",
+      "Supporting early-stage startups by providing mentorship, workspace, and access to startup resources to help them grow their ideas into businesses.",
     link: "/incubator-hub",
-    linkLabel: "Click to learn more",
+    linkLabel: "Click to learn more"
   },
   {
     label: "Research & Development Fellowship",
     description:
-      "A research-focused initiative that provides funding and resources to develop groundbreaking solutions.",
+      "Providing talents a chance to work on research projects, build new technologies, and solve complex problems with guidance from experts.",
     link: "/research-and-development",
-    linkLabel: "Click to submit",
-  },
-];
+    linkLabel: "Click to submit"
+  }
+]
 
 const GetInvolved = () => {
   return (

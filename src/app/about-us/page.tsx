@@ -62,9 +62,10 @@ const AboutUsPage = () => {
         <div>
           <h2
             className={cn(
-              "lg:text-5xl text-4xl font-semibold",
+              "lg:text-5xl text-4xl font-semibold ",
               nomixa.className
             )}
+            style={{lineHeight: 1.4}}
           >
             WE BELIEVE THE
             <span className="text-blue-500 underline">{' '} FUTURE {" "} </span>
@@ -132,7 +133,7 @@ const AboutUsPage = () => {
       </div>
 
       <div className="bg-gray-100 space-y-10 p-6  lg:p-14 rounded-lg mx-auto">
-        <p className="font-light lg:text-3xl text-xl">
+        <p className="font-light lg:text-3xl text-xl break-words" lang="en" style={{ hyphens: "auto"}}>
           At X3lab, we believe the future belongs to those who dare to create.
           Innovation is born from bold ideas and the courage to pursue them.
           It’s not about waiting for opportunities to come to you, it’s about
@@ -143,7 +144,7 @@ const AboutUsPage = () => {
           resources, mentorship, and collaborative environment to bring your
           vision to life.
         </p>
-        <p className="font-light lg:text-3xl text-xl">
+        <p className="font-light lg:text-3xl text-xl" style={{ hyphens: "auto"}} lang="en">
           Our mission is to support bold ideas that shape the future, by
           providing access to tools, guidance, and network to turn your
           ambitions into reality, no matter your field or experience level.

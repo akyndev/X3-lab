@@ -164,29 +164,76 @@ export default function Home() {
                 Into
               </div>
               <div className="flex items-start">
+                Impact. Build{" "}
+                <span className="ml-7 inline-flex">
+                  <svg
+                    className="hidden lg:block"
+                    width="136"
+                    height="57"
+                    viewBox="0 0 136 57"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0V57C14.6819 55.7786 26.2279 43.5032 26.2279 28.5C26.2279 13.4968 14.6819 1.22143 0 0Z"
+                      fill="#1B5299"
+                    />
+                    <path
+                      d="M36.2876 0V57C50.9695 55.7786 62.5155 43.5032 62.5155 28.5C62.5155 13.4968 50.9695 1.22143 36.2876 0Z"
+                      fill="#1B5299"
+                    />
+                    <path
+                      d="M72.5752 0V57C87.2571 55.7786 98.8031 43.5032 98.8031 28.5C98.8031 13.4968 87.2571 1.22143 72.5752 0Z"
+                      fill="#1B5299"
+                    />
+                    <path
+                      d="M108.842 0V57C123.524 55.7786 135.07 43.5032 135.07 28.5C135.07 13.4968 123.544 1.22143 108.842 0Z"
+                      fill="#1B5299"
+                    />
+                    <path
+                      d="M108.842 0V57C123.524 55.7786 135.07 43.5032 135.07 28.5C135.07 13.4968 123.544 1.22143 108.842 0Z"
+                      fill="#1B5299"
+                    />
+                    <path
+                      d="M108.842 0V57C123.524 55.7786 135.07 43.5032 135.07 28.5C135.07 13.4968 123.544 1.22143 108.842 0Z"
+                      fill="#1B5299"
+                    />
+                  </svg>
 
-              Impact. Build               <span className="ml-7 inline-flex">
-
-               <svg className="hidden lg:block" width="136" height="57" viewBox="0 0 136 57" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M0 0V57C14.6819 55.7786 26.2279 43.5032 26.2279 28.5C26.2279 13.4968 14.6819 1.22143 0 0Z" fill="#1B5299"/>
-<path d="M36.2876 0V57C50.9695 55.7786 62.5155 43.5032 62.5155 28.5C62.5155 13.4968 50.9695 1.22143 36.2876 0Z" fill="#1B5299"/>
-<path d="M72.5752 0V57C87.2571 55.7786 98.8031 43.5032 98.8031 28.5C98.8031 13.4968 87.2571 1.22143 72.5752 0Z" fill="#1B5299"/>
-<path d="M108.842 0V57C123.524 55.7786 135.07 43.5032 135.07 28.5C135.07 13.4968 123.544 1.22143 108.842 0Z" fill="#1B5299"/>
-<path d="M108.842 0V57C123.524 55.7786 135.07 43.5032 135.07 28.5C135.07 13.4968 123.544 1.22143 108.842 0Z" fill="#1B5299"/>
-<path d="M108.842 0V57C123.524 55.7786 135.07 43.5032 135.07 28.5C135.07 13.4968 123.544 1.22143 108.842 0Z" fill="#1B5299"/>
-</svg>
-
-
-<svg className="block lg:hidden" width="74" height="37" viewBox="0 0 74 37" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M0 0V37C8.0436 36.2071 14.3691 28.2389 14.3691 18.5C14.3691 8.76107 8.0436 0.792857 0 0Z" fill="#1B5299"/>
-<path d="M19.8818 0V37C27.9254 36.2071 34.251 28.2389 34.251 18.5C34.251 8.76107 27.9254 0.792857 19.8818 0Z" fill="#1B5299"/>
-<path d="M39.7627 0V37C47.8063 36.2071 54.1318 28.2389 54.1318 18.5C54.1318 8.76107 47.8063 0.792857 39.7627 0Z" fill="#1B5299"/>
-<path d="M59.6318 0V37C67.6754 36.2071 74.001 28.2389 74.001 18.5C74.001 8.76107 67.6866 0.792857 59.6318 0Z" fill="#1B5299"/>
-<path d="M59.6318 0V37C67.6754 36.2071 74.001 28.2389 74.001 18.5C74.001 8.76107 67.6866 0.792857 59.6318 0Z" fill="#1B5299"/>
-<path d="M59.6318 0V37C67.6754 36.2071 74.001 28.2389 74.001 18.5C74.001 8.76107 67.6866 0.792857 59.6318 0Z" fill="#1B5299"/>
-</svg>
-
-               </span>
+                  <svg
+                    className="block lg:hidden"
+                    width="74"
+                    height="37"
+                    viewBox="0 0 74 37"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0V37C8.0436 36.2071 14.3691 28.2389 14.3691 18.5C14.3691 8.76107 8.0436 0.792857 0 0Z"
+                      fill="#1B5299"
+                    />
+                    <path
+                      d="M19.8818 0V37C27.9254 36.2071 34.251 28.2389 34.251 18.5C34.251 8.76107 27.9254 0.792857 19.8818 0Z"
+                      fill="#1B5299"
+                    />
+                    <path
+                      d="M39.7627 0V37C47.8063 36.2071 54.1318 28.2389 54.1318 18.5C54.1318 8.76107 47.8063 0.792857 39.7627 0Z"
+                      fill="#1B5299"
+                    />
+                    <path
+                      d="M59.6318 0V37C67.6754 36.2071 74.001 28.2389 74.001 18.5C74.001 8.76107 67.6866 0.792857 59.6318 0Z"
+                      fill="#1B5299"
+                    />
+                    <path
+                      d="M59.6318 0V37C67.6754 36.2071 74.001 28.2389 74.001 18.5C74.001 8.76107 67.6866 0.792857 59.6318 0Z"
+                      fill="#1B5299"
+                    />
+                    <path
+                      d="M59.6318 0V37C67.6754 36.2071 74.001 28.2389 74.001 18.5C74.001 8.76107 67.6866 0.792857 59.6318 0Z"
+                      fill="#1B5299"
+                    />
+                  </svg>
+                </span>
               </div>
               <div className="flex items-start ">
                 <span className="mr-3 inline-flex">
@@ -351,8 +398,9 @@ export default function Home() {
               </H2>
 
               <p className="lg:text-2xl text-lg text-left font-light">
-                We provide the resources, mentorship and scalable projects. Our ecosystem fosters collaboration,
-                learning, and hands-on execution, bridging the gap between theory and real-world application.
+                Inspiring innovators, builders & visionaries: We provide the resources, mentorship, and opportunities
+                needed to move ideas to scalable projects. Our ecosystem opens room for collaboration, learning and
+                hand- on- execution, bridging the gap between theory and real world application.
               </p>
               <Button className="w-[203px] py-6">
                 Donate
@@ -385,7 +433,14 @@ export default function Home() {
               </h3>
 
               <div className="">
-                <svg className="w-48 h-48" width="219" height="197" viewBox="0 0 219 197" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg
+                  className="w-48 h-48"
+                  width="219"
+                  height="197"
+                  viewBox="0 0 219 197"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
                   <g filter="url(#filter0_d_495_14)">
                     <rect
                       x="0.0390625"
@@ -583,18 +638,20 @@ export default function Home() {
       <section>
         <div className="container">
           <div className="flex bg-gray-100 lg:gap-14 gap-4 flex-col lg:flex-row">
-            <div className="lg:p-8 p-2 space-y-8 lg:space-y-14">
+            <div className="lg:p-8 p-2 space-y-8 lg:space-y-14 w-6/12">
               <h2 className={cn(nomixa.className, "lg:text-5xl text-[28px] font-medium")}>
                 Hear Success <br className="hidden lg:block" /> Stories
               </h2>
 
               <p className="lg:text-2xl text-[18px] font-light">
-                Meet Joseph, a former apprentice who landed a top role in tech after completing our work simulation
-                program
+                Joining the X3 lab team has been a very good opportunity for me to implement what I have learnt on my
+                own theoretically. Working and learning with my fellow Project Manager. I have had the opportunity of
+                working with different teams and collaborating with them easily. There&apos;s still much more to learn and
+                explore, which I&apos;m looking up to
               </p>
             </div>
 
-            <div className="w-full">
+            <div className="w-6/12">
               <Image
                 src={"/success-people.png"}
                 alt="success-people"
@@ -665,21 +722,24 @@ const whatWeDo = [
   {
     no: "01",
     label: "Workspace & Community",
-    description: "Free access to a dynamic and resourceful co-working space."
+    description:
+      "A collaborative hub where innovators, creators, and problem solvers connect, share ideas, and build together."
   },
   {
     no: "02",
     label: "Research & Development (R&D)",
-    description: "Support for cutting-edge ideas, funding, and product prototyping."
+    description: "Turning curiosity into real-world solutions, experiment, test, and bring innovative ideas to life."
   },
   {
     no: "03",
     label: "Mentorship based trainings",
-    description: "Hands-on training through simulated work experiences and boootcamps."
+    description:
+      "Get hands-on guidance from industry experts to sharpen your skills, navigate challenges, and level up."
   },
   {
     no: "04",
     label: "Startup support & Incubation",
-    description: "Guidance for early-stage entreprenuers, from ideation to launch."
+    description:
+      "From idea to execution, we provide the guidance, resources, and network to help startups scale and succeed."
   }
 ]

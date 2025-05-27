@@ -2,12 +2,11 @@ import { ContactForm } from "@/components/form"
 import { cn } from "@/lib/utils"
 import { Dot } from "lucide-react"
 import { nomixa } from "../fonts"
-
+import Link from "next/link"
 const ContactUsPage = () => {
   return (
     <div className="container py-16">
       <div className="flex flex-col lg:flex-row space-y-10">
-
         <div className="space-y-8 lg:space-y-16 lg:w-6/12 w-full">
           <div className="flex items-center">
             <Dot color="green" size={46} className="p-0" />
@@ -23,7 +22,9 @@ const ContactUsPage = () => {
           </h2>
 
           <div className="flex gap-4 items-center">
-            <h4>info@X3Lab.org </h4>
+            <h4>
+              <Link href="mailto:info@X3Lab.org">info@X3Lab.org</Link>
+            </h4>
             <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="20" cy="20" r="20" fill="#1CFEBA" />
               <path
@@ -40,7 +41,6 @@ const ContactUsPage = () => {
         <div className="lg:w-5/12 w-full">
           <ContactForm />
         </div>
-
       </div>
     </div>
   )
