@@ -638,7 +638,7 @@ export default function Home() {
       <section>
         <div className="container">
           <div className="flex bg-gray-100 lg:gap-14 gap-4 flex-col lg:flex-row">
-            <div className="lg:p-8 p-2 space-y-8 lg:space-y-14 w-6/12">
+            <div className="lg:p-8 p-2 space-y-8 lg:space-y-14 lg:w-6/12">
               <h2 className={cn(nomixa.className, "lg:text-5xl text-[28px] font-medium")}>
                 Hear Success <br className="hidden lg:block" /> Stories
               </h2>
@@ -651,7 +651,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="w-6/12">
+            <div className="lg:w-6/12">
               <Image
                 src={"/success-people.png"}
                 alt="success-people"
