@@ -1,3 +1,4 @@
+import Carousel from "@/components/carousel"
 import { FAQsAccordion } from "@/components/faq-accordion"
 import { Marquee } from "@/components/magicui/marquee"
 import { H1, H2 } from "@/components/typography"
@@ -434,7 +435,7 @@ export default function Home() {
 
               <div className="">
                 <svg
-                  className="w-48 h-48"
+                  className="w-48 h-48 max-w-56  lg:w-56 lg:h-56"
                   width="219"
                   height="197"
                   viewBox="0 0 219 197"
@@ -643,12 +644,28 @@ export default function Home() {
                 Hear Success <br className="hidden lg:block" /> Stories
               </h2>
 
-              <p className="lg:text-2xl text-[18px] font-light">
-                Joining the X3 lab team has been a very good opportunity for me to implement what I have learnt on my
+              <div className="lg:text-bxl text-[18px] font-light">
+                <Carousel
+                  slides={[
+                    `Joining the X3 lab team has been a very good opportunity for me to implement what I have learnt on my
                 own theoretically. Working and learning with my fellow Project Manager. I have had the opportunity of
-                working with different teams and collaborating with them easily. There&apos;s still much more to learn and
-                explore, which I&apos;m looking up to
-              </p>
+                working with different teams and collaborating with them easily. There's still much more to learn
+                and explore, which I'm looking up`,
+                    `Joining the X3 lab team has been a very good opportunity for me to implement what I have learnt on my
+                own theoretically. Working and learning with my fellow Project Manager. I have had the opportunity of
+                working with different teams and collaborating with them easily. There's still much more to learn
+                and explore, which I'm looking up`,
+                    `Joining the X3 lab team has been a very good opportunity for me to implement what I have learnt on my
+                own theoretically. Working and learning with my fellow Project Manager. I have had the opportunity of
+                working with different teams and collaborating with them easily. There's still much more to learn
+                and explore, which I'm looking up`,
+                    `Joining the X3 lab team has been a very good opportunity for me to implement what I have learnt on my
+                own theoretically. Working and learning with my fellow Project Manager. I have had the opportunity of
+                working with different teams and collaborating with them easily. There's still much more to learn
+                and explore, which I'm looking up`
+                  ]}
+                />
+              </div>
             </div>
 
             <div className="lg:w-6/12">

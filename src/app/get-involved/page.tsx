@@ -145,11 +145,8 @@ const GetInvolvedPage = () => {
 
             <div className="lg:w-7/12 space-y-10">
               {waysToGetInvolved.map((way, index) => (
-                <>
-                  <div
-                    key={way.label + index.toString()}
-                    className="flex items-start lg:items-center gap-8 flex-col lg:flex-row"
-                  >
+                <div key={index}>
+                  <div className="flex items-start lg:items-center gap-8 flex-col lg:flex-row">
                     <div className="scale-75">{way.icon}</div>
 
                     <div className="space-y-4">
@@ -157,19 +154,19 @@ const GetInvolvedPage = () => {
                       <p className="lg:text-lg text-base font-light">{way.description}</p>
                     </div>
                   </div>
-                  <Separator key={index} className="opacity-50" />
-                </>
+                  <Separator className="opacity-50 mt-5" />
+                </div>
               ))}
             </div>
           </div>
         </div>
       </section>
 
-      <section className="pb-44">
+      <section className=" lg:pb-44">
         <div className="container flex flex-col lg:flex-row justify-between gap-6 lg:gap-0">
           <div className="space-y-6">
             <h2 className={cn(nomixa.className, "text-3xl")}>
-              Partner <br /> With Us
+              Partner <br className="hidden lg:block" /> With Us
             </h2>
 
             <p className="text-lg font-light pb-6">
@@ -188,25 +185,25 @@ const GetInvolvedPage = () => {
             </Button>
           </div>
 
-          <div className="flex flex-col lg:flex-row">
+          <div className="flex flex-col lg:flex-row space-y-6 lg:space-y-0">
             <Image
               width={313}
               height={432}
-              className="lg:translate-y-16 rounded-md w-full p-4"
+              className="lg:translate-y-16 rounded-md w-full lg:p-4"
               src={"/partner-with-us-1.png"}
               alt="partner with us"
             />
             <Image
               width={313}
               height={432}
-              className="lg:translate-y-0 rounded-md w-full p-4"
+              className="lg:translate-y-0 rounded-md w-full lg:p-4"
               src={"/partner-with-us.png"}
               alt="partner with us"
             />
             <Image
               width={313}
               height={432}
-              className="lg:translate-y-32 rounded-md w-full p-4"
+              className="lg:translate-y-32 rounded-md w-full lg:p-4"
               src={"/partner-with-us-2.png"}
               alt="partner with us"
             />

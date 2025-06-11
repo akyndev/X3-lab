@@ -1,11 +1,9 @@
 import { Development } from "@/components/development"
-import Image from "next/image"
 import { Marquee } from "@/components/magicui/marquee"
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
+import Image from "next/image"
 import { nomixa } from "../fonts"
-
-
 
 const IncubatorHub = () => {
   return (
@@ -75,7 +73,18 @@ const IncubatorHub = () => {
           <p className="font-light">Watch a video of our space and enviroment in FUTA Campus</p>
         </div>
 
-        <div className="w-full aspect-video bg-black rounded-xl"></div>
+        <div className="w-full aspect-video rounded-xl overflow-hidden">
+          <iframe
+            className="aspect-video w-full h-full"
+
+            src="https://www.youtube.com/embed/y9W1xSOg2eA?si=BXwOM2t0-cuwZE4v"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+          ></iframe>
+        </div>
       </section>
     </div>
   )
