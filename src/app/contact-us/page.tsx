@@ -1,8 +1,8 @@
 import { ContactForm } from "@/components/form"
 import { cn } from "@/lib/utils"
 import { Dot } from "lucide-react"
-import { nomixa } from "../fonts"
 import Link from "next/link"
+import { nomixa } from "../fonts"
 const ContactUsPage = () => {
   return (
     <div className="container pb-16 pt-10">
@@ -21,21 +21,21 @@ const ContactUsPage = () => {
             </b>{" "}
           </h2>
 
-          <div className="flex gap-4 items-center">
-            <h4>
-              <Link href="mailto:info@X3Lab.org">info@X3Lab.org</Link>
-            </h4>
-            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="20" cy="20" r="20" fill="#1CFEBA" />
-              <path
-                d="M15.358 26.5156L24.6419 13.4845M24.6419 13.4845L26.0471 21.8526M24.6419 13.4845L16.2738 14.8897"
-                stroke="black"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
-          </div>
+          <Link href="mailto:info@X3Lab.org">
+            <div className="flex gap-4 items-center">
+              <h4>info@X3Lab.org</h4>
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="20" cy="20" r="20" fill="#1CFEBA" />
+                <path
+                  d="M15.358 26.5156L24.6419 13.4845M24.6419 13.4845L26.0471 21.8526M24.6419 13.4845L16.2738 14.8897"
+                  stroke="black"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </div>
+          </Link>
         </div>
 
         <div className="lg:w-5/12 w-full">

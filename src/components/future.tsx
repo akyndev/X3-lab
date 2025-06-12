@@ -3,6 +3,7 @@ import { cn } from "@/lib/utils"
 import { CheckCircle } from "lucide-react"
 import Image from "next/image"
 import { Button } from "./ui/button"
+import Link from "next/link"
 
 const Future = () => {
   return (
@@ -21,7 +22,10 @@ const Future = () => {
             <p>Connect with like-mind creatives, access resources, and collaborate on impactful projects</p>
 
             <div className="flex items-center justify-center">
-              <Button className="py-6 bg-black">Join Community</Button>
+              <Button className="py-6 bg-black">
+                <Link href={"https://chat.whatsapp.com/Bp3fzOESpWJLltxEM2iMpH"}>
+                Join Community</Link>
+              </Button>
             </div>
           </div>
           <div className="flex justify-between pr-4">
