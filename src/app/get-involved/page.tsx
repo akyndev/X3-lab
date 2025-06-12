@@ -55,10 +55,10 @@ const members = [
 
 const GetInvolvedPage = () => {
   return (
-    <main className="space-y-24">
+    <main className="space-y-24  pt-10">
       <section>
         <div className="container ">
-          <div className="flex py-24 justify-between gap-24 flex-col lg:flex-row">
+          <div className="flex pb-24 justify-between gap-24 flex-col lg:flex-row">
             <div className=" relative lg:w-4/12 space-y-6">
               <h2 className={cn(nomixa.className, "text-4xl font-semibold")}>Get Involved</h2>
               <p>Be part of the innovation movement</p>

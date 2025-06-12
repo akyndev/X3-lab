@@ -5,7 +5,7 @@ import MobileScrollPin from "@/components/mobile-scroll-pin";
 
 const InnovatoionBootCampPage = () => {
   return (
-    <div className="container space-y-10 py-16">
+    <div className="container space-y-10 pb-16 pt-10">
       <div className="space-y-8">
         <h2 className={cn(nomixa.className, "text-5xl font-semibold")}>
           Research & <br />

@@ -44,7 +44,9 @@ const Footer = () => {
               {" "}
               <p className="bg-green-400 h-1 w-10" /> EMAIL
             </div>
-            <p className={cn("text-xl", nomixa.className)}>X3Lab@gmail.com</p>
+            <p className={cn("text-xl", nomixa.className)}>
+              <Link href="mailto:info@X3Lab.org">info@X3Lab.org</Link>
+            </p>
           </div>
 
           <div className="w-max space-y-4 lg:space-y-6 ">
@@ -113,10 +115,8 @@ const Footer = () => {
             </div>
           </div>
         </div>
- 
-        <div className="lg:hidden text-xl pt-16 pb-3">
-          Scan for community
-        </div>
+
+        <div className="lg:hidden text-xl pt-16 pb-3">Scan for community</div>
 
         <div className="flex items-center justify-between flex-col lg:flex-row ">
           <div className="flex items-center w-full">

@@ -7,7 +7,7 @@ import { nomixa } from "../fonts"
 
 const IncubatorHub = () => {
   return (
-    <div className="container space-y-10 py-16">
+    <div className="container space-y-10 pb-16  pt-10">
       <div className="space-y-8">
         <h2 className={cn(nomixa.className, "text-5xl font-semibold")}>Incubation Hub</h2>
 
@@ -67,8 +67,8 @@ const IncubatorHub = () => {
         </div>
       </div>
 
-      <section>
-        <div className="text-center">
+      <section className="pt-14 space-y-8">
+        <div className="text-center space-y-4">
           <h3 className={cn("text-4xl", nomixa.className)}>FUTA Incubator Hub</h3>
           <p className="font-light">Watch a video of our space and enviroment in FUTA Campus</p>
         </div>
@@ -76,7 +76,6 @@ const IncubatorHub = () => {
         <div className="w-full aspect-video rounded-xl overflow-hidden">
           <iframe
             className="aspect-video w-full h-full"
-
             src="https://www.youtube.com/embed/y9W1xSOg2eA?si=BXwOM2t0-cuwZE4v"
             title="YouTube video player"
             frameBorder="0"

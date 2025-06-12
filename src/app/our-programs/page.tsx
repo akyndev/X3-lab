@@ -42,22 +42,10 @@ const getInvolved: GetInvolvedType[] = [
 const GetInvolved = () => {
   return (
     <main>
-      <div className="space-y-12 container py-16">
-        <h2
-          className={cn(
-            "lg:text-5xl text-4xl text-nowrap font-semibold pb-6 ",
-            nomixa.className
-          )}
-        >
-          {" "}
-          Our Programs
-        </h2>
+      <div className="space-y-12 container pb-16  pt-10">
+        <h2 className={cn("lg:text-5xl text-4xl text-nowrap font-semibold pb-2 ", nomixa.className)}> Our Programs</h2>
 
-        <Accordion
-          type="multiple"
-          className="w-full text-[#2B2A2A]"
-          defaultValue={["item-0", "item-1", "item-2"]}
-        >
+        <Accordion type="multiple" className="w-full text-[#2B2A2A]" defaultValue={["item-0", "item-1", "item-2"]}>
           {getInvolved.map((_, index) => (
             <AccordionItem key={index} value={`item-${index}`}>
               <AccordionTrigger>{_.label}</AccordionTrigger>
@@ -74,7 +62,7 @@ const GetInvolved = () => {
         </Accordion>
       </div>
     </main>
-  );
+  )
 };
 
 export default GetInvolved;

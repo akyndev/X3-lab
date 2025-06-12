@@ -1,42 +1,49 @@
-"use client";
-import React, { useRef } from "react";
-import { nomixa } from "@/app/fonts";
-import { cn } from "@/lib/utils";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useGSAP } from "@gsap/react";
-import Image from "next/image";
+"use client"
+import { nomixa } from "@/app/fonts"
+import { cn } from "@/lib/utils"
+import { useGSAP } from "@gsap/react"
+import gsap from "gsap"
+import { ScrollTrigger } from "gsap/ScrollTrigger"
+import Image from "next/image"
+import { useRef } from "react"
 
-gsap.registerPlugin(useGSAP, ScrollTrigger);
+gsap.registerPlugin(useGSAP, ScrollTrigger)
 
 const ScrollPin = () => {
-  const containerRef = useRef<HTMLDivElement | null>(null);
+  const containerRef = useRef<HTMLDivElement | null>(null)
 
   useGSAP(() => {
-    gsap.to(".box1", {
+    ScrollTrigger.create({
+      trigger: containerRef.current,
+      start: "top 20px",
+      endTrigger: ".join",
+      end: "top 20px",
+      pin: "#pics"
+    })
+
+    gsap.to("#can-join", {
       translateY: "0%",
+
       scrollTrigger: {
         trigger: ".our-purpose",
-        start: "start 32px",
-        end: "bottom start",
-        scrub: true,
-        // pin: true,
-      },
-    });
-    gsap.to(".box2", {
+        start: "top 20px",
+        scrub: true
+      }
+    })
+    gsap.to("#for", {
       translateY: "0%",
+
       scrollTrigger: {
         trigger: ".who-can",
-        start: "start 32px",
-        end: "bottom start",
+        start: "top 20px",
         scrub: true,
-      },
-    });
-  });
+      }
+    })
+  })
 
   return (
-    <section ref={containerRef} className="flex justify-between relative">
-      <div className="space-y-56  pb-96 w-6/12">
+    <section ref={containerRef} className="flex justify-between gap-16">
+      <div className="space-y-56  pb-96 w-5/12">
         <div className="space-y-8 our-purpose">
           <h2 className={cn(nomixa.className, "font-medium text-3xl")}>Our Purpose</h2>
           <p className="text-lg font-light">
@@ -64,29 +71,45 @@ const ScrollPin = () => {
         </div>
       </div>
 
-      <div className="sticky top-20">
-        <div className="sticky top-8 h-[526px] w-[535px] overflow-hidden">
-          <div className="bg-gray-200 box rounded-lg overflow-hidden absolute inset-0">
-            <div className="w-full">
-              <Image src={"/the-boys.png"} alt="the boys" width={400} height={400} className="w-full" />
+      <div id="pics" className="w-[54%]">
+        <div className="w-full h-[65vh] rounded-lg relative overflow-hidden">
+          <div className="bg-gray-200 box h-full flex flex-col">
+            <div className="w-full flex-1">
+              <Image
+                src={"/the-boys.png"}
+                alt="the boys"
+                width={400}
+                height={400}
+                className="w-full h-full object-cover"
+              />
             </div>
             <div className="p-6">Our Purpose</div>
           </div>
           <div
+            id="can-join"
             style={{ translate: "0 100%" }}
-            className="bg-gray-200 box1 rounded-lg overflow-hidden absolute inset-0 z-10"
+            className="bg-gray-200 box absolute inset-0 flex flex-col z-10"
           >
-            <div className="w-full">
-              <Image src={"/who-can-join.png"} alt="the boys" width={400} height={400} className="w-full" />
+            <div className="w-full flex-1">
+              <Image
+                src={"/who-can-join.png"}
+                alt="the boys"
+                width={400}
+                height={400}
+                className="w-full h-full object-cover"
+              />
             </div>
             <div className="p-6">Who can join</div>
           </div>
-          <div
-            style={{ translate: "0 200%" }}
-            className="bg-gray-200 box2 rounded-lg overflow-hidden absolute inset-0 z-20"
-          >
-            <div className="w-full">
-              <Image src={"/what's-in-it-for-you.png"} alt="the boys" width={400} height={400} className="w-full" />
+          <div  id="for" style={{ translate: "0 100%" }} className="bg-gray-200 box absolute inset-0 flex flex-col z-20">
+            <div className="w-full flex-1">
+              <Image
+                src={"/what's-in-it-for-you.png"}
+                alt="the boys"
+                width={400}
+                height={400}
+                className="w-full h-full object-cover"
+              />
             </div>
             <div className="p-6">What&apos;s in it for you?</div>
           </div>
@@ -94,6 +117,6 @@ const ScrollPin = () => {
       </div>
     </section>
   )
-};
+}
 
-export default ScrollPin;
+export default ScrollPin

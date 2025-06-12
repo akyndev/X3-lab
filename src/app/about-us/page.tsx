@@ -1,25 +1,17 @@
-import Future from "@/components/future";
-import Mentors from "@/components/mentors";
-import { cn } from "@/lib/utils";
-import Image from "next/image";
-import { nomixa } from "../fonts";
-import HeroImage from "/public/about-hero.png";
-import { Button } from "@/components/ui/button";
-import Link from "next/link";
-import Members from "@/components/members";
+import Future from "@/components/future"
+import Members from "@/components/members"
+import Mentors from "@/components/mentors"
+import { Button } from "@/components/ui/button"
+import { cn } from "@/lib/utils"
+import Link from "next/link"
+import { nomixa } from "../fonts"
 
 const AboutUsPage = () => {
   return (
-    <div className="container space-y-32 py-16">
+    <div className="container space-y-32 pb-16  pt-14">
       <div className="flex items-center justify-between flex-col lg:flex-row gap-8 lg:gap-0 relative">
         <div className="absolute -left-4 -top-6 -z-10">
-          <svg
-            width="120"
-            height="120"
-            viewBox="0 0 120 120"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
+          <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clipPath="url(#clip0_142_12012)">
               <mask
                 id="mask0_142_12012"
@@ -59,32 +51,19 @@ const AboutUsPage = () => {
             </defs>
           </svg>
         </div>
-        <div>
-          <h2
-            className={cn(
-              "lg:text-5xl text-4xl font-semibold ",
-              nomixa.className
-            )}
-            style={{lineHeight: 1.4}}
-          >
+        <div className="">
+          <h2 className={cn("lg:text-5xl text-3xl font-semibold ", nomixa.className)} style={{ lineHeight: 1.4 }}>
             WE BELIEVE THE
-            <span className="text-blue-500 underline">{' '} FUTURE {" "} </span>
+            <span className="text-blue-500 underline"> FUTURE </span>
             <br className="hidden lg:block" />
-            BELONGS TO THOSE WHO {' '}
-            <br className="hidden lg:block" />
+            BELONGS TO THOSE WHO <br className="hidden lg:block" />
             DARES TO
             <span className="text-red-400 underline ml-2.5">CREATE!</span>
           </h2>
         </div>
-        <div className="relative">
+        <div className="relative w-full lg:w-max">
           <div className="absolute -bottom-20 -z-10 -left-20">
-            <svg
-              width="120"
-              height="120"
-              viewBox="0 0 120 120"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
+            <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clipPath="url(#clip0_145_12019)">
                 <mask
                   id="mask0_145_12019"
@@ -124,50 +103,49 @@ const AboutUsPage = () => {
               </defs>
             </svg>
           </div>
-          <Image
-            src={HeroImage}
-            alt="hero image"
-            className="rounded-lg w-[32rem] h-auto"
-          />
+          <div className="aspect-video rounded-xl overflow-hidden w-full lg:w-96">
+            <iframe
+              className="aspect-video w-full h-full"
+              src="https://www.youtube.com/embed/y9W1xSOg2eA?si=BXwOM2t0-cuwZE4v"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            ></iframe>
+          </div>
         </div>
       </div>
 
-      <div className="bg-gray-100 space-y-10 p-6  lg:p-14 rounded-lg mx-auto">
-        <p className="font-light lg:text-3xl text-xl break-words" lang="en" style={{ hyphens: "auto"}}>
-          At X3lab, we believe the future belongs to those who dare to create.
-          Innovation is born from bold ideas and the courage to pursue them.
-          It’s not about waiting for opportunities to come to you, it’s about
-          actively creating them. and that’s why we’ve built X3lab, an ecosystem
-          that inspires you to transform your boldest ideas into real-world
-          impact. Whether you&apos;re working on a startup, a personal project, or
-          navigating new solutions to complex problems, we provide the
-          resources, mentorship, and collaborative environment to bring your
-          vision to life.
-        </p>
-        <p className="font-light lg:text-3xl text-xl" style={{ hyphens: "auto"}} lang="en">
-          Our mission is to support bold ideas that shape the future, by
-          providing access to tools, guidance, and network to turn your
-          ambitions into reality, no matter your field or experience level.
-          Together, we can create a future built on innovation, collaboration,
-          and bold thinking.
-        </p>
-      </div>
+      <section>
+        <div className="bg-gray-100 space-y-10 p-6  lg:p-14 rounded-lg mx-auto">
+          <p className="font-light lg:text-3xl text-xl break-words" lang="en" style={{ hyphens: "auto" }}>
+            At X3lab, we believe the future belongs to those who dare to create. Innovation is born from bold ideas and
+            the courage to pursue them. It’s not about waiting for opportunities to come to you, it’s about actively
+            creating them. and that’s why we’ve built X3lab, an ecosystem that inspires you to transform your boldest
+            ideas into real-world impact. Whether you&apos;re working on a startup, a personal project, or navigating
+            new solutions to complex problems, we provide the resources, mentorship, and collaborative environment to
+            bring your vision to life.
+          </p>
+          <p className="font-light lg:text-3xl text-xl" style={{ hyphens: "auto" }} lang="en">
+            Our mission is to support bold ideas that shape the future, by providing access to tools, guidance, and
+            network to turn your ambitions into reality, no matter your field or experience level. Together, we can
+            create a future built on innovation, collaboration, and bold thinking.
+          </p>
+        </div>
+      </section>
 
       <Future />
 
-      <Mentors
-        title="Our Mentors."
-        description="Experts dedicated to shaping the next generation of innovators!"
-      />
-      <Members
-        title="X3LAB FUTA Team"
-        description="Group of young, vibrant innovators ready to shape the future"
-      />
+      <Mentors title="Our Mentors." description="Experts dedicated to shaping the next generation of innovators!" />
+      <Members title="X3LAB FUTA Team" description="Group of young, vibrant innovators ready to shape the future" />
       <Link href={"/team-members"} className="bg-red-100">
-        <Button variant={"outline"} className="px-8 py-6 mt-8 mx-auto  border-blue-800 text-blue-800" >See All Members</Button>
+        <Button variant={"outline"} className="px-8 py-6 mt-8 mx-auto  border-blue-800 text-blue-800">
+          See All Members
+        </Button>
       </Link>
     </div>
-  );
-};
+  )
+}
 
-export default AboutUsPage;
+export default AboutUsPage

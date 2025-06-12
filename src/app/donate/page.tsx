@@ -8,7 +8,7 @@ const DonatePage = () => {
     <main className="space-y-24">
       <section className="">
         <div className="flex text-white items-center lg:w-[1440px] flex-col lg:flex-row mx-auto bg-blue-600">
-          <div className=" p-8 space-y-16 lg:w-6/12">
+          <div className="p-8 space-y-16 lg:w-6/12">
             <h2 className={cn(nomixa.className, "lg:text-6xl text-4xl font-semibold")}>Donate to our program</h2>
 
             <div className="space-y-6">

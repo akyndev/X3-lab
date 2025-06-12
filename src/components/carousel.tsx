@@ -17,7 +17,7 @@ const Carousel: React.FC<PropType> = (props) => {
 
   const { selectedIndex, scrollSnaps, onDotButtonClick } = useDotButton(emblaApi)
   return (
-    <div>
+    <div className="">
       <div className="embla overflow-hidden">
         <div className="embla__viewport" ref={emblaRef}>
           <div className="embla__container flex">

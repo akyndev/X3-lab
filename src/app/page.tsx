@@ -72,7 +72,7 @@ const firstRow = [
 
 export default function Home() {
   return (
-    <main className="space-y-36">
+    <main className="space-y-36 pt-10">
       <section className="container">
         <div className="flex items-center flex-col lg:flex-row justify-between gap-12 lg:gap-0">
           <div className="lg:w-6/12 w-full text-black/80">
@@ -639,7 +639,7 @@ export default function Home() {
       <section>
         <div className="container">
           <div className="flex bg-gray-100 lg:gap-14 gap-4 flex-col lg:flex-row">
-            <div className="lg:p-8 p-2 space-y-8 lg:space-y-14 lg:w-6/12">
+            <div className="lg:p-8 p-4 space-y-8 lg:space-y-14 lg:w-6/12">
               <h2 className={cn(nomixa.className, "lg:text-5xl text-[28px] font-medium")}>
                 Hear Success <br className="hidden lg:block" /> Stories
               </h2>

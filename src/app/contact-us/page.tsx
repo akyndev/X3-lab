@@ -5,7 +5,7 @@ import { nomixa } from "../fonts"
 import Link from "next/link"
 const ContactUsPage = () => {
   return (
-    <div className="container py-16">
+    <div className="container pb-16 pt-10">
       <div className="flex flex-col lg:flex-row space-y-10">
         <div className="space-y-8 lg:space-y-16 lg:w-6/12 w-full">
           <div className="flex items-center">
