@@ -6,15 +6,15 @@ import { nomixa } from "../fonts"
 const DonatePage = () => {
   return (
     <main className="space-y-24">
-      <section className="bg-[#1B5299] relative">
-        <div
-          className="relative bg-repeat bg-left-top bg-[length:416px_450px]"
-          style={{ backgroundImage: "url('/swatch.png')" }}
-        >
-          <div className="lg:container">
-            <div className="flex text-white items-center lg:max-w-[1440px] lg:w-full flex-col lg:flex-row mx-auto ">
-              <div className="space-y-16 lg:w-6/12 p-8">
-                <h2 className={cn(nomixa.className, "lg:text-6xl text-4xl font-semibold")}>
+      <section className=" relative">
+        <div className=" bg-[#1B5299]">
+          <div
+            className="relative bg-repeat bg-left-top bg-[length:416px_450px]"
+            style={{ backgroundImage: "url('/swatch.png')" }}
+          >
+            <div className="flex text-white items-center justify-between lg:max-w-[1440px] lg:w-full flex-col lg:flex-row mx-auto ">
+              <div className="lg:space-y-16 space-y-10 p-8 lg:w-max ml-auto ">
+                <h2 className={cn(nomixa.className, "lg:text-6xl text-4xl font-semibold lg:-translate-x-24")}>
                   Donate to <br /> our program
                 </h2>
 
@@ -23,7 +23,7 @@ const DonatePage = () => {
 
                   <p className="text-lg font-light">
                     Connect with like-minded creatives, access
-                    <br className="hidden lg:block" />
+                    <br className="hidden lg:block" /> {" "}
                     resources, and collaborate on impactful projects
                   </p>
                 </div>
@@ -43,16 +43,16 @@ const DonatePage = () => {
             <h3 className={cn("text-3xl lg:text-4xl", nomixa.className)}>How to Donate to X3Lab.</h3>
           </div>
 
-          <article className="p-6  rounded-lg bg-[#D4Fdf1] space-y-4">
+          <article className="lg:p-8 lg:py-12 p-6  rounded-lg bg-[#D4Fdf1] space-y-4">
             <h2 className={cn(nomixa.className, "lg:text-3xl text-2xl font-medium")}>Donate in Kind</h2>
             <p className=" text-lg lg:text-xl font-light">
-              We accept donations in kind. if you&apos;d like to donate laptops, books, or other tech gear for our
-              community memebes. Please reach out to us on info@nexascale.org so that we can plan delivery logistics. We
-              appreciate the gesture in advance
+              We accept donations in kind. If you'd like to donate laptops, books, or other tech gear for our community
+              members, please reach out to us on info@x3lab.org so that we can plan delivery logistics. We appreciate
+              the gesture in advance
             </p>
           </article>
 
-          <article className="p-6  rounded-lg bg-[#ffd3ed] space-y-4">
+          <article className="lg:p-8 lg:py-12 p-6  rounded-lg bg-[#ffd3ed] space-y-4">
             <h2 className={cn(nomixa.className, "lg:text-3xl text-2xl font-medium")}>Donate in Cash</h2>
             <p className=" text-lg lg:text-xl font-light">
               We recognize that every cash donation is significant, and we&apos;re committed to ensuring that your
@@ -60,7 +60,7 @@ const DonatePage = () => {
             </p>
           </article>
 
-          <article className="p-6  rounded-lg bg-[#d9e9ff] space-y-4">
+          <article className="lg:p-8 lg:py-12 p-6  rounded-lg bg-[#d9e9ff] space-y-4">
             <h2 className={cn(nomixa.className, "lg:text-3xl text-2xl font-medium")}>Support a Hub</h2>
             <p className=" text-lg lg:text-xl font-light">
               Your experience can inspire and guide the next generation of innovators. Share your knowledge, provide
