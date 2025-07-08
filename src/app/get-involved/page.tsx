@@ -58,13 +58,20 @@ const GetInvolvedPage = () => {
     <main className="space-y-24  pt-10">
       <section>
         <div className="container ">
-          <div className="flex pb-24 justify-between gap-24 flex-col lg:flex-row">
-            <div className=" relative lg:w-4/12 space-y-6">
+          <div className="flex pb-10 lg:pb-24 justify-between gap-8 lg:gap-24 flex-col lg:flex-row">
+            <div className=" relative lg:w-4/12 space-y-2.5 lg:space-y-6">
               <h2 className={cn(nomixa.className, "text-4xl font-semibold")}>Get Involved</h2>
               <p>Be part of the innovation movement</p>
 
               <div className="absolute -right-12 -bottom-28 -z-10">
-                <svg className="scale-50" width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg
+                  className="scale-50"
+                  width="200"
+                  height="200"
+                  viewBox="0 0 200 200"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
                   <g clipPath="url(#clip0_107_16255)">
                     <mask
                       id="mask0_107_16255"
@@ -211,12 +218,12 @@ const GetInvolvedPage = () => {
         </div>
       </section>
 
-      <section className=" relative text-white">
+      <section className=" relative text-white py-20 ">
         <div className="absolute inset-0 bg-[#1CFEBA]  -z-10" />
         <div className="w-6/12 bg-[#10315C] -z-10 absolute inset-y-0 left-0 rounded-tr-[4rem]" />
         <div className="w-6/12 bg-[#10315C] -z-10 absolute inset-y-0 right-0 rounded-tl-[4rem]" />
 
-        <div className="container flex items-center justify-center flex-col py-20 space-y-6">
+        <div className="container flex items-center justify-center flex-col space-y-6 bg-[#10315C]">
           <h3 className={cn(nomixa.className, "font-medium text-4xl")}>Support Our Vision</h3>
           <p className="text-center font-light ">
             {" "}
