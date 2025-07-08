@@ -29,7 +29,7 @@ const IncubatorHub = () => {
       </div>
 
       <div className="flex flex-col lg:flex-row space-y-6 items-center justify-between relative">
-        <div className="lg:space-y-14 lg:w-6/12 space-y-10 bg-green-200">
+        <div className="lg:space-y-14 lg:w-6/12 space-y-10">
           <Development
             label="What we offer?"
             description="Talents are exposed to projects that bridge the gap between personal experiences, like school projects, and industry-level experience through collaboration with skilled peers and access to essential startup resources"
@@ -40,7 +40,7 @@ const IncubatorHub = () => {
           />
         </div>
 
-        <div className="relative flex lg:h-[610px] h-[500px] items-center gap-10 overflow-hidden w-full    lg:justify-end">
+        <div className="relative flex lg:h-[610px] h-[500px] items-center gap-10 overflow-hidden w-full  lg:w-max  lg:justify-end">
           <div className="space-y-8">
             <div className="bg-[#1CFEBA] w-48 lg:w-56 h-72 rounded-2xl"></div>
             <div className="bg-[#1B5299] w-48 lg:w-56 h-[280px] lg:h-[320px] rounded-2xl relative">
