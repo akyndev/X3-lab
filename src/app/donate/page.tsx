@@ -46,7 +46,7 @@ const DonatePage = () => {
           <article className="lg:p-8 lg:py-12 p-6  rounded-lg bg-[#D4Fdf1] space-y-4">
             <h2 className={cn(nomixa.className, "lg:text-3xl text-2xl font-medium")}>Donate in Kind</h2>
             <p className=" text-lg lg:text-xl font-light">
-              We accept donations in kind. If you'd like to donate laptops, books, or other tech gear for our community
+              We accept donations in kind. If you&apos;d like to donate laptops, books, or other tech gear for our community
               members, please reach out to us on info@x3lab.org so that we can plan delivery logistics. We appreciate
               the gesture in advance
             </p>
