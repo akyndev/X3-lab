@@ -29,7 +29,7 @@ const IncubatorHub = () => {
       </div>
 
       <div className="flex flex-col lg:flex-row space-y-6 items-center justify-between relative">
-        <div className="lg:space-y-14 lg:w-6/12 space-y-10">
+        <div className="lg:space-y-14 lg:w-6/12 space-y-10 bg-green-200">
           <Development
             label="What we offer?"
             description="Talents are exposed to projects that bridge the gap between personal experiences, like school projects, and industry-level experience through collaboration with skilled peers and access to essential startup resources"
@@ -40,10 +40,10 @@ const IncubatorHub = () => {
           />
         </div>
 
-        <div className="relative flex lg:h-[610px] h-[500px] flex-row items-center gap-8 justify-center overflow-hidden px-8">
-          <div className="space-y-8 translate-x-14 lg:translate-x-24">
-            <div className="bg-[#1CFEBA] w-44 lg:w-56 h-72 rounded-2xl"></div>
-            <div className="bg-[#1B5299] w-44 lg:w-56 h-[280px] lg:h-[320px] rounded-2xl relative">
+        <div className="relative flex lg:h-[610px] h-[500px] items-center gap-10 overflow-hidden w-full    lg:justify-end">
+          <div className="space-y-8">
+            <div className="bg-[#1CFEBA] w-48 lg:w-56 h-72 rounded-2xl"></div>
+            <div className="bg-[#1B5299] w-48 lg:w-56 h-[280px] lg:h-[320px] rounded-2xl relative">
               <div className="absolute -bottom-4 flex items-center justify-center">
                 <Image
                   src={"/hub-image.png"}
@@ -53,11 +53,11 @@ const IncubatorHub = () => {
                 />
               </div>
             </div>
-            <div className="bg-[#1CFEBA] w-44 lg:w-56 h-72 rounded-2xl"></div>
+            <div className="bg-[#1CFEBA] w-48 lg:w-56 h-72 rounded-2xl"></div>
           </div>
-          <div className="space-y-8 h-full flex-1 flex flex-col translate-x-24 py-6">
-            <div className="bg-[#1B5299] w-56 flex-1 rounded-2xl"></div>
-            <div className="bg-[#1CFEBA] w-56 flex-1 rounded-2xl"></div>
+          <div className="space-y-8 h-full flex-1 lg:flex-none  flex flex-col py-6 lg:w-max   ">
+            <div className="bg-[#1B5299] w-full lg:w-52 max-w-52 flex-1 rounded-l-2xl"></div>
+            <div className="bg-[#1CFEBA] w-full lg:w-52 max-w-52 flex-1 rounded-l-2xl"></div>
           </div>
         </div>
 
