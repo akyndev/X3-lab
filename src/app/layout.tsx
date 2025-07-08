@@ -17,12 +17,9 @@ export default function RootLayout({
   return (
     <html lang="en" className="text-[15px] 2xl:text-[16px]">
       <body className={`${mont.className}`}>
-        <div className="space-y-8">
-
         <Header />
         {children}
         <Footer />
-        </div>
       </body>
     </html>
   )

@@ -163,11 +163,11 @@ const TeamMembers = () => {
   return (
     <main>
       <section>
-        <div className="container space-y-14">
+        <div className="container space-y-14 my-14">
           <div className="text-center space-y-6">
             <h2
               className={cn(
-                "text-2xl lg:text-5xl lg:leading-[72px]",
+                "text-2xl lg:text-5xl lg:leading-[65px]",
                 nomixa.className
               )}
             >
@@ -190,12 +190,12 @@ const TeamMembers = () => {
                 width={315}
                 height={387}
                 alt="akinlade Joseph"
-                className="rounded-md w-full h-[387px] object-cover"
+                className="w-full h-[387px] object-cover"
               />
 
               <div>
                 <Link className="underline text-blue-800" href={"#"}>
-                  Become a mentor
+                  Become a member
                 </Link>
               </div>
             </div>

@@ -111,3 +111,7 @@
 .link:hover.link::after {
   width: 100%;
 }
+
+.active::after {
+  width: 100%;
+}

@@ -12,9 +12,9 @@ type ProfileCardType = {
 const ProfileCard = ({ name, role, image }: ProfileCardType) => {
     return (
       <div className="space-y-4 ">
-        <div className="w-full h-[387px] overflow-hidden rounded-md">
+        <div className="w-full h-[387px] overflow-hidden">
 
-        <Image src={`/members/${image}`} width={315} height={387} alt="akinlade Joseph" className="transition-all duration-500 hover:scale-110 ease-in-out rounded-md grayscale w-full h-[387px] object-cover" />
+        <Image src={`/members/${image}`} width={315} height={387} alt="akinlade Joseph" className="transition-all duration-500 hover:scale-110 ease-in-out grayscale w-full h-[387px] object-cover" />
         </div>
   
         <div>

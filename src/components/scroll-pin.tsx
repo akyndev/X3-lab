@@ -1,118 +1,115 @@
-"use client";
-import React, { useRef } from "react";
-import { nomixa } from "@/app/fonts";
-import { cn } from "@/lib/utils";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useGSAP } from "@gsap/react";
-import Image from "next/image";
+"use client"
+import { nomixa } from "@/app/fonts"
+import { cn } from "@/lib/utils"
+import { useGSAP } from "@gsap/react"
+import gsap from "gsap"
+import { ScrollTrigger } from "gsap/ScrollTrigger"
+import Image from "next/image"
+import { useRef } from "react"
 
-gsap.registerPlugin(useGSAP, ScrollTrigger);
+gsap.registerPlugin(useGSAP, ScrollTrigger)
 
 const ScrollPin = () => {
-  const containerRef = useRef<HTMLDivElement | null>(null);
+  const containerRef = useRef<HTMLDivElement | null>(null)
 
   useGSAP(() => {
-    gsap.to(".box1", {
+    ScrollTrigger.create({
+      trigger: containerRef.current,
+      start: "top 20px",
+      endTrigger: ".join",
+      end: "top 20px",
+      pin: "#pics",
+      pinSpacing: false
+    })
+
+    gsap.to("#can-join", {
       translateY: "0%",
+
       scrollTrigger: {
         trigger: ".our-purpose",
-        start: "start 32px",
-        end: "bottom start",
+        start: "top 20px",
         scrub: true,
-        // pin: true,
-      },
-    });
-    gsap.to(".box2", {
+      }
+    })
+    gsap.to("#for", {
       translateY: "0%",
+
       scrollTrigger: {
         trigger: ".who-can",
-        start: "start 32px",
-        end: "bottom start",
+        start: "top 20px",
         scrub: true,
-      },
-    });
-  });
+      }
+    })
+  })
 
   return (
-    <section ref={containerRef} className="flex justify-between relative">
-      <div className="space-y-56  pb-96 w-6/12">
+    <section ref={containerRef} className="flex justify-between gap-16 overflow-hidden">
+      <div className="space-y-56  pb-96 w-5/12">
         <div className="space-y-8 our-purpose">
-          <h2 className={cn(nomixa.className, "font-medium text-3xl")}>
-            Our Purpose
-          </h2>
+          <h2 className={cn(nomixa.className, "font-medium text-3xl")}>Our Purpose</h2>
           <p className="text-lg font-light">
-            X3Lab is a dynamic community where tech enthusiasts, creatives, and
-            innovators come together to learn, collaborate, build projects, and
-            grow professionally. We host bi-weekly sessions and hands-on office
-            hours across various tech and creative tracks
+            X3Lab Innovation Bootcamps help participants find new ideas by exposing them to creative thinking
+            techniques, guiding them to identify real-world problems, and showing them how to quickly turn their ideas
+            into testable models without needing big budgets or resources.
           </p>
         </div>
         <div className="space-y-8 who-can">
-          <h2 className={cn(nomixa.className, "font-medium text-3xl")}>
-            Who can join?
-          </h2>
+          <h2 className={cn(nomixa.className, "font-medium text-3xl")}>Who can join?</h2>
           <p className="text-lg font-light">
-            Whether you&apos;re transitioning into tech, taking your first steps
-            as a creative technologist, or you&apos;re a seasoned professional
-            eager to give back or level up—this community is for you
+            Students who are eager to learn, aspiring entrepreneurs with early-stage ideas, tech and non-tech talents
+            looking to improve their problem-solving skills, or anyone curious about innovation and wanting to learn how
+            to create and test new ideas.
           </p>
         </div>
 
         <div className="space-y-8 join">
-          <h2 className={cn(nomixa.className, "font-medium text-3xl")}>
-            What&apos;s in it for You?
-          </h2>
+          <h2 className={cn(nomixa.className, "font-medium text-3xl")}>What&apos;s in it for You?</h2>
           <p className="text-lg font-light">
-            1. Learn from real people solving real problems <br /> 2. Join
-            project-based learning sessions <br />
-            3. Get help from mentors and peers <br /> 4. Build your portfolio
-            and confidence <br /> 5. Stay plugged into a supportive and
-            inspiring ecosystem
+            1. Learn how to turn ideas into real solutions <br /> 2. Work on real-world projects <br />
+            3. Collaborate with other talents and experts <br /> 4. Boost confidence to start or join innovative
+            projects <br /> 5. Get exposed to startup tools and resources
           </p>
         </div>
       </div>
 
-      <div className="sticky top-20">
-        <div className="sticky top-8 h-[526px] w-[535px] overflow-hidden">
-          <div className="bg-gray-200 box rounded-lg overflow-hidden absolute inset-0">
-            <div className="w-full">
+      <div id="pics" className="w-[54%] overflow-hidden">
+        <div className="w-full h-[65vh] rounded-lg relative overflow-hidden">
+          <div className="bg-gray-200 box h-full flex flex-col">
+            <div className="w-full flex-1 overflow-hidden">
               <Image
                 src={"/the-boys.png"}
                 alt="the boys"
                 width={400}
                 height={400}
-                className="w-full"
+                className="w-full h-full object-cover"
               />
             </div>
             <div className="p-6">Our Purpose</div>
           </div>
           <div
+            id="can-join"
             style={{ translate: "0 100%" }}
-            className="bg-gray-200 box1 rounded-lg overflow-hidden absolute inset-0 z-10"
+            className="bg-gray-200 box absolute inset-0 flex flex-col z-10"
           >
-            <div className="w-full">
+            <div className="w-full flex-1 overflow-hidden bg-green-400">
               <Image
                 src={"/who-can-join.png"}
                 alt="the boys"
-                width={400}
-                height={400}
-                className="w-full"
+                width={700}
+                height={700}
+                className="w-full h-full object-cover"
               />
             </div>
-            <div className="p-6">Who can join</div>
+            <div className="p-6 ">Who can join</div>
           </div>
-          <div
-            style={{ translate: "0 200%" }}
-            className="bg-gray-200 box2 rounded-lg overflow-hidden absolute inset-0 z-20"
-          >
-            <div className="w-full">
+          <div id="for" style={{ translate: "0 100%" }} className="bg-gray-200 box absolute inset-0 flex flex-col z-20">
+            <div className="w-full flex-1 overflow-hidden bg-blue-400">
               <Image
                 src={"/what's-in-it-for-you.png"}
                 alt="the boys"
                 width={400}
                 height={400}
-                className="w-full"
+                className="w-full h-full object-cover"
               />
             </div>
             <div className="p-6">What&apos;s in it for you?</div>
@@ -120,7 +117,7 @@ const ScrollPin = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default ScrollPin;
+export default ScrollPin

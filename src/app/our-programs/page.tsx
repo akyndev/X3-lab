@@ -19,45 +19,33 @@ const getInvolved: GetInvolvedType[] = [
   {
     label: "Innovative Bootcamp",
     description:
-      "A fast-paced, immersive program that equips participants with the skills to build and launch tech solutions.",
+      "Where creative ideas are being turned into real solutions by teaching problem-solving, teamwork, and how to test ideas quickly.",
     link: "/innovation-bootcamp",
-    linkLabel: "Click to learn more",
+    linkLabel: "Click to learn more"
   },
   {
     label: "Startup Incubation",
     description:
-      "A structured pathway for early-stage entrepreneurs, including mentorship, funding, and business development support.",
+      "Supporting early-stage startups by providing mentorship, workspace, and access to startup resources to help them grow their ideas into businesses.",
     link: "/incubator-hub",
-    linkLabel: "Click to learn more",
+    linkLabel: "Click to learn more"
   },
   {
     label: "Research & Development Fellowship",
     description:
-      "A research-focused initiative that provides funding and resources to develop groundbreaking solutions.",
-    link: "/research-and-development",
-    linkLabel: "Click to submit",
-  },
-];
+      "Providing talents a chance to work on research projects, build new technologies, and solve complex problems with guidance from experts.",
+    link: "mailto:info@x3lab.org",
+    linkLabel: "Click to submit"
+  }
+]
 
 const GetInvolved = () => {
   return (
     <main>
-      <div className="space-y-12 container py-16">
-        <h2
-          className={cn(
-            "lg:text-5xl text-4xl text-nowrap font-semibold pb-6 ",
-            nomixa.className
-          )}
-        >
-          {" "}
-          Our Programs
-        </h2>
+      <div className="space-y-12 container pb-16  pt-10">
+        <h2 className={cn("lg:text-5xl text-4xl text-nowrap font-semibold pb-2 ", nomixa.className)}> Our Programs</h2>
 
-        <Accordion
-          type="multiple"
-          className="w-full text-[#2B2A2A]"
-          defaultValue={["item-0", "item-1", "item-2"]}
-        >
+        <Accordion type="multiple" className="w-full text-[#2B2A2A]" defaultValue={["item-0", "item-1", "item-2"]}>
           {getInvolved.map((_, index) => (
             <AccordionItem key={index} value={`item-${index}`}>
               <AccordionTrigger>{_.label}</AccordionTrigger>
@@ -74,7 +62,7 @@ const GetInvolved = () => {
         </Accordion>
       </div>
     </main>
-  );
+  )
 };
 
 export default GetInvolved;

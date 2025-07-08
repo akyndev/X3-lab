@@ -3,6 +3,7 @@ import { cn } from "@/lib/utils"
 import { CheckCircle } from "lucide-react"
 import Image from "next/image"
 import { Button } from "./ui/button"
+import Link from "next/link"
 
 const Future = () => {
   return (
@@ -11,17 +12,21 @@ const Future = () => {
         <h3 className={cn("text-4xl", nomixa.className)}>The future starts here.</h3>
         <p className="font-light">Here&apos;s how you can be part</p>
       </div>
-      <div className="grid grid-cols-1  lg:grid-cols-3 gap-4 ">
-        <div className="w-full h-[660px] shadow-md rounded-md border flex flex-col justify-between pt-10 relative overflow-hidden">
+      <div className="grid grid-cols-1  lg:grid-cols-3 gap-4 p-6">
+        <div className="w-full h-[520px] shadow-md rounded-md border flex flex-col justify-between pt-10 relative overflow-hidden">
           <div className="space-y-6 px-4">
             <span className={cn("font-medium text-[#1B5299]", nomixa.className)}>#BUILD</span>
             <h3 className={cn("text-4xl ", nomixa.className)}>
               Join X3Lab and <br /> start building!
             </h3>
-            <p>Connect with like-mind creatives, access resources, and collaborate on impactful projects</p>
+            <p className="text-lg font-light ">
+              Connect with like-mind creatives, access resources, and collaborate on impactful projects
+            </p>
 
             <div className="flex items-center justify-center">
-              <Button className="py-6 bg-black">Join Community</Button>
+              <Button className="py-6 bg-black mt-4">
+                <Link href={"https://chat.whatsapp.com/Bp3fzOESpWJLltxEM2iMpH"}>Join Community</Link>
+              </Button>
             </div>
           </div>
           <div className="flex justify-between pr-4">
@@ -40,10 +45,10 @@ const Future = () => {
           </div>
         </div>
 
-        <div className="w-full h-[660px] relative shadow-md bg-[#1B5299] text-white rounded-lg border p-6 pt-10 space-y-12 overflow-hidden">
+        <div className="w-full h-[520px] relative shadow-md bg-[#1B5299] text-white rounded-lg border p-6 pt-10 space-y-8 overflow-hidden">
           <span className={cn("font-medium text-[#1CFEBA]", nomixa.className)}>#RESEARCH</span>
-          <p className="">
-          Turn curiosity into real-world <br /> solutions, bring innovative <br /> ideas to life.
+          <p className="text-lg font-light ml-auto w-max">
+            Turn curiosity into real-world <br /> solutions, bring innovative <br /> ideas to life.
           </p>
 
           <div className="relative rounded-lg w-full flex items-center justify-center">
@@ -162,14 +167,14 @@ const Future = () => {
               </svg>
             </div>
 
-            <div className="bg-gray-100 rounded w-9/12 text-black p-10 space-y-3 z-10">
-              <div className="flex bg-white px-2 items-center rounded-lg py-1 gap-4 shadow-md">
+            <div className="bg-gray-100 rounded lg:w-11/12 w-11/12 text-black p-6 px-10 space-y-1.5 z-10">
+              <div className="flex bg-white p-2 items-center rounded-lg gap-4 text-sm font-bold shadow-md">
                 <CheckCircle color="green" size={20} /> Idea
               </div>
-              <div className="flex bg-white px-2 items-center rounded-lg py-1 gap-4 shadow-md">
+              <div className="flex bg-white p-2 items-center rounded-lg gap-4 text-sm font-bold shadow-md">
                 <CheckCircle color="green" size={20} /> Research
               </div>
-              <div className="flex bg-white px-2 items-center rounded-lg py-1 gap-4 shadow-md">
+              <div className="flex bg-white p-2 items-center rounded-lg gap-4 text-sm font-bold shadow-md">
                 <CheckCircle color="green" size={20} /> Development
               </div>
             </div>
@@ -221,28 +226,28 @@ const Future = () => {
             R&D Support
           </h3>
 
-          <div className="absolute bottom-0 left-0">
+          <div className="absolute -bottom-[32px] left-0">
             <Image src={"/future-gradient.png"} alt="future gradient" width={100} height={100} />
           </div>
         </div>
 
-        <div className="w-full h-[660px] pt-10 shadow-md rounded-md border relative flex flex-col justify-between overflow-hidden">
+        <div className="w-full h-[520px] pt-10 shadow-md rounded-md border relative flex flex-col justify-between overflow-hidden">
           <div className="px-6 space-y-8">
             <span className={cn("font-medium text-[#1B5299]", nomixa.className)}>#MENTORSHIP</span>
             <h3 className={cn("text-4xl ", nomixa.className)}>
               Mentorship <br />
               based Training
             </h3>
-            <p>Gain hands-on experience through our simulated work programs.</p>
+            <p className="text-lg font-light ">Gain hands-on experience through our simulated work programs.</p>
 
             <div className="flex items-center justify-center">
               <Button className="py-6 bg-black">Partner Here</Button>
             </div>
           </div>
           <div className="relative overflow-hidden">
-            <div className="w-[535px] -z-10 h-[335px] bg-[#1B5299] rounded-t-full absolute inset-0 top-16 left-1/2 -translate-x-1/2"></div>
+            <div className="w-[535px] -z-10 h-[335px] bg-[#1B5299] rounded-t-full absolute inset-0 top-7 left-1/2 -translate-x-1/2"></div>
             <div className="z-10 flex items-center justify-center">
-              <Image src={"/happy-couple.png"} alt="happy couple" width={372} height={466} className="" />
+              <Image src={"/happy-couple.png"} alt="happy couple" width={372} height={466} className="w-64" />
             </div>
           </div>
 

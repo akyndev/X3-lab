@@ -1,83 +1,23 @@
+import Carousel from "@/components/carousel"
 import { FAQsAccordion } from "@/components/faq-accordion"
 import { Marquee } from "@/components/magicui/marquee"
 import { H1, H2 } from "@/components/typography"
 import { Button } from "@/components/ui/button"
 import { Separator } from "@/components/ui/separator"
+import { logoArr, logoArr2 } from "@/lib/logos"
 import { cn } from "@/lib/utils"
 import Image from "next/image"
 import { nomixa } from "./fonts"
 
-const secondRow = [
-  {
-    src: "/mentors-logo/Globacom Limited Logo 1.png",
-    alt: "binance"
-  },
-  {
-    src: "/mentors-logo/MTN Logo 1.png",
-    alt: "MTN"
-  },
-  {
-    src: "/mentors-logo/grace health 1.png",
-    alt: "binance"
-  },
-  {
-    src: "/mentors-logo/stallion 1.png",
-    alt: "binance"
-  },
-  {
-    src: "/mentors-logo/nigeria-lng-logo-liquefied-natural-gas-business-png-favpng-z580ujg7N5uG0tiSBbWjA3FW6 1.png",
-    alt: "binance"
-  },
-  {
-    src: "/mentors-logo/n 1.png",
-    alt: "binance"
-  },
-  {
-    src: "/mentors-logo/pwc 1.png",
-    alt: "binance"
-  }
-]
-
-const firstRow = [
-  {
-    src: "/mentors-logo/Group.png",
-    alt: "binance"
-  },
-  {
-    src: "/mentors-logo/Flutterwave Logo 1.png",
-    alt: "binance"
-  },
-  {
-    src: "/mentors-logo/Interswitch Logo 1.png",
-    alt: "binance"
-  },
-  {
-    src: "/mentors-logo/Julius Berger Logo 1.png",
-    alt: "binance"
-  },
-  {
-    src: "/mentors-logo/cedae group 1.png",
-    alt: "binance"
-  },
-  {
-    src: "/mentors-logo/deloitte-1 1.png",
-    alt: "binance"
-  },
-  {
-    src: "/mentors-logo/Fincra Logo 1.png",
-    alt: "binance"
-  }
-]
-
 export default function Home() {
   return (
-    <main className="space-y-36">
+    <main className="space-y-16 pt-10">
       <section className="container">
         <div className="flex items-center flex-col lg:flex-row justify-between gap-12 lg:gap-0">
           <div className="lg:w-6/12 w-full text-black/80">
             <H1 className="text-left ">
               <div className="flex items-start flex-wrap">
-                Turn Your{" "}
+                Turn Your
                 <span className="inline-flex mx-3">
                   <svg
                     className="hidden lg:block"
@@ -160,33 +100,80 @@ export default function Home() {
                       </filter>
                     </defs>
                   </svg>
-                </span>{" "}
+                </span>
                 Into
               </div>
               <div className="flex items-start">
+                Impact. Build
+                <span className="ml-7 inline-flex">
+                  <svg
+                    className="hidden lg:block"
+                    width="136"
+                    height="57"
+                    viewBox="0 0 136 57"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0V57C14.6819 55.7786 26.2279 43.5032 26.2279 28.5C26.2279 13.4968 14.6819 1.22143 0 0Z"
+                      fill="#1B5299"
+                    />
+                    <path
+                      d="M36.2876 0V57C50.9695 55.7786 62.5155 43.5032 62.5155 28.5C62.5155 13.4968 50.9695 1.22143 36.2876 0Z"
+                      fill="#1B5299"
+                    />
+                    <path
+                      d="M72.5752 0V57C87.2571 55.7786 98.8031 43.5032 98.8031 28.5C98.8031 13.4968 87.2571 1.22143 72.5752 0Z"
+                      fill="#1B5299"
+                    />
+                    <path
+                      d="M108.842 0V57C123.524 55.7786 135.07 43.5032 135.07 28.5C135.07 13.4968 123.544 1.22143 108.842 0Z"
+                      fill="#1B5299"
+                    />
+                    <path
+                      d="M108.842 0V57C123.524 55.7786 135.07 43.5032 135.07 28.5C135.07 13.4968 123.544 1.22143 108.842 0Z"
+                      fill="#1B5299"
+                    />
+                    <path
+                      d="M108.842 0V57C123.524 55.7786 135.07 43.5032 135.07 28.5C135.07 13.4968 123.544 1.22143 108.842 0Z"
+                      fill="#1B5299"
+                    />
+                  </svg>
 
-              Impact. Build               <span className="ml-7 inline-flex">
-
-               <svg className="hidden lg:block" width="136" height="57" viewBox="0 0 136 57" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M0 0V57C14.6819 55.7786 26.2279 43.5032 26.2279 28.5C26.2279 13.4968 14.6819 1.22143 0 0Z" fill="#1B5299"/>
-<path d="M36.2876 0V57C50.9695 55.7786 62.5155 43.5032 62.5155 28.5C62.5155 13.4968 50.9695 1.22143 36.2876 0Z" fill="#1B5299"/>
-<path d="M72.5752 0V57C87.2571 55.7786 98.8031 43.5032 98.8031 28.5C98.8031 13.4968 87.2571 1.22143 72.5752 0Z" fill="#1B5299"/>
-<path d="M108.842 0V57C123.524 55.7786 135.07 43.5032 135.07 28.5C135.07 13.4968 123.544 1.22143 108.842 0Z" fill="#1B5299"/>
-<path d="M108.842 0V57C123.524 55.7786 135.07 43.5032 135.07 28.5C135.07 13.4968 123.544 1.22143 108.842 0Z" fill="#1B5299"/>
-<path d="M108.842 0V57C123.524 55.7786 135.07 43.5032 135.07 28.5C135.07 13.4968 123.544 1.22143 108.842 0Z" fill="#1B5299"/>
-</svg>
-
-
-<svg className="block lg:hidden" width="74" height="37" viewBox="0 0 74 37" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M0 0V37C8.0436 36.2071 14.3691 28.2389 14.3691 18.5C14.3691 8.76107 8.0436 0.792857 0 0Z" fill="#1B5299"/>
-<path d="M19.8818 0V37C27.9254 36.2071 34.251 28.2389 34.251 18.5C34.251 8.76107 27.9254 0.792857 19.8818 0Z" fill="#1B5299"/>
-<path d="M39.7627 0V37C47.8063 36.2071 54.1318 28.2389 54.1318 18.5C54.1318 8.76107 47.8063 0.792857 39.7627 0Z" fill="#1B5299"/>
-<path d="M59.6318 0V37C67.6754 36.2071 74.001 28.2389 74.001 18.5C74.001 8.76107 67.6866 0.792857 59.6318 0Z" fill="#1B5299"/>
-<path d="M59.6318 0V37C67.6754 36.2071 74.001 28.2389 74.001 18.5C74.001 8.76107 67.6866 0.792857 59.6318 0Z" fill="#1B5299"/>
-<path d="M59.6318 0V37C67.6754 36.2071 74.001 28.2389 74.001 18.5C74.001 8.76107 67.6866 0.792857 59.6318 0Z" fill="#1B5299"/>
-</svg>
-
-               </span>
+                  <svg
+                    className="block lg:hidden"
+                    width="74"
+                    height="37"
+                    viewBox="0 0 74 37"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0V37C8.0436 36.2071 14.3691 28.2389 14.3691 18.5C14.3691 8.76107 8.0436 0.792857 0 0Z"
+                      fill="#1B5299"
+                    />
+                    <path
+                      d="M19.8818 0V37C27.9254 36.2071 34.251 28.2389 34.251 18.5C34.251 8.76107 27.9254 0.792857 19.8818 0Z"
+                      fill="#1B5299"
+                    />
+                    <path
+                      d="M39.7627 0V37C47.8063 36.2071 54.1318 28.2389 54.1318 18.5C54.1318 8.76107 47.8063 0.792857 39.7627 0Z"
+                      fill="#1B5299"
+                    />
+                    <path
+                      d="M59.6318 0V37C67.6754 36.2071 74.001 28.2389 74.001 18.5C74.001 8.76107 67.6866 0.792857 59.6318 0Z"
+                      fill="#1B5299"
+                    />
+                    <path
+                      d="M59.6318 0V37C67.6754 36.2071 74.001 28.2389 74.001 18.5C74.001 8.76107 67.6866 0.792857 59.6318 0Z"
+                      fill="#1B5299"
+                    />
+                    <path
+                      d="M59.6318 0V37C67.6754 36.2071 74.001 28.2389 74.001 18.5C74.001 8.76107 67.6866 0.792857 59.6318 0Z"
+                      fill="#1B5299"
+                    />
+                  </svg>
+                </span>
               </div>
               <div className="flex items-start ">
                 <span className="mr-3 inline-flex">
@@ -277,12 +264,12 @@ export default function Home() {
               </div>
             </H1>
 
-            <p className="text-[18px] lg:text-[1.5rem] mt-11 font-light lg:mt-0">
+            <p className="text-[18px] lg:text-[1.5rem] mt-11 font-light lg:mt-8">
               We provide a collaborative ecosystem where <br className="hidden lg:block" /> tech creatives, innovators,
               and problem-solvers <br className="hidden lg:block" /> bring their boldest ideas to life
             </p>
 
-            <Button className="w-[203px] py-6 mt-6 lg:mt-[5.75rem] hidden lg:inline-flex">Get Involved</Button>
+            <Button className="w-[203px] py-6 lg:mt-14 hidden lg:inline-flex">Get Involved</Button>
           </div>
 
           <div
@@ -294,7 +281,7 @@ export default function Home() {
             <div className="absolute inset-0 z-10">
               <Image src={"/swatch.png"} alt="swatch" width={560} height={600} className="w-full h-auto" />
             </div>
-            <Image src={"/hero-image.png"} alt="hero image " width={560} height={600} className="w-full h-auto" />
+            <Image src={"/hero-image.png"} alt="hero image " width={900} height={800} className="w-full h-auto" />
           </div>
         </div>
       </section>
@@ -307,28 +294,28 @@ export default function Home() {
           </div>
 
           <div className="space-y-6">
-            <Marquee pauseOnHover className="[--duration:25s]">
-              {firstRow.map((company, index) => (
+            <Marquee pauseOnHover className="[--duration:35s]">
+              {logoArr.map((company, index) => (
                 <div key={index} className="lg:mx-8 mx-2 flex items-center justify-center">
                   <Image
-                    src={company.src}
-                    alt={company.alt}
-                    width={157}
-                    height={27}
-                    className="lg:w-44 w-28 object-cover h-auto "
+                    src={`/mentor-logo/${company}.png`}
+                    alt={company}
+                    width={140}
+                    height={64}
+                    className="lg:w-[140px] w-28 object-cover h-auto "
                   />
                 </div>
               ))}
             </Marquee>
-            <Marquee reverse pauseOnHover className="[--duration:20s]">
-              {secondRow.map((company, index) => (
+            <Marquee reverse pauseOnHover className="[--duration:40s]">
+              {logoArr2.map((company, index) => (
                 <div key={index} className="lg:mx-8 mx-2 flex items-center justify-center">
                   <Image
-                    src={company.src}
-                    alt={company.alt}
-                    width={157}
+                    src={`/mentor-logo/${company}.png`}
+                    alt={company}
+                    width={250}
                     height={27}
-                    className="w-24 object-cover h-auto"
+                    className="lg:w-44 w-28 object-cover h-auto "
                   />
                 </div>
               ))}
@@ -350,9 +337,10 @@ export default function Home() {
                 Builders & Visionaries
               </H2>
 
-              <p className="lg:text-2xl text-lg text-left font-light">
-                We provide the resources, mentorship and scalable projects. Our ecosystem fosters collaboration,
-                learning, and hands-on execution, bridging the gap between theory and real-world application.
+              <p className="lg:text-xl text-lg text- font-light text-left">
+                Inspiring innovators, builders & visionaries: We provide the resources, mentorship, and opportunities
+                needed to move ideas to scalable projects. Our ecosystem opens room for collaboration, learning and
+                hand-on-execution, bridging the gap between theory and real world application.
               </p>
               <Button className="w-[203px] py-6">
                 Donate
@@ -385,7 +373,14 @@ export default function Home() {
               </h3>
 
               <div className="">
-                <svg className="w-48 h-48" width="219" height="197" viewBox="0 0 219 197" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg
+                  className="w-48 h-48 max-w-56  lg:w-56 lg:h-56"
+                  width="219"
+                  height="197"
+                  viewBox="0 0 219 197"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
                   <g filter="url(#filter0_d_495_14)">
                     <rect
                       x="0.0390625"
@@ -582,19 +577,37 @@ export default function Home() {
 
       <section>
         <div className="container">
-          <div className="flex bg-gray-100 lg:gap-14 gap-4 flex-col lg:flex-row">
-            <div className="lg:p-8 p-2 space-y-8 lg:space-y-14">
+          <div className="flex bg-gray-100 lg:gap-6 gap-4 flex-col lg:flex-row">
+            <div className="lg:py-12 lg:pl-8 p-4 space-y-8 lg:space-y-10 lg:w-6/12">
               <h2 className={cn(nomixa.className, "lg:text-5xl text-[28px] font-medium")}>
                 Hear Success <br className="hidden lg:block" /> Stories
               </h2>
 
-              <p className="lg:text-2xl text-[18px] font-light">
-                Meet Joseph, a former apprentice who landed a top role in tech after completing our work simulation
-                program
-              </p>
+              <div className="lg:text-xl text-justify text-[18px] font-light">
+                <Carousel
+                  slides={[
+                    `Joining the X3 lab team has been a very good opportunity for me to implement what I have learnt on my
+                own theoretically. Working and learning with my fellow Project Manager. I have had the opportunity of
+                working with different teams and collaborating with them easily. There's still much more to learn
+                and explore, which I'm looking up`,
+                    `Joining the X3 lab team has been a very good opportunity for me to implement what I have learnt on my
+                own theoretically. Working and learning with my fellow Project Manager. I have had the opportunity of
+                working with different teams and collaborating with them easily. There's still much more to learn
+                and explore, which I'm looking up`,
+                    `Joining the X3 lab team has been a very good opportunity for me to implement what I have learnt on my
+                own theoretically. Working and learning with my fellow Project Manager. I have had the opportunity of
+                working with different teams and collaborating with them easily. There's still much more to learn
+                and explore, which I'm looking up`,
+                    `Joining the X3 lab team has been a very good opportunity for me to implement what I have learnt on my
+                own theoretically. Working and learning with my fellow Project Manager. I have had the opportunity of
+                working with different teams and collaborating with them easily. There's still much more to learn
+                and explore, which I'm looking up`
+                  ]}
+                />
+              </div>
             </div>
 
-            <div className="w-full">
+            <div className="lg:w-6/12 overflow-hidden">
               <Image
                 src={"/success-people.png"}
                 alt="success-people"
@@ -602,24 +615,23 @@ export default function Home() {
                 width={756}
                 height={319}
               />
-              <div className="bg-black lg:p-6 text-white space-y-16 p-4">
-                <h3 className="text-xl">Real world Experience, Real Growth</h3>
+              <div className="bg-black lg:p-10 text-white space-y-10 p-4">
+                <h3 className="text-xl relative pl-5 lg:pl-0">
+                  Real-world Experience, Real Growth
+                  <div className="absolute lg:top-1/2 -translate-y-1/2 lg:-left-14 top-3 -left-10 bg-white w-14 h-[2px]"></div>
+                </h3>
 
                 <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
-                  <span className="border border-white px-3 py-2 rounded-full text-xs lg:text-base text-center ">
-                    {" "}
+                  <span className="border border-white px-3 py-2 rounded-2xl text-xs lg:text-base text-center ">
                     Innovation
                   </span>
-                  <span className="border border-white px-3 py-2 rounded-full text-xs lg:text-base text-center ">
-                    {" "}
+                  <span className="border border-white px-3 py-2 rounded-2xl text-xs lg:text-base text-center ">
                     Growth
                   </span>
-                  <span className="border border-white px-3 py-2 rounded-full text-xs lg:text-base text-center ">
-                    {" "}
+                  <span className="border border-white px-3 py-2 rounded-2xl text-xs lg:text-base text-center ">
                     Impact
                   </span>
-                  <span className="border border-white px-3 py-2 rounded-full text-xs lg:text-base text-center ">
-                    {" "}
+                  <span className="border border-white px-3 py-2 rounded-2xl text-xs lg:text-base text-center ">
                     Creativity
                   </span>
                 </div>
@@ -629,7 +641,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section>
+      <section className="pt-4">
         <div className="container flex lg:gap-44 flex-col lg:flex-row">
           <div className="pt-4">
             <h2 className={cn(nomixa.className, "lg:text-6xl text-[28px] font-semibold")}>
@@ -655,7 +667,7 @@ const WhatWeDo = ({ no, label, description }: { no: string; label: string; descr
       <h3 className={cn(nomixa.className, "lg:text-5xl text-3xl font-semibold lg:mb-0 mb-4")}>{no}</h3>
       <div className="lg:space-y-6 space-y-3">
         <h4 className={cn(nomixa.className, "lg:text-[28px] text-xl font-medium")}>{label}</h4>
-        <p className="font-light text-base lg:text-2xl">{description}</p>
+        <p className="font-light text-base lg:text-xl">{description}</p>
       </div>
     </div>
   )
@@ -665,21 +677,24 @@ const whatWeDo = [
   {
     no: "01",
     label: "Workspace & Community",
-    description: "Free access to a dynamic and resourceful co-working space."
+    description:
+      "A collaborative hub where innovators, creators, and problem solvers connect, share ideas, and build together."
   },
   {
     no: "02",
     label: "Research & Development (R&D)",
-    description: "Support for cutting-edge ideas, funding, and product prototyping."
+    description: "Turning curiosity into real-world solutions, experiment, test, and bring innovative ideas to life."
   },
   {
     no: "03",
     label: "Mentorship based trainings",
-    description: "Hands-on training through simulated work experiences and boootcamps."
+    description:
+      "Get hands-on guidance from industry experts to sharpen your skills, navigate challenges, and level up."
   },
   {
     no: "04",
     label: "Startup support & Incubation",
-    description: "Guidance for early-stage entreprenuers, from ideation to launch."
+    description:
+      "From idea to execution, we provide the guidance, resources, and network to help startups scale and succeed."
   }
 ]
